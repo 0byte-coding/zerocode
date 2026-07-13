@@ -1,6 +1,6 @@
-import { LayerNode } from "@opencode-ai/core/effect/layer-node"
-import { httpClient } from "@opencode-ai/core/effect/app-node-platform"
-import { Ripgrep } from "@opencode-ai/core/ripgrep"
+import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { httpClient } from "@zerocode-ai/core/effect/app-node-platform"
+import { Ripgrep } from "@zerocode-ai/core/ripgrep"
 import { PlanExitTool } from "./plan"
 import { Session } from "@/session/session"
 import { QuestionTool } from "./question"
@@ -10,15 +10,17 @@ import { GlobTool } from "./glob"
 import { GrepTool } from "./grep"
 import { ReadTool } from "./read"
 import { TaskTool } from "./task"
-import { Database } from "@opencode-ai/core/database/database"
+import { Database } from "@zerocode-ai/core/database/database"
 import { TodoWriteTool } from "./todo"
 import { WebFetchTool } from "./webfetch"
 import { WriteTool } from "./write"
 import { InvalidTool } from "./invalid"
 import { SkillTool } from "./skill"
+import { ListToolsTool, ID as ListToolsID } from "./list_tools"
+import { CallToolTool, ID as CallToolID } from "./call_tool"
 import * as Tool from "./tool"
 import { Config } from "@/config/config"
-import { type ToolContext as PluginToolContext, type ToolDefinition } from "@opencode-ai/plugin"
+import { type ToolContext as PluginToolContext, type ToolDefinition } from "@zerocode-ai/plugin"
 import type { JSONSchema7, JSONSchema7Definition } from "@ai-sdk/provider"
 import { Schema } from "effect"
 import z from "zod"
@@ -29,12 +31,12 @@ import { WebSearchTool } from "./websearch"
 import { LspTool } from "./lsp"
 import * as Truncate from "./truncate"
 import { ApplyPatchTool } from "./apply_patch"
-import { Glob } from "@opencode-ai/core/util/glob"
+import { Glob } from "@zerocode-ai/core/util/glob"
 import path from "path"
 import { pathToFileURL } from "url"
 import { Effect, Layer, Context } from "effect"
 import { ChildProcessSpawner } from "effect/unstable/process/ChildProcessSpawner"
-import { CrossSpawnSpawner } from "@opencode-ai/core/cross-spawn-spawner"
+import { CrossSpawnSpawner } from "@zerocode-ai/core/cross-spawn-spawner"
 import { Format } from "../format"
 import { InstanceState } from "@/effect/instance-state"
 import { EffectBridge } from "@/effect/bridge"
@@ -42,17 +44,17 @@ import { Question } from "../question"
 import { Todo } from "../session/todo"
 import { LSP } from "@/lsp/lsp"
 import { Instruction } from "../session/instruction"
-import { FSUtil } from "@opencode-ai/core/fs-util"
+import { FSUtil } from "@zerocode-ai/core/fs-util"
 import { EventV2Bridge } from "@/event-v2-bridge"
 import { Agent } from "../agent/agent"
 import { Skill } from "../skill"
 import { Permission } from "@/permission"
 import { BackgroundJob } from "@/background/job"
 import { RuntimeFlags } from "@/effect/runtime-flags"
-import { ProviderV2 } from "@opencode-ai/core/provider"
-import { ModelV2 } from "@opencode-ai/core/model"
+import { ProviderV2 } from "@zerocode-ai/core/provider"
+import { ModelV2 } from "@zerocode-ai/core/model"
 import { MCP } from "@/mcp"
-import { PermissionV1 } from "@opencode-ai/core/v1/permission"
+import { PermissionV1 } from "@zerocode-ai/core/v1/permission"
 import { McpCatalog } from "@/mcp/catalog"
 
 export function webSearchEnabled(providerID: ProviderV2.ID, flags = { exa: false, parallel: false }) {
@@ -112,6 +114,14 @@ const layer = Layer.effect(
     const agent = yield* Agent.Service
     const codeMode = flags.experimentalCodeMode ? yield* Effect.promise(() => import("./code-mode")) : undefined
     const codeModeTool = codeMode ? yield* codeMode.CodeModeTool : undefined
+
+    // `list_tools`/`call_tool` dispatch against every other registered tool. Their
+    // targets aren't known until the rest of this closure builds `custom`/`tool`
+    // below, so they read `dynamicTargets` lazily through this getter — by the time
+    // either tool actually executes, the assignment further down has already run.
+    let dynamicTargets: Tool.Def[] = []
+    const listTools = yield* ListToolsTool(() => dynamicTargets)
+    const callTool = yield* CallToolTool(() => dynamicTargets)
 
     const state = yield* InstanceState.make<State>(
       Effect.fn("ToolRegistry.state")(function* (ctx) {
@@ -218,29 +228,40 @@ const layer = Layer.effect(
           question: Tool.init(question),
           lsp: Tool.init(lsptool),
           plan: Tool.init(plan),
+          listTools: Tool.init(listTools),
+          callTool: Tool.init(callTool),
           ...(codeModeTool ? { execute: Tool.init(codeModeTool) } : {}),
         })
+
+        const otherTools: Tool.Def[] = [
+          ...(questionEnabled ? [tool.question] : []),
+          tool.shell,
+          tool.read,
+          tool.glob,
+          tool.grep,
+          tool.edit,
+          tool.write,
+          tool.task,
+          tool.fetch,
+          tool.todo,
+          tool.search,
+          tool.skill,
+          tool.patch,
+          ...(tool.execute ? [tool.execute] : []),
+          ...(flags.experimentalLspTool ? [tool.lsp] : []),
+          ...(flags.experimentalPlanMode && flags.client === "cli" ? [tool.plan] : []),
+        ]
+        // `call_tool`/`list_tools` can dispatch to any of these plus whatever
+        // plugins register, regardless of whether dynamic tool mode hides them
+        // from the LLM's tool list below.
+        dynamicTargets = [...otherTools, ...custom]
 
         return {
           custom,
           builtin: [
             tool.invalid,
-            ...(questionEnabled ? [tool.question] : []),
-            tool.shell,
-            tool.read,
-            tool.glob,
-            tool.grep,
-            tool.edit,
-            tool.write,
-            tool.task,
-            tool.fetch,
-            tool.todo,
-            tool.search,
-            tool.skill,
-            tool.patch,
-            ...(tool.execute ? [tool.execute] : []),
-            ...(flags.experimentalLspTool ? [tool.lsp] : []),
-            ...(flags.experimentalPlanMode && flags.client === "cli" ? [tool.plan] : []),
+            ...otherTools,
+            ...(flags.experimentalDynamicTools ? [tool.listTools, tool.callTool] : []),
           ],
           task: tool.task,
           read: tool.read,
@@ -285,6 +306,14 @@ const layer = Layer.effect(
 
     const tools: Interface["tools"] = Effect.fn("ToolRegistry.tools")(function* (input) {
       const filtered = (yield* all()).filter((tool) => {
+        // Dynamic tool mode collapses the LLM-facing tool list down to just the
+        // discovery/dispatch pair (plus the always-present `invalid` fallback).
+        // Every other registered tool — builtin or plugin — stays reachable
+        // through `call_tool` instead of appearing directly here.
+        if (flags.experimentalDynamicTools) {
+          return tool.id === InvalidTool.id || tool.id === ListToolsID || tool.id === CallToolID
+        }
+
         if (tool.id === WebSearchTool.id) {
           return webSearchEnabled(input.providerID, { exa: flags.enableExa, parallel: flags.enableParallel })
         }
@@ -297,9 +326,10 @@ const layer = Layer.effect(
         return true
       })
 
-      const codeModeDescription = filtered.some((tool) => tool.id === "execute")
-        ? yield* describeCodeMode(input)
-        : undefined
+      const codeModeDescription =
+        !flags.experimentalDynamicTools && filtered.some((tool) => tool.id === "execute")
+          ? yield* describeCodeMode(input)
+          : undefined
       const visible = filtered.filter((tool) => tool.id !== "execute" || codeModeDescription)
 
       return yield* Effect.forEach(

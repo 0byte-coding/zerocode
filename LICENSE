@@ -1,6 +1,11 @@
 MIT License
 
+zerocode is a hard fork of opencode. The original opencode copyright notice
+is preserved below as required by the MIT License; zerocode's own
+modifications are additionally copyright (c) 2026 zerocode.
+
 Copyright (c) 2025 opencode
+Copyright (c) 2026 zerocode
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

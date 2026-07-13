@@ -1,35 +1,35 @@
 import { expect, test } from "bun:test"
 import { Schema } from "effect"
-import { AgentV2 } from "@opencode-ai/core/agent"
-import { ModelV2 } from "@opencode-ai/core/model"
-import { SessionV2 } from "@opencode-ai/core/session"
-import { Agent } from "@opencode-ai/schema/agent"
-import { Location } from "@opencode-ai/schema/location"
-import { Model } from "@opencode-ai/schema/model"
-import { AgentAttachment, FileAttachment, Prompt, Source } from "@opencode-ai/schema/prompt"
-import { Provider } from "@opencode-ai/schema/provider"
-import { Project } from "@opencode-ai/schema/project"
-import { ProjectDirectories } from "@opencode-ai/schema/project-directories"
-import { PermissionV1 } from "@opencode-ai/schema/permission-v1"
-import { Session } from "@opencode-ai/schema/session"
-import { SessionInput } from "@opencode-ai/schema/session-input"
-import { SessionMessage } from "@opencode-ai/schema/session-message"
-import { Workspace } from "@opencode-ai/schema/workspace"
-import { Command } from "@opencode-ai/schema/command"
-import { Connection } from "@opencode-ai/schema/connection"
-import { Credential } from "@opencode-ai/schema/credential"
-import { FileSystem } from "@opencode-ai/schema/filesystem"
-import { Integration } from "@opencode-ai/schema/integration"
-import { LLM } from "@opencode-ai/schema/llm"
-import { Permission } from "@opencode-ai/schema/permission"
-import { Plugin } from "@opencode-ai/schema/plugin"
-import { Pty } from "@opencode-ai/schema/pty"
-import { Reference } from "@opencode-ai/schema/reference"
-import { SessionTodo } from "@opencode-ai/schema/session-todo"
-import { Skill } from "@opencode-ai/schema/skill"
-import { AbsolutePath, DateTimeUtcFromMillis, optional, statics } from "@opencode-ai/schema/schema"
-import { ProviderV2 } from "@opencode-ai/core/provider"
-import { PluginV2 } from "@opencode-ai/core/plugin"
+import { AgentV2 } from "@zerocode-ai/core/agent"
+import { ModelV2 } from "@zerocode-ai/core/model"
+import { SessionV2 } from "@zerocode-ai/core/session"
+import { Agent } from "@zerocode-ai/schema/agent"
+import { Location } from "@zerocode-ai/schema/location"
+import { Model } from "@zerocode-ai/schema/model"
+import { AgentAttachment, FileAttachment, Prompt, Source } from "@zerocode-ai/schema/prompt"
+import { Provider } from "@zerocode-ai/schema/provider"
+import { Project } from "@zerocode-ai/schema/project"
+import { ProjectDirectories } from "@zerocode-ai/schema/project-directories"
+import { PermissionV1 } from "@zerocode-ai/schema/permission-v1"
+import { Session } from "@zerocode-ai/schema/session"
+import { SessionInput } from "@zerocode-ai/schema/session-input"
+import { SessionMessage } from "@zerocode-ai/schema/session-message"
+import { Workspace } from "@zerocode-ai/schema/workspace"
+import { Command } from "@zerocode-ai/schema/command"
+import { Connection } from "@zerocode-ai/schema/connection"
+import { Credential } from "@zerocode-ai/schema/credential"
+import { FileSystem } from "@zerocode-ai/schema/filesystem"
+import { Integration } from "@zerocode-ai/schema/integration"
+import { LLM } from "@zerocode-ai/schema/llm"
+import { Permission } from "@zerocode-ai/schema/permission"
+import { Plugin } from "@zerocode-ai/schema/plugin"
+import { Pty } from "@zerocode-ai/schema/pty"
+import { Reference } from "@zerocode-ai/schema/reference"
+import { SessionTodo } from "@zerocode-ai/schema/session-todo"
+import { Skill } from "@zerocode-ai/schema/skill"
+import { AbsolutePath, DateTimeUtcFromMillis, optional, statics } from "@zerocode-ai/schema/schema"
+import { ProviderV2 } from "@zerocode-ai/core/provider"
+import { PluginV2 } from "@zerocode-ai/core/plugin"
 
 test("Core reuses the canonical shared schemas", async () => {
   const [
@@ -55,27 +55,27 @@ test("Core reuses the canonical shared schemas", async () => {
     coreSchema,
     coreWorkspace,
   ] = await Promise.all([
-    import("@opencode-ai/core/command"),
-    import("@opencode-ai/core/integration/connection"),
-    import("@opencode-ai/core/credential"),
-    import("@opencode-ai/core/filesystem"),
-    import("@opencode-ai/core/integration"),
-    import("@opencode-ai/core/location"),
-    import("@opencode-ai/llm"),
-    import("@opencode-ai/core/permission"),
-    import("@opencode-ai/core/v1/permission"),
-    import("@opencode-ai/core/project/copy"),
-    import("@opencode-ai/core/pty"),
-    import("@opencode-ai/core/project/schema"),
-    import("@opencode-ai/core/reference"),
-    import("@opencode-ai/core/session/input"),
-    import("@opencode-ai/core/session/message"),
-    import("@opencode-ai/core/session/todo"),
-    import("@opencode-ai/core/session/prompt"),
-    import("@opencode-ai/core/skill"),
-    import("@opencode-ai/core/v2-schema"),
-    import("@opencode-ai/core/schema"),
-    import("@opencode-ai/core/workspace"),
+    import("@zerocode-ai/core/command"),
+    import("@zerocode-ai/core/integration/connection"),
+    import("@zerocode-ai/core/credential"),
+    import("@zerocode-ai/core/filesystem"),
+    import("@zerocode-ai/core/integration"),
+    import("@zerocode-ai/core/location"),
+    import("@zerocode-ai/llm"),
+    import("@zerocode-ai/core/permission"),
+    import("@zerocode-ai/core/v1/permission"),
+    import("@zerocode-ai/core/project/copy"),
+    import("@zerocode-ai/core/pty"),
+    import("@zerocode-ai/core/project/schema"),
+    import("@zerocode-ai/core/reference"),
+    import("@zerocode-ai/core/session/input"),
+    import("@zerocode-ai/core/session/message"),
+    import("@zerocode-ai/core/session/todo"),
+    import("@zerocode-ai/core/session/prompt"),
+    import("@zerocode-ai/core/skill"),
+    import("@zerocode-ai/core/v2-schema"),
+    import("@zerocode-ai/core/schema"),
+    import("@zerocode-ai/core/workspace"),
   ])
 
   const schemas = [

@@ -1,31 +1,31 @@
-import { LayerNode } from "@opencode-ai/core/effect/layer-node"
-import { httpClient } from "@opencode-ai/core/effect/app-node-platform"
-import { serviceUse } from "@opencode-ai/core/effect/service-use"
+import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { httpClient } from "@zerocode-ai/core/effect/app-node-platform"
+import { serviceUse } from "@zerocode-ai/core/effect/service-use"
 import path from "path"
 import { pathToFileURL } from "url"
 import os from "os"
 import { mergeDeep } from "remeda"
-import { Global } from "@opencode-ai/core/global"
+import { Global } from "@zerocode-ai/core/global"
 import fsNode from "fs/promises"
-import { Flag } from "@opencode-ai/core/flag/flag"
+import { Flag } from "@zerocode-ai/core/flag/flag"
 import { Auth } from "../auth"
 import { Env } from "../env"
 import { applyEdits, modify } from "jsonc-parser"
-import { InstallationLocal, InstallationVersion } from "@opencode-ai/core/installation/version"
+import { InstallationLocal, InstallationVersion } from "@zerocode-ai/core/installation/version"
 import { existsSync } from "fs"
 import { Account } from "@/account/account"
 import { isRecord } from "@/util/record"
-import type { ConsoleState } from "@opencode-ai/core/v1/config/console-state"
-import { FSUtil } from "@opencode-ai/core/fs-util"
+import type { ConsoleState } from "@zerocode-ai/core/v1/config/console-state"
+import { FSUtil } from "@zerocode-ai/core/fs-util"
 import { InstanceState } from "@/effect/instance-state"
 import { Context, Duration, Effect, Exit, Fiber, Layer, Option, Schema } from "effect"
 import { FetchHttpClient, HttpClient, HttpClientRequest } from "effect/unstable/http"
-import { EffectFlock } from "@opencode-ai/core/util/effect-flock"
+import { EffectFlock } from "@zerocode-ai/core/util/effect-flock"
 import { containsPath, type InstanceContext } from "../project/instance-context"
-import { ConfigV1 } from "@opencode-ai/core/v1/config/config"
-import { RemoteAuthError } from "@opencode-ai/core/v1/config/error"
-import { ConfigPermissionV1 } from "@opencode-ai/core/v1/config/permission"
-import { ConfigPluginV1 } from "@opencode-ai/core/v1/config/plugin"
+import { ConfigV1 } from "@zerocode-ai/core/v1/config/config"
+import { RemoteAuthError } from "@zerocode-ai/core/v1/config/error"
+import { ConfigPermissionV1 } from "@zerocode-ai/core/v1/config/permission"
+import { ConfigPluginV1 } from "@zerocode-ai/core/v1/config/plugin"
 import { ConfigAgent } from "./agent"
 import { ConfigCommand } from "./command"
 import { ConfigManaged } from "./managed"
@@ -33,7 +33,7 @@ import { ConfigParse } from "./parse"
 import { ConfigPaths } from "./paths"
 import { ConfigPlugin } from "./plugin"
 import { ConfigVariable } from "./variable"
-import { Npm } from "@opencode-ai/core/npm"
+import { Npm } from "@zerocode-ai/core/npm"
 import { withTransientReadRetry } from "@/util/effect-http-client"
 
 // Custom merge function that concatenates array fields instead of replacing them
@@ -247,7 +247,7 @@ const layer = Layer.effect(
       let result: Info = {}
       // Seed the default global config with the schema for editor completion, but avoid writing when the user
       // explicitly routes config through env-provided paths or content.
-      if (!Flag.OPENCODE_CONFIG && !Flag.OPENCODE_CONFIG_DIR && !Flag.OPENCODE_CONFIG_CONTENT) {
+      if (!Flag.ZEROCODE_CONFIG && !Flag.ZEROCODE_CONFIG_DIR && !Flag.ZEROCODE_CONFIG_CONTENT) {
         const file = globalConfigFile()
         if (!existsSync(file)) {
           yield* fs
@@ -322,7 +322,7 @@ const layer = Layer.effect(
 
         const pluginScopeForSource = Effect.fnUntraced(function* (source: string) {
           if (source.startsWith("http://") || source.startsWith("https://")) return "global"
-          if (source === "OPENCODE_CONFIG_CONTENT") return "local"
+          if (source === "ZEROCODE_CONFIG_CONTENT") return "local"
           if (containsPath(source, ctx)) return "local"
           return "global"
         })
@@ -398,12 +398,12 @@ const layer = Layer.effect(
         const global = Object.keys(authEnv).length ? yield* loadGlobal(authEnv) : yield* getGlobal()
         yield* merge(Global.Path.config, global, "global")
 
-        if (Flag.OPENCODE_CONFIG) {
-          yield* merge(Flag.OPENCODE_CONFIG, yield* loadFile(Flag.OPENCODE_CONFIG, authEnv))
-          yield* Effect.logDebug("loaded custom config", { path: Flag.OPENCODE_CONFIG })
+        if (Flag.ZEROCODE_CONFIG) {
+          yield* merge(Flag.ZEROCODE_CONFIG, yield* loadFile(Flag.ZEROCODE_CONFIG, authEnv))
+          yield* Effect.logDebug("loaded custom config", { path: Flag.ZEROCODE_CONFIG })
         }
 
-        if (!Flag.OPENCODE_DISABLE_PROJECT_CONFIG) {
+        if (!Flag.ZEROCODE_DISABLE_PROJECT_CONFIG) {
           for (const file of yield* ConfigPaths.files("opencode", ctx.directory, ctx.worktree).pipe(Effect.orDie)) {
             yield* merge(file, yield* loadFile(file, authEnv), "local")
           }
@@ -415,14 +415,14 @@ const layer = Layer.effect(
 
         const directories = yield* ConfigPaths.directories(ctx.directory, ctx.worktree)
 
-        if (Flag.OPENCODE_CONFIG_DIR) {
-          yield* Effect.logDebug("loading config from OPENCODE_CONFIG_DIR", { path: Flag.OPENCODE_CONFIG_DIR })
+        if (Flag.ZEROCODE_CONFIG_DIR) {
+          yield* Effect.logDebug("loading config from ZEROCODE_CONFIG_DIR", { path: Flag.ZEROCODE_CONFIG_DIR })
         }
 
         const deps: Fiber.Fiber<void>[] = []
 
         for (const dir of directories) {
-          if (dir.endsWith(".opencode") || dir === Flag.OPENCODE_CONFIG_DIR) {
+          if (dir.endsWith(".opencode") || dir === Flag.ZEROCODE_CONFIG_DIR) {
             for (const file of ["opencode.json", "opencode.jsonc"]) {
               const source = path.join(dir, file)
               yield* Effect.logDebug(`loading config from ${source}`)
@@ -439,6 +439,10 @@ const layer = Layer.effect(
             .install(dir, {
               add: [
                 {
+                  // Real, published npm package — end users' locally-authored
+                  // `.opencode/tool` and `.opencode/plugin` files import from this for
+                  // type support, so it must stay pointed at the actual registry name
+                  // regardless of this fork's own internal `@zerocode-ai/*` scope.
                   name: "@opencode-ai/plugin",
                   version: InstallationLocal ? undefined : InstallationVersion,
                 },
@@ -465,14 +469,14 @@ const layer = Layer.effect(
           yield* mergePluginOrigins(dir, list)
         }
 
-        if (process.env.OPENCODE_CONFIG_CONTENT) {
-          const source = "OPENCODE_CONFIG_CONTENT"
-          const next = yield* loadConfig(process.env.OPENCODE_CONFIG_CONTENT, {
+        if (process.env.ZEROCODE_CONFIG_CONTENT) {
+          const source = "ZEROCODE_CONFIG_CONTENT"
+          const next = yield* loadConfig(process.env.ZEROCODE_CONFIG_CONTENT, {
             dir: ctx.directory,
             source,
           })
           yield* merge(source, next, "local")
-          yield* Effect.logDebug("loaded custom config from OPENCODE_CONFIG_CONTENT")
+          yield* Effect.logDebug("loaded custom config from ZEROCODE_CONFIG_CONTENT")
         }
 
         const activeAccount = Option.getOrUndefined(
@@ -488,8 +492,8 @@ const layer = Layer.effect(
               { concurrency: 2 },
             )
             if (Option.isSome(tokenOpt)) {
-              process.env["OPENCODE_CONSOLE_TOKEN"] = tokenOpt.value
-              yield* env.set("OPENCODE_CONSOLE_TOKEN", tokenOpt.value)
+              process.env["ZEROCODE_CONSOLE_TOKEN"] = tokenOpt.value
+              yield* env.set("ZEROCODE_CONSOLE_TOKEN", tokenOpt.value)
             }
 
             if (Option.isSome(configOpt)) {
@@ -542,11 +546,11 @@ const layer = Layer.effect(
           })
         }
 
-        if (Flag.OPENCODE_PERMISSION) {
+        if (Flag.ZEROCODE_PERMISSION) {
           try {
-            result.permission = mergeDeep(result.permission ?? {}, JSON.parse(Flag.OPENCODE_PERMISSION))
+            result.permission = mergeDeep(result.permission ?? {}, JSON.parse(Flag.ZEROCODE_PERMISSION))
           } catch (err) {
-            yield* Effect.logWarning("OPENCODE_PERMISSION contains invalid JSON, skipping", { err })
+            yield* Effect.logWarning("ZEROCODE_PERMISSION contains invalid JSON, skipping", { err })
           }
         }
 
@@ -576,10 +580,10 @@ const layer = Layer.effect(
           result.share = "auto"
         }
 
-        if (Flag.OPENCODE_DISABLE_AUTOCOMPACT) {
+        if (Flag.ZEROCODE_DISABLE_AUTOCOMPACT) {
           result.compaction = { ...result.compaction, auto: false }
         }
-        if (Flag.OPENCODE_DISABLE_PRUNE) {
+        if (Flag.ZEROCODE_DISABLE_PRUNE) {
           result.compaction = { ...result.compaction, prune: false }
         }
 
