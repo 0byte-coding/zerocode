@@ -1,6 +1,6 @@
 #!/usr/bin/env bun
 
-import { Script } from "@opencode-ai/script"
+import { Script } from "@zerocode-ai/script"
 import path from "path"
 import { fileURLToPath } from "url"
 
@@ -20,11 +20,11 @@ await Bun.build({
   sourcemap: "linked",
   external: ["jsonc-parser", "@lydell/node-pty"],
   define: {
-    OPENCODE_MODELS_DEV: generated.modelsData,
-    OPENCODE_CHANNEL: `'${Script.channel}'`,
+    ZEROCODE_MODELS_DEV: generated.modelsData,
+    ZEROCODE_CHANNEL: `'${Script.channel}'`,
   },
   files: {
-    "opencode-web-ui.gen.ts": "",
+    "zerocode-web-ui.gen.ts": "",
   },
 })
 

@@ -8,8 +8,8 @@ export function publish(port: number, domain?: string) {
   if (bonjour) unpublish()
 
   try {
-    const host = domain ?? "opencode.local"
-    const name = `opencode-${port}`
+    const host = domain ?? "zerocode.local"
+    const name = `zerocode-${port}`
     bonjour = new Bonjour()
     const service = bonjour.publish({
       name,

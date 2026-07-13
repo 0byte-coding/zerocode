@@ -1,8 +1,8 @@
 import { createHash } from "node:crypto"
 import { describe, expect } from "bun:test"
-import { Flag } from "@opencode-ai/core/flag/flag"
+import { Flag } from "@zerocode-ai/core/flag/flag"
 import { ConfigProvider, Effect, Layer, Option } from "effect"
-import { AppNodeBuilder } from "@opencode-ai/core/effect/app-node-builder"
+import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
 import {
   HttpClient,
   HttpClientRequest,
@@ -12,7 +12,7 @@ import {
   HttpServerRequest,
   HttpServerResponse,
 } from "effect/unstable/http"
-import { FSUtil } from "@opencode-ai/core/fs-util"
+import { FSUtil } from "@zerocode-ai/core/fs-util"
 import { RuntimeFlags } from "../../src/effect/runtime-flags"
 import { ServerAuth } from "../../src/server/auth"
 import { authorizationRouterMiddleware } from "../../src/server/routes/instance/httpapi/middleware/authorization"
@@ -23,18 +23,18 @@ import { testEffect } from "../lib/effect"
 const testStateLayer = Layer.effectDiscard(
   Effect.gen(function* () {
     const original = {
-      OPENCODE_SERVER_PASSWORD: Flag.OPENCODE_SERVER_PASSWORD,
-      OPENCODE_SERVER_USERNAME: Flag.OPENCODE_SERVER_USERNAME,
-      envPassword: process.env.OPENCODE_SERVER_PASSWORD,
-      envUsername: process.env.OPENCODE_SERVER_USERNAME,
+      ZEROCODE_SERVER_PASSWORD: Flag.ZEROCODE_SERVER_PASSWORD,
+      ZEROCODE_SERVER_USERNAME: Flag.ZEROCODE_SERVER_USERNAME,
+      envPassword: process.env.ZEROCODE_SERVER_PASSWORD,
+      envUsername: process.env.ZEROCODE_SERVER_USERNAME,
     }
 
     yield* Effect.addFinalizer(() =>
       Effect.sync(() => {
-        Flag.OPENCODE_SERVER_PASSWORD = original.OPENCODE_SERVER_PASSWORD
-        Flag.OPENCODE_SERVER_USERNAME = original.OPENCODE_SERVER_USERNAME
-        restoreEnv("OPENCODE_SERVER_PASSWORD", original.envPassword)
-        restoreEnv("OPENCODE_SERVER_USERNAME", original.envUsername)
+        Flag.ZEROCODE_SERVER_PASSWORD = original.ZEROCODE_SERVER_PASSWORD
+        Flag.ZEROCODE_SERVER_USERNAME = original.ZEROCODE_SERVER_USERNAME
+        restoreEnv("ZEROCODE_SERVER_PASSWORD", original.envPassword)
+        restoreEnv("ZEROCODE_SERVER_USERNAME", original.envUsername)
       }),
     )
   }),
@@ -64,8 +64,8 @@ function app(input?: { password?: string; username?: string }) {
       Layer.provide(
         ConfigProvider.layer(
           ConfigProvider.fromUnknown({
-            OPENCODE_SERVER_PASSWORD: input?.password,
-            OPENCODE_SERVER_USERNAME: input?.username,
+            ZEROCODE_SERVER_PASSWORD: input?.password,
+            ZEROCODE_SERVER_USERNAME: input?.username,
           }),
         ),
       ),

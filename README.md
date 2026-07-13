@@ -1,3 +1,4 @@
+<p align="center"><strong>zerocode</strong> is a hard fork of <a href="https://opencode.ai">opencode</a>. See <code>LICENSE</code> for attribution. Badges, links, and brand assets below still point at the upstream project pending a full rebrand.</p>
 <p align="center">
   <a href="https://opencode.ai">
     <picture>

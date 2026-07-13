@@ -1,5 +1,5 @@
-import { Icon as IconV2 } from "@opencode-ai/ui/v2/icon"
-import { IconButtonV2 } from "@opencode-ai/ui/v2/icon-button-v2"
+import { Icon as IconV2 } from "@zerocode-ai/ui/v2/icon"
+import { IconButtonV2 } from "@zerocode-ai/ui/v2/icon-button-v2"
 import { createSignal, Show } from "solid-js"
 import { createStore } from "solid-js/store"
 import { Drawer, DrawerClose, DrawerContent } from "@/components/ui/drawer"
@@ -31,7 +31,7 @@ const triggerClass =
 const showPopover = () => true
 
 export function HelpButton() {
-  if (import.meta.env.VITE_OPENCODE_CHANNEL !== "dev") return null
+  if (import.meta.env.VITE_ZEROCODE_CHANNEL !== "dev") return null
 
   const platform = usePlatform()
 
@@ -54,7 +54,7 @@ export function HelpButton() {
 
 // can remove this after the tabs rollout has been out for a while
 export function TabsInfoPopup() {
-  if (import.meta.env.VITE_OPENCODE_CHANNEL !== "dev") return null
+  if (import.meta.env.VITE_ZEROCODE_CHANNEL !== "dev") return null
 
   const [state, setState] = persisted(Persist.global("tabsInfoPopup"), createStore({ dismissed: false }))
   // setState({ dismissed: false }) // for testing
