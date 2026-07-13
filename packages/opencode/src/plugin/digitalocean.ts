@@ -1,7 +1,7 @@
-import type { Hooks, PluginInput } from "@zerocode-ai/plugin"
-import type { Model } from "@zerocode-ai/sdk/v2"
-import { InstallationVersion } from "@zerocode-ai/core/installation/version"
-import { OauthCallbackPage } from "@zerocode-ai/core/oauth/page"
+import type { Hooks, PluginInput } from "@0codeai/zerocode-plugin"
+import type { Model } from "@0codeai/zerocode-sdk/v2"
+import { InstallationVersion } from "@0codeai/zerocode-core/installation/version"
+import { OauthCallbackPage } from "@0codeai/zerocode-core/oauth/page"
 import { createServer } from "http"
 import open from "open"
 

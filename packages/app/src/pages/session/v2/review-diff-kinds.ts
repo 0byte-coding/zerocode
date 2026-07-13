@@ -1,4 +1,4 @@
-import type { SnapshotFileDiff, VcsFileDiff } from "@zerocode-ai/sdk/v2"
+import type { SnapshotFileDiff, VcsFileDiff } from "@0codeai/zerocode-sdk/v2"
 import type { Kind } from "@/components/file-tree-v2"
 import { normalizeFileTreeV2Path } from "@/components/file-tree-v2-model"
 

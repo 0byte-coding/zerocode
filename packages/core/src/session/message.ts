@@ -1,2 +1,2 @@
 export * as SessionMessage from "./message"
-export * from "@zerocode-ai/schema/session-message"
+export * from "@0codeai/zerocode-schema/session-message"

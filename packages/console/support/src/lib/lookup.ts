@@ -1,8 +1,8 @@
 "use server"
 
-import { Database, and, eq, isNull, sql } from "@zerocode-ai/console-core/drizzle/index.js"
-import { AuthTable } from "@zerocode-ai/console-core/schema/auth.sql.js"
-import { UserTable } from "@zerocode-ai/console-core/schema/user.sql.js"
+import { Database, and, eq, isNull, sql } from "@0codeai/zerocode-console-core/drizzle/index.js"
+import { AuthTable } from "@0codeai/zerocode-console-core/schema/auth.sql.js"
+import { UserTable } from "@0codeai/zerocode-console-core/schema/user.sql.js"
 import {
   BillingTable,
   PaymentTable,
@@ -10,15 +10,15 @@ import {
   BlackPlans,
   UsageTable,
   LiteTable,
-} from "@zerocode-ai/console-core/schema/billing.sql.js"
-import { WorkspaceTable } from "@zerocode-ai/console-core/schema/workspace.sql.js"
-import { KeyTable } from "@zerocode-ai/console-core/schema/key.sql.js"
-import { ModelTable } from "@zerocode-ai/console-core/schema/model.sql.js"
-import { BlackData } from "@zerocode-ai/console-core/black.js"
-import { LiteData } from "@zerocode-ai/console-core/lite.js"
-import { Subscription } from "@zerocode-ai/console-core/subscription.js"
-import { centsToMicroCents } from "@zerocode-ai/console-core/util/price.js"
-import { getWeekBounds } from "@zerocode-ai/console-core/util/date.js"
+} from "@0codeai/zerocode-console-core/schema/billing.sql.js"
+import { WorkspaceTable } from "@0codeai/zerocode-console-core/schema/workspace.sql.js"
+import { KeyTable } from "@0codeai/zerocode-console-core/schema/key.sql.js"
+import { ModelTable } from "@0codeai/zerocode-console-core/schema/model.sql.js"
+import { BlackData } from "@0codeai/zerocode-console-core/black.js"
+import { LiteData } from "@0codeai/zerocode-console-core/lite.js"
+import { Subscription } from "@0codeai/zerocode-console-core/subscription.js"
+import { centsToMicroCents } from "@0codeai/zerocode-console-core/util/price.js"
+import { getWeekBounds } from "@0codeai/zerocode-console-core/util/date.js"
 
 export type LookupResult = {
   identifier: string

@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, test } from "bun:test"
 import { Option, Redacted } from "effect"
-import { Flag } from "@zerocode-ai/core/flag/flag"
+import { Flag } from "@0codeai/zerocode-core/flag/flag"
 import { ServerAuth } from "../../src/server/auth"
 
 const original = {

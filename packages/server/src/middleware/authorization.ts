@@ -1,8 +1,8 @@
 import { ServerAuth } from "../auth"
-import { UnauthorizedError } from "@zerocode-ai/protocol/errors"
-import { Authorization } from "@zerocode-ai/protocol/middleware/authorization"
-export { Authorization } from "@zerocode-ai/protocol/middleware/authorization"
-import { hasPtyConnectTicketURL } from "@zerocode-ai/protocol/groups/pty"
+import { UnauthorizedError } from "@0codeai/zerocode-protocol/errors"
+import { Authorization } from "@0codeai/zerocode-protocol/middleware/authorization"
+export { Authorization } from "@0codeai/zerocode-protocol/middleware/authorization"
+import { hasPtyConnectTicketURL } from "@0codeai/zerocode-protocol/groups/pty"
 import { Effect, Encoding, Layer, Redacted } from "effect"
 import { HttpEffect, HttpServerRequest, HttpServerResponse } from "effect/unstable/http"
 

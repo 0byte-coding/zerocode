@@ -1,5 +1,5 @@
 import { Schema } from "effect"
-import { ServerEvent } from "@zerocode-ai/schema/server-event"
+import { ServerEvent } from "@0codeai/zerocode-schema/server-event"
 
 export const Event = ServerEvent
 

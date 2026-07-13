@@ -1,7 +1,7 @@
 // @ts-nocheck
 import * as mod from "./markdown"
-import { create } from "@zerocode-ai/ui/storybook/scaffold"
-import { markdown } from "@zerocode-ai/ui/storybook/fixtures"
+import { create } from "@0codeai/zerocode-ui/storybook/scaffold"
+import { markdown } from "@0codeai/zerocode-ui/storybook/fixtures"
 
 const docs = `### Overview
 Render sanitized Markdown with code blocks, inline code, and safe links.

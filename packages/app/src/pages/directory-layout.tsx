@@ -1,6 +1,6 @@
-import { DataProvider } from "@zerocode-ai/session-ui/context"
+import { DataProvider } from "@0codeai/zerocode-session-ui/context"
 import { showToast } from "@/utils/toast"
-import { base64Encode } from "@zerocode-ai/core/util/encode"
+import { base64Encode } from "@0codeai/zerocode-core/util/encode"
 import { useLocation, useNavigate, useParams } from "@solidjs/router"
 import { type Accessor, createEffect, createMemo, createResource, onCleanup, type ParentProps, Show } from "solid-js"
 import { useLanguage } from "@/context/language"

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import type { Agent } from "@zerocode-ai/sdk/v2/client"
+import type { Agent } from "@0codeai/zerocode-sdk/v2/client"
 import { directoryKey, normalizeAgentList } from "./utils"
 
 const agent = (name = "build") =>

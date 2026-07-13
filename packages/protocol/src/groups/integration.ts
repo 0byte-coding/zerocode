@@ -1,5 +1,5 @@
-import { Integration } from "@zerocode-ai/schema/integration"
-import { Location } from "@zerocode-ai/schema/location"
+import { Integration } from "@0codeai/zerocode-schema/integration"
+import { Location } from "@0codeai/zerocode-schema/location"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, HttpApiSchema, OpenApi } from "effect/unstable/httpapi"
 import { InvalidRequestError } from "../errors"

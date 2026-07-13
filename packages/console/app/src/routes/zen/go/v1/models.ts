@@ -1,5 +1,5 @@
 import type { APIEvent } from "@solidjs/start/server"
-import { ZenData } from "@zerocode-ai/console-core/model.js"
+import { ZenData } from "@0codeai/zerocode-console-core/model.js"
 import { buildModelsResponse, buildOptionsResponse } from "../../util/modelsHandler"
 
 export async function OPTIONS(_input: APIEvent) {

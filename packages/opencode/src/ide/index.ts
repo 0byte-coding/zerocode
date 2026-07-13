@@ -1,7 +1,7 @@
 import { Schema } from "effect"
-import { NamedError } from "@zerocode-ai/core/util/error"
+import { NamedError } from "@0codeai/zerocode-core/util/error"
 import { Process } from "@/util/process"
-import { IdeEvent } from "@zerocode-ai/schema/ide-event"
+import { IdeEvent } from "@0codeai/zerocode-schema/ide-event"
 
 const SUPPORTED_IDES = [
   { name: "Windsurf" as const, cmd: "windsurf" },

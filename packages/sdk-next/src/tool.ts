@@ -1,2 +1,2 @@
-export { Failure, RegistrationError, make } from "@zerocode-ai/core/tool/tool"
-export type { AnyTool, Content, Context, Definition } from "@zerocode-ai/core/tool/tool"
+export { Failure, RegistrationError, make } from "@0codeai/zerocode-core/tool/tool"
+export type { AnyTool, Content, Context, Definition } from "@0codeai/zerocode-core/tool/tool"

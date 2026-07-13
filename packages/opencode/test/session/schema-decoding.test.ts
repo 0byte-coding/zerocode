@@ -8,8 +8,8 @@ import { SessionStatus } from "../../src/session/status"
 import { SessionSummary } from "../../src/session/summary"
 import { Todo } from "../../src/session/todo"
 import { SessionID, MessageID, PartID } from "../../src/session/schema"
-import { ProjectV2 } from "@zerocode-ai/core/project"
-import { WorkspaceV2 } from "@zerocode-ai/core/workspace"
+import { ProjectV2 } from "@0codeai/zerocode-core/project"
+import { WorkspaceV2 } from "@0codeai/zerocode-core/workspace"
 
 // Covers the session-domain Effect Schema migration. For each migrated
 // schema we assert:

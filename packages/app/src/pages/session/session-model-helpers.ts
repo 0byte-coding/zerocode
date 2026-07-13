@@ -1,4 +1,4 @@
-import type { UserMessage } from "@zerocode-ai/sdk/v2"
+import type { UserMessage } from "@0codeai/zerocode-sdk/v2"
 
 type Local = {
   session: {

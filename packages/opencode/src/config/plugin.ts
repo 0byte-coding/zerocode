@@ -1,5 +1,5 @@
-import { Glob } from "@zerocode-ai/core/util/glob"
-import { ConfigPluginV1 } from "@zerocode-ai/core/v1/config/plugin"
+import { Glob } from "@0codeai/zerocode-core/util/glob"
+import { ConfigPluginV1 } from "@0codeai/zerocode-core/v1/config/plugin"
 import { pathToFileURL } from "url"
 import { isPathPluginSpec, parsePluginSpecifier, resolvePathPluginTarget } from "@/plugin/shared"
 import path from "path"

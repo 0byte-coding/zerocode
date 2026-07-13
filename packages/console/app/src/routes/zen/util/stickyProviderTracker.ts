@@ -1,5 +1,5 @@
-import { Database, eq } from "@zerocode-ai/console-core/drizzle/index.js"
-import { ModelStickyProviderTable } from "@zerocode-ai/console-core/schema/ip.sql.js"
+import { Database, eq } from "@0codeai/zerocode-console-core/drizzle/index.js"
+import { ModelStickyProviderTable } from "@0codeai/zerocode-console-core/schema/ip.sql.js"
 
 export function createStickyTracker(
   modelId: string,

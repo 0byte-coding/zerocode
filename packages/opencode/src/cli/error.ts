@@ -1,4 +1,4 @@
-import { NamedError } from "@zerocode-ai/core/util/error"
+import { NamedError } from "@0codeai/zerocode-core/util/error"
 import { errorFormat } from "@/util/error"
 import { isRecord } from "@/util/record"
 

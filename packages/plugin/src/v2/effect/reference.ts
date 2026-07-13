@@ -1,4 +1,4 @@
-import type { ReferenceGitSource, ReferenceLocalSource } from "@zerocode-ai/sdk/v2/types"
+import type { ReferenceGitSource, ReferenceLocalSource } from "@0codeai/zerocode-sdk/v2/types"
 import type { Hooks } from "./registration.js"
 
 export interface ReferenceDraft {

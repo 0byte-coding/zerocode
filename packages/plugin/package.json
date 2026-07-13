@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@zerocode-ai/plugin",
+  "name": "@0codeai/zerocode-plugin",
   "version": "1.17.18",
   "type": "module",
   "license": "MIT",
@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "@ai-sdk/provider": "3.0.8",
-    "@zerocode-ai/sdk": "workspace:*",
+    "@0codeai/zerocode-sdk": "workspace:*",
     "effect": "catalog:",
     "zod": "catalog:"
   },

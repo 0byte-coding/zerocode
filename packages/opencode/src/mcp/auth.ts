@@ -1,10 +1,10 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import path from "path"
-import { serviceUse } from "@zerocode-ai/core/effect/service-use"
-import { Global } from "@zerocode-ai/core/global"
+import { serviceUse } from "@0codeai/zerocode-core/effect/service-use"
+import { Global } from "@0codeai/zerocode-core/global"
 import { Effect, Layer, Context, Option, Schema } from "effect"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
-import { EffectFlock } from "@zerocode-ai/core/util/effect-flock"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
+import { EffectFlock } from "@0codeai/zerocode-core/util/effect-flock"
 
 export const Tokens = Schema.Struct({
   accessToken: Schema.mutableKey(Schema.String),

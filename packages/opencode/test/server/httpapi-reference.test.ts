@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, test } from "bun:test"
 import path from "path"
 import { Server } from "../../src/server/server"
-import { Global } from "@zerocode-ai/core/global"
+import { Global } from "@0codeai/zerocode-core/global"
 import { resetDatabase } from "../fixture/db"
 import { disposeAllInstances, tmpdir } from "../fixture/fixture"
 import { Effect } from "effect"

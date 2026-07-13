@@ -1,7 +1,7 @@
 import { describe, test, expect } from "bun:test"
 import path from "path"
 import fs from "fs/promises"
-import { Glob } from "@zerocode-ai/core/util/glob"
+import { Glob } from "@0codeai/zerocode-core/util/glob"
 import { tmpdir } from "../fixture/fixture"
 
 describe("Glob", () => {

@@ -1,6 +1,6 @@
 import { describe, expect } from "bun:test"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { CrossSpawnSpawner } from "@zerocode-ai/core/cross-spawn-spawner"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { CrossSpawnSpawner } from "@0codeai/zerocode-core/cross-spawn-spawner"
 import { Deferred, Effect, Fiber, Layer } from "effect"
 import { InstanceRef } from "../../src/effect/instance-ref"
 import { registerDisposer } from "../../src/effect/instance-registry"

@@ -1,5 +1,5 @@
-import { useI18n } from "@zerocode-ai/ui/context/i18n"
-import { Icon } from "@zerocode-ai/ui/v2/icon"
+import { useI18n } from "@0codeai/zerocode-ui/context/i18n"
+import { Icon } from "@0codeai/zerocode-ui/v2/icon"
 import "./session-review-v2.css"
 
 export function SessionReviewEmptyChangesV2() {

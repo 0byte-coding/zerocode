@@ -1,7 +1,7 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { httpClient } from "@zerocode-ai/core/effect/app-node-platform"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { httpClient } from "@0codeai/zerocode-core/effect/app-node-platform"
 import { Cache, Clock, Duration, Effect, Layer, Option, Schema, SchemaGetter, Context } from "effect"
-import { serviceUse } from "@zerocode-ai/core/effect/service-use"
+import { serviceUse } from "@0codeai/zerocode-core/effect/service-use"
 import {
   FetchHttpClient,
   HttpClient,

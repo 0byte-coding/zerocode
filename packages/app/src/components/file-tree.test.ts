@@ -22,15 +22,15 @@ beforeAll(async () => {
       },
     }),
   }))
-  mock.module("@zerocode-ai/ui/collapsible", () => ({
+  mock.module("@0codeai/zerocode-ui/collapsible", () => ({
     Collapsible: {
       Trigger: (props: { children?: unknown }) => props.children,
       Content: (props: { children?: unknown }) => props.children,
     },
   }))
-  mock.module("@zerocode-ai/ui/file-icon", () => ({ FileIcon: () => null }))
-  mock.module("@zerocode-ai/ui/icon", () => ({ Icon: () => null }))
-  mock.module("@zerocode-ai/ui/tooltip", () => ({ Tooltip: (props: { children?: unknown }) => props.children }))
+  mock.module("@0codeai/zerocode-ui/file-icon", () => ({ FileIcon: () => null }))
+  mock.module("@0codeai/zerocode-ui/icon", () => ({ Icon: () => null }))
+  mock.module("@0codeai/zerocode-ui/tooltip", () => ({ Tooltip: (props: { children?: unknown }) => props.children }))
   const mod = await import("./file-tree")
   shouldListRoot = mod.shouldListRoot
   shouldListExpanded = mod.shouldListExpanded

@@ -1,9 +1,9 @@
 import { describe, expect } from "bun:test"
 import { Effect } from "effect"
-import { CommandV2 } from "@zerocode-ai/core/command"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { ModelV2 } from "@zerocode-ai/core/model"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
+import { CommandV2 } from "@0codeai/zerocode-core/command"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { ModelV2 } from "@0codeai/zerocode-core/model"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
 import { testEffect } from "./lib/effect"
 
 const it = testEffect(AppNodeBuilder.build(CommandV2.node))

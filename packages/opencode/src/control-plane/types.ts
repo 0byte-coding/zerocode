@@ -1,8 +1,8 @@
 import { Schema, Struct } from "effect"
-import { ProjectV2 } from "@zerocode-ai/core/project"
+import { ProjectV2 } from "@0codeai/zerocode-core/project"
 import type { InstanceContext } from "@/project/instance-context"
-import { WorkspaceV2 } from "@zerocode-ai/core/workspace"
-import type { DeepMutable } from "@zerocode-ai/core/schema"
+import { WorkspaceV2 } from "@0codeai/zerocode-core/workspace"
+import type { DeepMutable } from "@0codeai/zerocode-core/schema"
 
 export const WorkspaceInfo = Schema.Struct({
   id: WorkspaceV2.ID,

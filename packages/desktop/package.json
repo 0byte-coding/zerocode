@@ -1,5 +1,5 @@
 {
-  "name": "@zerocode-ai/desktop",
+  "name": "@0codeai/zerocode-desktop",
   "private": true,
   "version": "1.17.18",
   "type": "module",
@@ -36,8 +36,8 @@
   "devDependencies": {
     "@actions/artifact": "4.0.0",
     "@lydell/node-pty": "catalog:",
-    "@zerocode-ai/app": "workspace:*",
-    "@zerocode-ai/ui": "workspace:*",
+    "@0codeai/zerocode-app": "workspace:*",
+    "@0codeai/zerocode-ui": "workspace:*",
     "@sentry/solid": "catalog:",
     "@sentry/vite-plugin": "catalog:",
     "@solid-primitives/i18n": "2.2.1",

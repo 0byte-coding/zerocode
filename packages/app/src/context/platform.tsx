@@ -1,4 +1,4 @@
-import { createSimpleContext } from "@zerocode-ai/ui/context"
+import { createSimpleContext } from "@0codeai/zerocode-ui/context"
 import type { AsyncStorage, SyncStorage } from "@solid-primitives/storage"
 import type { Accessor } from "solid-js"
 import type { DesktopMenuAction } from "../desktop-menu"

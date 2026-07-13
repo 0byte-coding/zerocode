@@ -1,6 +1,6 @@
 import { describe, expect } from "bun:test"
 import { Deferred, Effect, Fiber } from "effect"
-import { KeyedMutex } from "@zerocode-ai/core/effect/keyed-mutex"
+import { KeyedMutex } from "@0codeai/zerocode-core/effect/keyed-mutex"
 import { it } from "../lib/effect"
 
 describe("KeyedMutex", () => {

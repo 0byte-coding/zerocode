@@ -1,9 +1,9 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import path from "path"
-import { Global } from "@zerocode-ai/core/global"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
+import { Global } from "@0codeai/zerocode-core/global"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
 import { Effect, Exit, Layer, Option, RcMap, Schema, Context, TxReentrantLock } from "effect"
-import { NonNegativeInt } from "@zerocode-ai/core/schema"
+import { NonNegativeInt } from "@0codeai/zerocode-core/schema"
 import { Git } from "@/git"
 
 type Migration = (dir: string, fs: FSUtil.Interface, git: Git.Interface) => Effect.Effect<void, FSUtil.Error>

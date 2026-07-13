@@ -1,1 +1,1 @@
-export * from "@zerocode-ai/tui/prompt/display"
+export * from "@0codeai/zerocode-tui/prompt/display"

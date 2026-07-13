@@ -1,10 +1,10 @@
 import path from "path"
 import { NodeFileSystem } from "@effect/platform-node"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
 import { describe, expect, test } from "bun:test"
 import { Effect, FileSystem, Layer } from "effect"
-import { Global } from "@zerocode-ai/core/global"
+import { Global } from "@0codeai/zerocode-core/global"
 import {
   createVariantRuntime,
   cycleVariant,

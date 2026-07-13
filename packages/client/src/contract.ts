@@ -1,13 +1,13 @@
-import { makeDefaultApi } from "@zerocode-ai/protocol/api"
-import { InvalidRequestError, SessionNotFoundError } from "@zerocode-ai/protocol/errors"
+import { makeDefaultApi } from "@0codeai/zerocode-protocol/api"
+import { InvalidRequestError, SessionNotFoundError } from "@0codeai/zerocode-protocol/errors"
 import { HttpApiMiddleware } from "effect/unstable/httpapi"
 
 class LocationMiddleware extends HttpApiMiddleware.Service<LocationMiddleware>()(
-  "@zerocode-ai/client/LocationMiddleware",
+  "@0codeai/zerocode-client/LocationMiddleware",
 ) {}
 
 class SessionLocationMiddleware extends HttpApiMiddleware.Service<SessionLocationMiddleware>()(
-  "@zerocode-ai/client/SessionLocationMiddleware",
+  "@0codeai/zerocode-client/SessionLocationMiddleware",
   { error: [InvalidRequestError, SessionNotFoundError] },
 ) {}
 

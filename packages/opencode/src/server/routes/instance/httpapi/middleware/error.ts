@@ -1,5 +1,5 @@
-import { NamedError } from "@zerocode-ai/core/util/error"
-import { ConfigErrorV1 } from "@zerocode-ai/core/v1/config/error"
+import { NamedError } from "@0codeai/zerocode-core/util/error"
+import { ConfigErrorV1 } from "@0codeai/zerocode-core/v1/config/error"
 import { Cause, Effect } from "effect"
 import { HttpRouter, HttpServerError, HttpServerRespondable, HttpServerResponse } from "effect/unstable/http"
 

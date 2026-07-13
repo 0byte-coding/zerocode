@@ -1,5 +1,5 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { AppProcess } from "@zerocode-ai/core/process"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { AppProcess } from "@0codeai/zerocode-core/process"
 import { Effect, Layer, Context, Stream } from "effect"
 import { ChildProcess } from "effect/unstable/process"
 

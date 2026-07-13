@@ -1,4 +1,4 @@
-import type { FileContent } from "@zerocode-ai/sdk/v2"
+import type { FileContent } from "@0codeai/zerocode-sdk/v2"
 
 export type FileSelection = {
   startLine: number

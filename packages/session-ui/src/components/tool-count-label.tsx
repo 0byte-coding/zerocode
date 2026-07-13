@@ -1,5 +1,5 @@
 import { createMemo } from "solid-js"
-import { AnimatedNumber } from "@zerocode-ai/ui/animated-number"
+import { AnimatedNumber } from "@0codeai/zerocode-ui/animated-number"
 
 function split(text: string) {
   const match = /{{\s*count\s*}}/.exec(text)

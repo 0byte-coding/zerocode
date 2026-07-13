@@ -1,8 +1,8 @@
 import { describe, expect } from "bun:test"
 import { Effect } from "effect"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { SkillPlugin } from "@zerocode-ai/core/plugin/skill"
-import { SkillV2 } from "@zerocode-ai/core/skill"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { SkillPlugin } from "@0codeai/zerocode-core/plugin/skill"
+import { SkillV2 } from "@0codeai/zerocode-core/skill"
 import { testEffect } from "../lib/effect"
 import { host } from "./host"
 

@@ -1,4 +1,4 @@
-import type { TuiPluginApi } from "@zerocode-ai/plugin/tui"
+import type { TuiPluginApi } from "@0codeai/zerocode-plugin/tui"
 import { createMemo, For, type Accessor } from "solid-js"
 import { DEFAULT_THEMES, useTheme } from "../../context/theme"
 import { useCommandShortcut } from "../../keymap"

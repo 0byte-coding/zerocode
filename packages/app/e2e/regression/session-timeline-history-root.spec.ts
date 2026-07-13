@@ -1,4 +1,4 @@
-import { base64Encode } from "@zerocode-ai/core/util/encode"
+import { base64Encode } from "@0codeai/zerocode-core/util/encode"
 import { expect, test, type Page } from "@playwright/test"
 import {
   assistantMessage,

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@zerocode-ai/sdk-next",
+  "name": "@0codeai/zerocode-sdk-next",
   "private": true,
   "type": "module",
   "license": "MIT",
@@ -12,9 +12,9 @@
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
-    "@zerocode-ai/client": "workspace:*",
-    "@zerocode-ai/core": "workspace:*",
-    "@zerocode-ai/server": "workspace:*",
+    "@0codeai/zerocode-client": "workspace:*",
+    "@0codeai/zerocode-core": "workspace:*",
+    "@0codeai/zerocode-server": "workspace:*",
     "effect": "catalog:"
   },
   "devDependencies": {

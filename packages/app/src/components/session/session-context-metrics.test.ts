@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import type { Message } from "@zerocode-ai/sdk/v2/client"
+import type { Message } from "@0codeai/zerocode-sdk/v2/client"
 import { getSessionContext } from "./session-context-metrics"
 
 const assistant = (

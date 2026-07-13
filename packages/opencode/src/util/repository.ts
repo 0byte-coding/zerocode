@@ -1,7 +1,7 @@
 import path from "path"
 import { fileURLToPath } from "url"
 import { Schema } from "effect"
-import { Global } from "@zerocode-ai/core/global"
+import { Global } from "@0codeai/zerocode-core/global"
 
 type BaseReference = {
   host: string

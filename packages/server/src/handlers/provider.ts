@@ -1,8 +1,8 @@
-import { Catalog } from "@zerocode-ai/core/catalog"
+import { Catalog } from "@0codeai/zerocode-core/catalog"
 import { Effect } from "effect"
 import { HttpApiBuilder } from "effect/unstable/httpapi"
 import { Api } from "../api"
-import { ProviderNotFoundError } from "@zerocode-ai/protocol/errors"
+import { ProviderNotFoundError } from "@0codeai/zerocode-protocol/errors"
 import { response } from "../location"
 
 export const ProviderHandler = HttpApiBuilder.group(Api, "server.provider", (handlers) =>

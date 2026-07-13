@@ -1,6 +1,6 @@
 #!/usr/bin/env bun
 
-import { Script } from "@zerocode-ai/script"
+import { Script } from "@0codeai/zerocode-script"
 import { $ } from "bun"
 
 const output = [`version=${Script.version}`]

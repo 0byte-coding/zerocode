@@ -1,6 +1,6 @@
 import type { Config } from "@/config/config"
-import { ConfigV1 } from "@zerocode-ai/core/v1/config/config"
-import { SessionV1 } from "@zerocode-ai/core/v1/session"
+import { ConfigV1 } from "@0codeai/zerocode-core/v1/config/config"
+import { SessionV1 } from "@0codeai/zerocode-core/v1/session"
 import type { Provider } from "@/provider/provider"
 import { ProviderTransform } from "@/provider/transform"
 import type { MessageV2 } from "./message-v2"

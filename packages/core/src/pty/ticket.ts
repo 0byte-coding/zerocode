@@ -1,7 +1,7 @@
 export * as PtyTicket from "./ticket"
 
 import { WorkspaceV2 } from "../workspace"
-import { PtyTicket } from "@zerocode-ai/schema/pty-ticket"
+import { PtyTicket } from "@0codeai/zerocode-schema/pty-ticket"
 import { PtyID } from "./schema"
 import { Cache, Context, Duration, Effect, Layer } from "effect"
 import { makeGlobalNode } from "../effect/app-node"

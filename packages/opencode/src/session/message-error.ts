@@ -1,5 +1,5 @@
 import { Schema } from "effect"
-import { NamedError } from "@zerocode-ai/core/util/error"
+import { NamedError } from "@0codeai/zerocode-core/util/error"
 
 export const OutputLengthError = NamedError.create("MessageOutputLengthError", {})
 

@@ -1,13 +1,13 @@
 import { describe, expect } from "bun:test"
-import { makeGlobalNode } from "@zerocode-ai/core/effect/app-node"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { httpClient } from "@zerocode-ai/core/effect/app-node-platform"
+import { makeGlobalNode } from "@0codeai/zerocode-core/effect/app-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { httpClient } from "@0codeai/zerocode-core/effect/app-node-platform"
 import { Effect, Layer, Stream } from "effect"
 import { HttpClient, HttpClientRequest, HttpClientResponse } from "effect/unstable/http"
 import { ChildProcess, ChildProcessSpawner } from "effect/unstable/process"
 import { Installation } from "../../src/installation"
-import { InstallationChannel } from "@zerocode-ai/core/installation/version"
-import { CrossSpawnSpawner } from "@zerocode-ai/core/cross-spawn-spawner"
+import { InstallationChannel } from "@0codeai/zerocode-core/installation/version"
+import { CrossSpawnSpawner } from "@0codeai/zerocode-core/cross-spawn-spawner"
 import { testEffect } from "../lib/effect"
 
 const encoder = new TextEncoder()

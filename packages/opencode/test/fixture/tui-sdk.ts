@@ -1,5 +1,5 @@
-import type { GlobalEvent } from "@zerocode-ai/sdk/v2"
-import type { EventSource } from "@zerocode-ai/tui/context/sdk"
+import type { GlobalEvent } from "@0codeai/zerocode-sdk/v2"
+import type { EventSource } from "@0codeai/zerocode-tui/context/sdk"
 
 export const worktree = "/tmp/opencode"
 export const directory = `${worktree}/packages/opencode`

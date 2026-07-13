@@ -1,5 +1,5 @@
 import { LocalContext } from "@/util/local-context"
-import type { WorkspaceV2 } from "@zerocode-ai/core/workspace"
+import type { WorkspaceV2 } from "@0codeai/zerocode-core/workspace"
 
 export interface WorkspaceContext {
   workspaceID: WorkspaceV2.ID | undefined

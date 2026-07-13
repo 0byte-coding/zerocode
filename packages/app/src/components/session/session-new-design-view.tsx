@@ -1,5 +1,5 @@
 import type { JSX } from "solid-js"
-import { WordmarkV2 } from "@zerocode-ai/ui/v2/wordmark-v2"
+import { WordmarkV2 } from "@0codeai/zerocode-ui/v2/wordmark-v2"
 import { NEW_SESSION_CONTENT_WIDTH } from "@/pages/session/new-session-layout"
 
 export function NewSessionDesignView(props: { children: JSX.Element }) {

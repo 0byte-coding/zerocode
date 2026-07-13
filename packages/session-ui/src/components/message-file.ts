@@ -1,6 +1,6 @@
 import { bundledLanguagesInfo } from "shiki"
-import { getFilename } from "@zerocode-ai/core/util/path"
-import type { FilePart } from "@zerocode-ai/sdk/v2"
+import { getFilename } from "@0codeai/zerocode-core/util/path"
+import type { FilePart } from "@0codeai/zerocode-sdk/v2"
 
 export function attached(part: FilePart) {
   return part.url.startsWith("data:")

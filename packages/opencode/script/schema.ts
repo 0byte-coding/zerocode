@@ -1,8 +1,8 @@
 #!/usr/bin/env bun
 
 import { Config } from "@/config/config"
-import { ConfigV1 } from "@zerocode-ai/core/v1/config/config"
-import { TuiConfig } from "@zerocode-ai/tui/config"
+import { ConfigV1 } from "@0codeai/zerocode-core/v1/config/config"
+import { TuiConfig } from "@0codeai/zerocode-tui/config"
 import { Schema } from "effect"
 
 type JsonSchema = Record<string, unknown>

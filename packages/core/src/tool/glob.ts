@@ -1,6 +1,6 @@
 export * as GlobTool from "./glob"
 
-import { ToolFailure } from "@zerocode-ai/llm"
+import { ToolFailure } from "@0codeai/zerocode-llm"
 import { Effect, Layer, Schema } from "effect"
 import path from "path"
 import { makeLocationNode } from "../effect/app-node"

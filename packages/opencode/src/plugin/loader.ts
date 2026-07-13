@@ -9,8 +9,8 @@ import {
   type PluginSource,
 } from "./shared"
 import { ConfigPlugin } from "@/config/plugin"
-import { ConfigPluginV1 } from "@zerocode-ai/core/v1/config/plugin"
-import { InstallationVersion } from "@zerocode-ai/core/installation/version"
+import { ConfigPluginV1 } from "@0codeai/zerocode-core/v1/config/plugin"
+import { InstallationVersion } from "@0codeai/zerocode-core/installation/version"
 
 export namespace PluginLoader {
   // A normalized plugin declaration derived from config before any filesystem or npm work happens.

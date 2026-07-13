@@ -1,9 +1,9 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { InstanceState } from "@/effect/instance-state"
 import { SessionID } from "./schema"
 import { Effect, Layer, Context } from "effect"
 import { EventV2Bridge } from "@/event-v2-bridge"
-import { SessionStatusEvent } from "@zerocode-ai/schema/session-status-event"
+import { SessionStatusEvent } from "@0codeai/zerocode-schema/session-status-event"
 
 export const Info = SessionStatusEvent.Info
 export type Info = SessionStatusEvent.Info

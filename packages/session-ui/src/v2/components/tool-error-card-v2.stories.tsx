@@ -1,5 +1,5 @@
 import { createSignal } from "solid-js"
-import { ButtonV2 } from "@zerocode-ai/ui/v2/button-v2"
+import { ButtonV2 } from "@0codeai/zerocode-ui/v2/button-v2"
 import { ToolErrorCardV2, type ToolErrorCardV2Props } from "./tool-error-card-v2"
 
 const docs = `### Overview

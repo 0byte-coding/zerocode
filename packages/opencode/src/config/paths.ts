@@ -1,11 +1,11 @@
 export * as ConfigPaths from "./paths"
 
 import path from "path"
-import { Flag } from "@zerocode-ai/core/flag/flag"
-import { Global } from "@zerocode-ai/core/global"
+import { Flag } from "@0codeai/zerocode-core/flag/flag"
+import { Global } from "@0codeai/zerocode-core/global"
 import { unique } from "remeda"
 import * as Effect from "effect/Effect"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
 
 export const files = Effect.fn("ConfigPaths.projectFiles")(function* (
   name: string,

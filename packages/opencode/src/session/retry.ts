@@ -1,5 +1,5 @@
-import type { NamedError } from "@zerocode-ai/core/util/error"
-import { SessionV1 } from "@zerocode-ai/core/v1/session"
+import type { NamedError } from "@0codeai/zerocode-core/util/error"
+import { SessionV1 } from "@0codeai/zerocode-core/v1/session"
 import { Cause, Clock, Duration, Effect, Schedule } from "effect"
 import { MessageV2 } from "./message-v2"
 import { iife } from "@/util/iife"

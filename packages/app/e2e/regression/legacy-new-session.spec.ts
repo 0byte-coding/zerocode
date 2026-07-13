@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test"
-import { base64Encode } from "@zerocode-ai/core/util/encode"
+import { base64Encode } from "@0codeai/zerocode-core/util/encode"
 import { mockOpenCodeServer } from "../utils/mock-server"
 
 const draftID = "draft_legacy_new_session"

@@ -1,6 +1,6 @@
-import { createOpencodeClient } from "@zerocode-ai/sdk/v2"
-import type { GlobalEvent } from "@zerocode-ai/sdk/v2"
-import { Flag } from "@zerocode-ai/core/flag/flag"
+import { createOpencodeClient } from "@0codeai/zerocode-sdk/v2"
+import type { GlobalEvent } from "@0codeai/zerocode-sdk/v2"
+import { Flag } from "@0codeai/zerocode-core/flag/flag"
 import { createSimpleContext } from "./helper"
 import { batch, onCleanup, onMount } from "solid-js"
 

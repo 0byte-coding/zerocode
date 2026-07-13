@@ -1,4 +1,4 @@
-import { createSimpleContext } from "@zerocode-ai/ui/context"
+import { createSimpleContext } from "@0codeai/zerocode-ui/context"
 import { createEffect, createMemo, createRoot } from "solid-js"
 import { createStore } from "solid-js/store"
 import { createServerProjects, RECENTLY_CLOSED_DISPLAY_LIMIT, ServerConnection, useServer } from "./server"

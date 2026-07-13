@@ -1,5 +1,5 @@
-import { EventV2 } from "@zerocode-ai/core/event"
-import { OpenCodeEvent } from "@zerocode-ai/protocol/groups/event"
+import { EventV2 } from "@0codeai/zerocode-core/event"
+import { OpenCodeEvent } from "@0codeai/zerocode-protocol/groups/event"
 import { Effect, Schema, Stream } from "effect"
 import { HttpServerResponse } from "effect/unstable/http"
 import { HttpApiBuilder } from "effect/unstable/httpapi"

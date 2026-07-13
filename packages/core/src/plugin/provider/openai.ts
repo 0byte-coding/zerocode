@@ -1,6 +1,6 @@
 import { createServer } from "node:http"
-import type { IntegrationOAuthMethodRegistration } from "@zerocode-ai/plugin/v2/effect/integration"
-import { define } from "@zerocode-ai/plugin/v2/effect/plugin"
+import type { IntegrationOAuthMethodRegistration } from "@0codeai/zerocode-plugin/v2/effect/integration"
+import { define } from "@0codeai/zerocode-plugin/v2/effect/plugin"
 import { Deferred, Effect } from "effect"
 import type { Scope } from "effect"
 import { Credential } from "../../credential"

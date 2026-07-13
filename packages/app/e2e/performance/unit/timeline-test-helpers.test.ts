@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test"
-import { base64Encode } from "@zerocode-ai/core/util/encode"
+import { base64Encode } from "@0codeai/zerocode-core/util/encode"
 import { fixture } from "../timeline/session-timeline-stress.fixture"
 import { stressSessionHref } from "../timeline/timeline-test-helpers"
 

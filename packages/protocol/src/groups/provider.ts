@@ -1,5 +1,5 @@
-import { Provider } from "@zerocode-ai/schema/provider"
-import { Location } from "@zerocode-ai/schema/location"
+import { Provider } from "@0codeai/zerocode-schema/provider"
+import { Location } from "@0codeai/zerocode-schema/location"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"
 import { ProviderNotFoundError, ServiceUnavailableError } from "../errors"

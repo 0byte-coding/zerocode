@@ -1,6 +1,6 @@
 /** @jsxImportSource @opentui/solid */
-import type { TuiPlugin, TuiPluginApi, TuiRouteCurrent } from "@zerocode-ai/plugin/tui"
-import type { SnapshotFileDiff, VcsFileDiff } from "@zerocode-ai/sdk/v2"
+import type { TuiPlugin, TuiPluginApi, TuiRouteCurrent } from "@0codeai/zerocode-plugin/tui"
+import type { SnapshotFileDiff, VcsFileDiff } from "@0codeai/zerocode-sdk/v2"
 import {
   TextAttributes,
   type BorderSides,

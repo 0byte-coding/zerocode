@@ -1,5 +1,5 @@
-import { Binary } from "@zerocode-ai/core/util/binary"
-import type { Message, Part, Session } from "@zerocode-ai/sdk/v2/client"
+import { Binary } from "@0codeai/zerocode-core/util/binary"
+import type { Message, Part, Session } from "@0codeai/zerocode-sdk/v2/client"
 import { createMemo } from "solid-js"
 import { produce, reconcile, type SetStoreFunction } from "solid-js/store"
 import type { createServerSdkContext } from "./server-sdk"

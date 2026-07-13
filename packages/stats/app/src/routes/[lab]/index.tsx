@@ -1,6 +1,6 @@
 import "../index.css"
 import { Meta, Title } from "@solidjs/meta"
-import { ProviderIcon } from "@zerocode-ai/ui/provider-icon"
+import { ProviderIcon } from "@0codeai/zerocode-ui/provider-icon"
 import {
   getStatsLabData,
   getStatsHomeData,
@@ -9,7 +9,7 @@ import {
   type ModelUsagePoint,
   type StatsHomeData,
   type StatsLabData,
-} from "@zerocode-ai/stats-core/domain/home"
+} from "@0codeai/zerocode-stats-core/domain/home"
 import { createAsync, query, useParams } from "@solidjs/router"
 import { createMemo, createSignal, createUniqueId, For, onMount, Show, type JSX } from "solid-js"
 import { getRequestEvent } from "solid-js/web"

@@ -1,4 +1,4 @@
-import { checksum } from "@zerocode-ai/core/util/encode"
+import { checksum } from "@0codeai/zerocode-core/util/encode"
 import DOMPurify from "dompurify"
 import { project } from "./markdown-stream"
 

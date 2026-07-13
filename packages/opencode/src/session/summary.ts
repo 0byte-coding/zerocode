@@ -1,6 +1,6 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { Effect, Layer, Context, Schema } from "effect"
-import { SessionV1 } from "@zerocode-ai/core/v1/session"
+import { SessionV1 } from "@0codeai/zerocode-core/v1/session"
 import { EventV2Bridge } from "@/event-v2-bridge"
 import { Snapshot } from "@/snapshot"
 import { Session } from "./session"

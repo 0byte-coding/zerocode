@@ -1,8 +1,8 @@
-import { Binary } from "@zerocode-ai/core/util/binary"
+import { Binary } from "@0codeai/zerocode-core/util/binary"
 import { createMemo } from "solid-js"
 import { useServerSync } from "./server-sync"
 import { useSDK } from "./sdk"
-import type { Message, Part } from "@zerocode-ai/sdk/v2/client"
+import type { Message, Part } from "@0codeai/zerocode-sdk/v2/client"
 
 const SKIP_PARTS = new Set(["patch", "step-start", "step-finish"])
 

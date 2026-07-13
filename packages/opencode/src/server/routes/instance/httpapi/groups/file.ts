@@ -1,5 +1,5 @@
-import { FileSystem } from "@zerocode-ai/core/filesystem"
-import { NonNegativeInt } from "@zerocode-ai/core/schema"
+import { FileSystem } from "@0codeai/zerocode-core/filesystem"
+import { NonNegativeInt } from "@0codeai/zerocode-core/schema"
 import { LSP } from "@/lsp/lsp"
 import { Schema } from "effect"
 import { HttpApi, HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"

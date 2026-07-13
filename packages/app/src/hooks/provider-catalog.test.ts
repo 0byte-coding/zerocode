@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test"
-import type { NormalizedProviderListResponse } from "@zerocode-ai/session-ui/context"
+import type { NormalizedProviderListResponse } from "@0codeai/zerocode-session-ui/context"
 import { selectProviderCatalog } from "./provider-catalog"
 
 const catalog = (id: string): NormalizedProviderListResponse => ({

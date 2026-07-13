@@ -1,12 +1,12 @@
 import path from "path"
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
-import { AgentV2 } from "@zerocode-ai/core/agent"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { AbsolutePath } from "@zerocode-ai/core/schema"
-import { SkillV2 } from "@zerocode-ai/core/skill"
-import { SystemContext } from "@zerocode-ai/core/system-context"
-import { SkillGuidance } from "@zerocode-ai/core/skill/guidance"
+import { AgentV2 } from "@0codeai/zerocode-core/agent"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { AbsolutePath } from "@0codeai/zerocode-core/schema"
+import { SkillV2 } from "@0codeai/zerocode-core/skill"
+import { SystemContext } from "@0codeai/zerocode-core/system-context"
+import { SkillGuidance } from "@0codeai/zerocode-core/skill/guidance"
 import { it } from "../lib/effect"
 
 const build = AgentV2.ID.make("build")

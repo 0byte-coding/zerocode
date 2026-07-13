@@ -1,8 +1,8 @@
 import { describe, expect, test } from "bun:test"
 import path from "path"
-import { Shell } from "@zerocode-ai/core/shell"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
-import { which } from "@zerocode-ai/core/util/which"
+import { Shell } from "@0codeai/zerocode-core/shell"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
+import { which } from "@0codeai/zerocode-core/util/which"
 
 const withShell = async (shell: string | undefined, fn: () => void | Promise<void>) => {
   const prev = process.env.SHELL

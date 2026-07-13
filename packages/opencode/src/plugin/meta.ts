@@ -1,10 +1,10 @@
 import path from "path"
 import { fileURLToPath } from "url"
 
-import { Flag } from "@zerocode-ai/core/flag/flag"
-import { Global } from "@zerocode-ai/core/global"
+import { Flag } from "@0codeai/zerocode-core/flag/flag"
+import { Global } from "@0codeai/zerocode-core/global"
 import { Filesystem } from "@/util/filesystem"
-import { Flock } from "@zerocode-ai/core/util/flock"
+import { Flock } from "@0codeai/zerocode-core/util/flock"
 
 import { parsePluginSpecifier, pluginSource } from "./shared"
 

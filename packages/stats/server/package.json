@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@zerocode-ai/stats-server",
+  "name": "@0codeai/zerocode-stats-server",
   "version": "1.17.18",
   "private": true,
   "type": "module",
@@ -16,7 +16,7 @@
   "dependencies": {
     "@aws-sdk/client-firehose": "3.933.0",
     "@effect/platform-node": "catalog:",
-    "@zerocode-ai/stats-core": "workspace:*",
+    "@0codeai/zerocode-stats-core": "workspace:*",
     "effect": "catalog:",
     "sst": "catalog:"
   },

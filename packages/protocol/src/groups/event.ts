@@ -1,7 +1,7 @@
-import { Event } from "@zerocode-ai/schema/event"
-import { EventManifest } from "@zerocode-ai/schema/event-manifest"
-import { Location } from "@zerocode-ai/schema/location"
-import type { Definition } from "@zerocode-ai/schema/event"
+import { Event } from "@0codeai/zerocode-schema/event"
+import { EventManifest } from "@0codeai/zerocode-schema/event-manifest"
+import { Location } from "@0codeai/zerocode-schema/location"
+import type { Definition } from "@0codeai/zerocode-schema/event"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, HttpApiSchema, OpenApi } from "effect/unstable/httpapi"
 

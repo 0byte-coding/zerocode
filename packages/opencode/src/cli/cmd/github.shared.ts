@@ -1,4 +1,4 @@
-import type { SessionV1 } from "@zerocode-ai/core/v1/session"
+import type { SessionV1 } from "@0codeai/zerocode-core/v1/session"
 
 export { parseGitHubRemote } from "@/util/repository"
 

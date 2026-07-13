@@ -1,5 +1,5 @@
 import { Config } from "@/config/config"
-import { emptyConsoleState } from "@zerocode-ai/core/v1/config/console-state"
+import { emptyConsoleState } from "@0codeai/zerocode-core/v1/config/console-state"
 import { Effect, Layer } from "effect"
 
 export function make(overrides: Partial<Config.Interface> = {}) {

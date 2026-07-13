@@ -1,1 +1,1 @@
-export { default } from "@zerocode-ai/tui/parsers-config"
+export { default } from "@0codeai/zerocode-tui/parsers-config"

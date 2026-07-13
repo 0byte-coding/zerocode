@@ -1,2 +1,2 @@
-export * from "@zerocode-ai/schema/session-event"
-export * as SessionEvent from "@zerocode-ai/schema/session-event"
+export * from "@0codeai/zerocode-schema/session-event"
+export * as SessionEvent from "@0codeai/zerocode-schema/session-event"

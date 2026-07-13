@@ -2,7 +2,7 @@
 
 import path from "path"
 import { pathToFileURL } from "bun"
-import { createOpencode } from "@zerocode-ai/sdk"
+import { createOpencode } from "@0codeai/zerocode-sdk"
 import { parseArgs } from "util"
 
 async function main() {

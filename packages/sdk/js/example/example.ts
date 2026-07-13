@@ -1,4 +1,4 @@
-import { createOpencodeClient, createOpencodeServer } from "@zerocode-ai/sdk"
+import { createOpencodeClient, createOpencodeServer } from "@0codeai/zerocode-sdk"
 import { pathToFileURL } from "bun"
 
 const server = await createOpencodeServer()

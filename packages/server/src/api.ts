@@ -1,4 +1,4 @@
-import { makeDefaultApi } from "@zerocode-ai/protocol/api"
+import { makeDefaultApi } from "@0codeai/zerocode-protocol/api"
 import { LocationMiddleware } from "./location"
 import { SessionLocationMiddleware } from "./middleware/session-location"
 

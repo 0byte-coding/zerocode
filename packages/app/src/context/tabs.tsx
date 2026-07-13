@@ -1,5 +1,5 @@
-import type { Session } from "@zerocode-ai/sdk/v2/client"
-import { createSimpleContext } from "@zerocode-ai/ui/context"
+import type { Session } from "@0codeai/zerocode-sdk/v2/client"
+import { createSimpleContext } from "@0codeai/zerocode-ui/context"
 import { createStore, produce } from "solid-js/store"
 import { Persist, persisted, removePersisted, draftPersistedKeys } from "@/utils/persist"
 import { ServerConnection, useServer } from "./server"

@@ -1,5 +1,5 @@
-import type { AssistantMessage } from "@zerocode-ai/sdk/v2"
-import type { TuiPlugin, TuiPluginApi } from "@zerocode-ai/plugin/tui"
+import type { AssistantMessage } from "@0codeai/zerocode-sdk/v2"
+import type { TuiPlugin, TuiPluginApi } from "@0codeai/zerocode-plugin/tui"
 import type { BuiltinTuiPlugin } from "../builtins"
 import { createMemo } from "solid-js"
 

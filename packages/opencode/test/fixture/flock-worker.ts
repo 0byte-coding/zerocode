@@ -1,5 +1,5 @@
 import fs from "fs/promises"
-import { Flock } from "@zerocode-ai/core/util/flock"
+import { Flock } from "@0codeai/zerocode-core/util/flock"
 
 type Msg = {
   key: string

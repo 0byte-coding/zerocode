@@ -1,5 +1,5 @@
-import type { SnapshotFileDiff } from "@zerocode-ai/sdk/v2"
-import type { PartGroup } from "@zerocode-ai/session-ui/message-part"
+import type { SnapshotFileDiff } from "@0codeai/zerocode-sdk/v2"
+import type { PartGroup } from "@0codeai/zerocode-session-ui/message-part"
 import { Data, Equal } from "effect"
 
 export type SummaryDiff = SnapshotFileDiff & { file: string }

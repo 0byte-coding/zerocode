@@ -1,4 +1,4 @@
-import type { ProjectV2 } from "@zerocode-ai/core/project"
+import type { ProjectV2 } from "@0codeai/zerocode-core/project"
 import type { WorkspaceAdapter, WorkspaceAdapterEntry } from "../types"
 import { WorktreeAdapter } from "./worktree"
 

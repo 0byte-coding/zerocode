@@ -1,6 +1,6 @@
 import { describe, expect } from "bun:test"
-import { BackgroundJob } from "@zerocode-ai/core/background-job"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { BackgroundJob } from "@0codeai/zerocode-core/background-job"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { Deferred, Effect, Exit, Scope } from "effect"
 import { it } from "./lib/effect"
 

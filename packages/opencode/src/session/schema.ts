@@ -1,8 +1,8 @@
 import { Schema } from "effect"
 
 import { Identifier } from "@/id/id"
-import { SessionV2 } from "@zerocode-ai/core/session"
-import { statics } from "@zerocode-ai/core/schema"
+import { SessionV2 } from "@0codeai/zerocode-core/session"
+import { statics } from "@0codeai/zerocode-core/schema"
 
 export const SessionID = SessionV2.ID
 export type SessionID = Schema.Schema.Type<typeof SessionID>

@@ -1,7 +1,7 @@
 import { createSignal } from "solid-js"
-import { Dialog } from "@zerocode-ai/ui/dialog"
-import { Button } from "@zerocode-ai/ui/button"
-import { useDialog } from "@zerocode-ai/ui/context/dialog"
+import { Dialog } from "@0codeai/zerocode-ui/dialog"
+import { Button } from "@0codeai/zerocode-ui/button"
+import { useDialog } from "@0codeai/zerocode-ui/context/dialog"
 import { useLanguage } from "@/context/language"
 import { useSettings } from "@/context/settings"
 

@@ -1,7 +1,7 @@
-import type { FileContent } from "@zerocode-ai/sdk/v2"
+import type { FileContent } from "@0codeai/zerocode-sdk/v2"
 import { createEffect, createMemo, Match, on, onCleanup, Show, Switch, untrack, type JSX } from "solid-js"
 import { createStore } from "solid-js/store"
-import { useI18n } from "@zerocode-ai/ui/context/i18n"
+import { useI18n } from "@0codeai/zerocode-ui/context/i18n"
 import {
   dataUrlFromMediaValue,
   hasMediaValue,

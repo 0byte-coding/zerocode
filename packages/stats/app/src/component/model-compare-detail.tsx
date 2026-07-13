@@ -1,13 +1,13 @@
 import "../routes/index.css"
 import { Link, Meta, Title } from "@solidjs/meta"
-import { ProviderIcon } from "@zerocode-ai/ui/provider-icon"
+import { ProviderIcon } from "@0codeai/zerocode-ui/provider-icon"
 import {
   getStatsModelsComparisonData,
   type ModelUsagePoint,
   type StatsModelComparisonInput,
   type StatsModelComparisonEntry,
-} from "@zerocode-ai/stats-core/domain/home"
-import { runtime } from "@zerocode-ai/stats-core/runtime"
+} from "@0codeai/zerocode-stats-core/domain/home"
+import { runtime } from "@0codeai/zerocode-stats-core/runtime"
 import { createAsync, query, useParams, useSearchParams } from "@solidjs/router"
 import { createEffect, createMemo, createSignal, For, onMount, Show } from "solid-js"
 import { getRequestEvent } from "solid-js/web"

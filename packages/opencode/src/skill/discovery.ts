@@ -1,11 +1,11 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { httpClient, path } from "@zerocode-ai/core/effect/app-node-platform"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { httpClient, path } from "@0codeai/zerocode-core/effect/app-node-platform"
 import { NodePath } from "@effect/platform-node"
 import { Effect, Layer, Path, Schema, Context } from "effect"
 import { FetchHttpClient, HttpClient, HttpClientRequest, HttpClientResponse } from "effect/unstable/http"
 import { withTransientReadRetry } from "@/util/effect-http-client"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
-import { Global } from "@zerocode-ai/core/global"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
+import { Global } from "@0codeai/zerocode-core/global"
 
 const skillConcurrency = 4
 const fileConcurrency = 8

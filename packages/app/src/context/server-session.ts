@@ -1,5 +1,5 @@
-import { Binary } from "@zerocode-ai/core/util/binary"
-import { retry } from "@zerocode-ai/core/util/retry"
+import { Binary } from "@0codeai/zerocode-core/util/binary"
+import { retry } from "@0codeai/zerocode-core/util/retry"
 import type {
   Message,
   OpencodeClient,
@@ -10,7 +10,7 @@ import type {
   SessionStatus,
   SnapshotFileDiff,
   Todo,
-} from "@zerocode-ai/sdk/v2/client"
+} from "@0codeai/zerocode-sdk/v2/client"
 import { batch } from "solid-js"
 import { createStore, produce, reconcile } from "solid-js/store"
 import { diffs as cleanDiffs, message as cleanMessage } from "@/utils/diffs"

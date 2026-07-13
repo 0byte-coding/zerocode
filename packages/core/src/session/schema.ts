@@ -1,6 +1,6 @@
 export * as SessionSchema from "./schema"
 
-import { Session } from "@zerocode-ai/schema/session"
+import { Session } from "@0codeai/zerocode-schema/session"
 
 export const ID = Session.ID
 export type ID = typeof ID.Type

@@ -7,8 +7,8 @@ import { FSUtil } from "./fs-util"
 import { Location } from "./location"
 import { PositiveInt, RelativePath } from "./schema"
 import { FileSystemSearch } from "./filesystem/search"
-import { Entry, FileSystem, FindInput, Match } from "@zerocode-ai/schema/filesystem"
-export { Entry, Match, Submatch } from "@zerocode-ai/schema/filesystem"
+import { Entry, FileSystem, FindInput, Match } from "@0codeai/zerocode-schema/filesystem"
+export { Entry, Match, Submatch } from "@0codeai/zerocode-schema/filesystem"
 
 export const ReadInput = Schema.Struct({
   path: RelativePath,

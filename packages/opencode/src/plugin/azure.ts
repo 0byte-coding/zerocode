@@ -1,4 +1,4 @@
-import type { Hooks, PluginInput } from "@zerocode-ai/plugin"
+import type { Hooks, PluginInput } from "@0codeai/zerocode-plugin"
 
 export async function AzureAuthPlugin(_input: PluginInput): Promise<Hooks> {
   const prompts = []

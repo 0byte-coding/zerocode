@@ -1,6 +1,6 @@
-import { run as runTui, type TuiInput } from "@zerocode-ai/tui"
-import { Global } from "@zerocode-ai/core/global"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
+import { run as runTui, type TuiInput } from "@0codeai/zerocode-tui"
+import { Global } from "@0codeai/zerocode-core/global"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
 import { Effect } from "effect"
 
 export function run(input: TuiInput) {

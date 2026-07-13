@@ -3,8 +3,8 @@ import { getProjectAvatarVariant } from "@/context/layout"
 import type { ServerConnection } from "@/context/server"
 import { displayName, getProjectAvatarSource } from "@/pages/layout/helpers"
 import { useSessionTabAvatarState } from "@/pages/layout/project-avatar-state"
-import { ProjectAvatar } from "@zerocode-ai/ui/v2/project-avatar-v2"
-import { SessionProgressIndicatorV2 } from "@zerocode-ai/session-ui/v2/session-progress-indicator-v2"
+import { ProjectAvatar } from "@0codeai/zerocode-ui/v2/project-avatar-v2"
+import { SessionProgressIndicatorV2 } from "@0codeai/zerocode-session-ui/v2/session-progress-indicator-v2"
 import { Show } from "solid-js"
 
 export function SessionTabAvatar(props: {

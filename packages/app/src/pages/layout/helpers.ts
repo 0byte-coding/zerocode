@@ -1,5 +1,5 @@
-import { getFilename } from "@zerocode-ai/core/util/path"
-import { type Session } from "@zerocode-ai/sdk/v2/client"
+import { getFilename } from "@0codeai/zerocode-core/util/path"
+import { type Session } from "@0codeai/zerocode-sdk/v2/client"
 import { pathKey } from "@/utils/path-key"
 import type { ServerConnection } from "@/context/server"
 import type { HomeProjectSelection } from "@/context/layout"

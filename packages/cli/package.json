@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@zerocode-ai/cli",
+  "name": "@0codeai/zerocode-cli",
   "version": "1.17.18",
   "type": "module",
   "license": "MIT",
@@ -17,10 +17,10 @@
   },
   "dependencies": {
     "@effect/platform-node": "catalog:",
-    "@zerocode-ai/core": "workspace:*",
-    "@zerocode-ai/sdk": "workspace:*",
-    "@zerocode-ai/server": "workspace:*",
-    "@zerocode-ai/tui": "workspace:*",
+    "@0codeai/zerocode-core": "workspace:*",
+    "@0codeai/zerocode-sdk": "workspace:*",
+    "@0codeai/zerocode-server": "workspace:*",
+    "@0codeai/zerocode-tui": "workspace:*",
     "@opentui/core": "catalog:",
     "@opentui/solid": "catalog:",
     "@parcel/watcher": "2.5.1",
@@ -28,7 +28,7 @@
     "solid-js": "catalog:"
   },
   "devDependencies": {
-    "@zerocode-ai/script": "workspace:*",
+    "@0codeai/zerocode-script": "workspace:*",
     "@tsconfig/bun": "catalog:",
     "@types/bun": "catalog:",
     "@typescript/native-preview": "catalog:"

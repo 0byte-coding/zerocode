@@ -1,4 +1,4 @@
-import { AgentV2 } from "@zerocode-ai/core/agent"
+import { AgentV2 } from "@0codeai/zerocode-core/agent"
 import { Effect } from "effect"
 import { HttpApiBuilder } from "effect/unstable/httpapi"
 import { Api } from "../api"

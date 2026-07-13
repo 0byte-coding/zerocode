@@ -1,4 +1,4 @@
-import type { ExperimentalWorkspaceAdapterListResponse, Workspace } from "@zerocode-ai/sdk/v2"
+import type { ExperimentalWorkspaceAdapterListResponse, Workspace } from "@0codeai/zerocode-sdk/v2"
 import { useDialog } from "../ui/dialog"
 import { DialogSelect, type DialogSelectOption } from "../ui/dialog-select"
 import { useSync } from "../context/sync"

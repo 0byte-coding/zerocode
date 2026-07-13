@@ -1,5 +1,5 @@
-import type { WorkspaceV2 } from "@zerocode-ai/core/workspace"
-import { Flag } from "@zerocode-ai/core/flag/flag"
+import type { WorkspaceV2 } from "@0codeai/zerocode-core/workspace"
+import { Flag } from "@0codeai/zerocode-core/flag/flag"
 import { Effect, Scope } from "effect"
 
 /**

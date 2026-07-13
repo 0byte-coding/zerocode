@@ -1,5 +1,5 @@
-import { checksum } from "@zerocode-ai/core/util/encode"
-import type { FilePartSource } from "@zerocode-ai/sdk/v2/client"
+import { checksum } from "@0codeai/zerocode-core/util/encode"
+import type { FilePartSource } from "@0codeai/zerocode-sdk/v2/client"
 import { batch, createMemo, type Accessor } from "solid-js"
 import { createStore, type SetStoreFunction } from "solid-js/store"
 import type { FileSelection } from "@/context/file"

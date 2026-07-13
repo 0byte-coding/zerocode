@@ -1,8 +1,8 @@
 import * as NodeRuntime from "@effect/platform-node/NodeRuntime"
-import { Athena } from "@zerocode-ai/stats-core/athena"
-import { ModelStatRepo } from "@zerocode-ai/stats-core/domain/model"
-import { layer as statsLayer } from "@zerocode-ai/stats-core/runtime"
-import { syncStats } from "@zerocode-ai/stats-core/stat-sync"
+import { Athena } from "@0codeai/zerocode-stats-core/athena"
+import { ModelStatRepo } from "@0codeai/zerocode-stats-core/domain/model"
+import { layer as statsLayer } from "@0codeai/zerocode-stats-core/runtime"
+import { syncStats } from "@0codeai/zerocode-stats-core/stat-sync"
 import { Cause, Duration, Effect, Layer, Schedule } from "effect"
 
 const SYNC_INTERVAL = "1 hour"

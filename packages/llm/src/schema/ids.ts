@@ -1,5 +1,5 @@
 import { Schema } from "effect"
-import { ProviderMetadata } from "@zerocode-ai/schema/llm"
+import { ProviderMetadata } from "@0codeai/zerocode-schema/llm"
 
 export { ProviderMetadata }
 

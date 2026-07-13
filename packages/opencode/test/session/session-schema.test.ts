@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test"
 import { Schema } from "effect"
-import { ProjectV2 } from "@zerocode-ai/core/project"
+import { ProjectV2 } from "@0codeai/zerocode-core/project"
 import { MessageID, SessionID } from "../../src/session/schema"
 import { Session } from "../../src/session/session"
 

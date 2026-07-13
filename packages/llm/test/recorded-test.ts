@@ -1,6 +1,6 @@
 import { NodeFileSystem } from "@effect/platform-node"
-import { HttpRecorder } from "@zerocode-ai/http-recorder"
-import { HttpRecorderInternal } from "@zerocode-ai/http-recorder/internal"
+import { HttpRecorder } from "@0codeai/zerocode-http-recorder"
+import { HttpRecorderInternal } from "@0codeai/zerocode-http-recorder/internal"
 import { Layer } from "effect"
 import { FetchHttpClient } from "effect/unstable/http"
 import * as path from "node:path"

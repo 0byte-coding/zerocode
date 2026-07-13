@@ -4,7 +4,7 @@ import { $ } from "bun"
 import fs from "fs"
 import { rm } from "fs/promises"
 import path from "path"
-import { Script } from "@zerocode-ai/script"
+import { Script } from "@0codeai/zerocode-script"
 import { createSolidTransformPlugin } from "@opentui/solid/bun-plugin"
 import pkg from "../package.json"
 import { modelsData } from "./generate"
@@ -111,10 +111,10 @@ for (const item of targets) {
     `./dist/${name}/package.json`,
     JSON.stringify(
       {
-        name: `@zerocode-ai/${name}`,
+        name: `@0codeai/zerocode-${name}`,
         version: Script.version,
         license: "MIT",
-        repository: { type: "git", url: "git+https://github.com/anomalyco/opencode.git" },
+        repository: { type: "git", url: "git+https://github.com/0byte-coding/zerocode.git" },
         os: [item.os],
         cpu: [item.arch],
       },

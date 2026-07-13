@@ -1,4 +1,4 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { Context, Effect, Layer } from "effect"
 import open from "open"
 

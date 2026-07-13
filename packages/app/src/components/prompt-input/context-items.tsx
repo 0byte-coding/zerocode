@@ -1,10 +1,10 @@
 import { Component, For, Show } from "solid-js"
 import { Dynamic } from "solid-js/web"
-import { FileIcon } from "@zerocode-ai/ui/file-icon"
-import { IconButton } from "@zerocode-ai/ui/icon-button"
-import { Tooltip } from "@zerocode-ai/ui/tooltip"
-import { TooltipV2 } from "@zerocode-ai/ui/v2/tooltip-v2"
-import { getDirectory, getFilename, getFilenameTruncated } from "@zerocode-ai/core/util/path"
+import { FileIcon } from "@0codeai/zerocode-ui/file-icon"
+import { IconButton } from "@0codeai/zerocode-ui/icon-button"
+import { Tooltip } from "@0codeai/zerocode-ui/tooltip"
+import { TooltipV2 } from "@0codeai/zerocode-ui/v2/tooltip-v2"
+import { getDirectory, getFilename, getFilenameTruncated } from "@0codeai/zerocode-core/util/path"
 import type { ContextItem } from "@/context/prompt"
 
 type PromptContextItem = ContextItem & { key: string }

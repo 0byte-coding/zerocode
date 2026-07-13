@@ -1,8 +1,8 @@
-import { run } from "@zerocode-ai/tui"
-import { TuiConfig } from "@zerocode-ai/tui/config"
+import { run } from "@0codeai/zerocode-tui"
+import { TuiConfig } from "@0codeai/zerocode-tui/config"
 import { Effect } from "effect"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { Global } from "@zerocode-ai/core/global"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { Global } from "@0codeai/zerocode-core/global"
 
 export function runTui(transport: { url: string; headers: RequestInit["headers"] }) {
   const config = TuiConfig.resolve({}, { terminalSuspend: false })

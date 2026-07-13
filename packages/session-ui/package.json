@@ -1,5 +1,5 @@
 {
-  "name": "@zerocode-ai/session-ui",
+  "name": "@0codeai/zerocode-session-ui",
   "version": "1.17.18",
   "private": true,
   "type": "module",
@@ -35,9 +35,9 @@
   },
   "dependencies": {
     "@kobalte/core": "catalog:",
-    "@zerocode-ai/core": "workspace:*",
-    "@zerocode-ai/sdk": "workspace:*",
-    "@zerocode-ai/ui": "workspace:*",
+    "@0codeai/zerocode-core": "workspace:*",
+    "@0codeai/zerocode-sdk": "workspace:*",
+    "@0codeai/zerocode-ui": "workspace:*",
     "@pierre/diffs": "catalog:",
     "@shikijs/stream": "catalog:",
     "@shikijs/transformers": "3.9.2",

@@ -1,5 +1,5 @@
-import { NonNegativeInt } from "@zerocode-ai/core/schema"
-import { EventV2 } from "@zerocode-ai/core/event"
+import { NonNegativeInt } from "@0codeai/zerocode-core/schema"
+import { EventV2 } from "@0codeai/zerocode-core/event"
 import { SessionID } from "@/session/schema"
 import { Schema } from "effect"
 import { HttpApi, HttpApiEndpoint, HttpApiError, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"

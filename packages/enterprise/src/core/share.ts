@@ -1,5 +1,5 @@
-import { Message, Model, Part, Session, SnapshotFileDiff } from "@zerocode-ai/sdk/v2"
-import { iife } from "@zerocode-ai/core/util/iife"
+import { Message, Model, Part, Session, SnapshotFileDiff } from "@0codeai/zerocode-sdk/v2"
+import { iife } from "@0codeai/zerocode-core/util/iife"
 import z from "zod"
 import { Storage } from "./storage"
 

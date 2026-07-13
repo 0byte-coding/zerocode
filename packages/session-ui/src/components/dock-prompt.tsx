@@ -1,5 +1,5 @@
 import type { JSX } from "solid-js"
-import { DockShell, DockTray } from "@zerocode-ai/ui/dock-surface"
+import { DockShell, DockTray } from "@0codeai/zerocode-ui/dock-surface"
 
 export function DockPrompt(props: {
   kind: "question" | "permission"

@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test"
-import type { PermissionRequest, Session } from "@zerocode-ai/sdk/v2/client"
-import { base64Encode } from "@zerocode-ai/core/util/encode"
+import type { PermissionRequest, Session } from "@0codeai/zerocode-sdk/v2/client"
+import { base64Encode } from "@0codeai/zerocode-core/util/encode"
 import { autoRespondsPermission, isDirectoryAutoAccepting } from "./permission-auto-respond"
 
 const session = (input: { id: string; parentID?: string }) =>

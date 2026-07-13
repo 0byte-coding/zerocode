@@ -1,5 +1,5 @@
-import { Actor } from "@zerocode-ai/console-core/actor.js"
-import { Referral } from "@zerocode-ai/console-core/referral.js"
+import { Actor } from "@0codeai/zerocode-console-core/actor.js"
+import { Referral } from "@0codeai/zerocode-console-core/referral.js"
 import { getRequestEvent } from "solid-js/web"
 
 const REFERRAL_COOKIE = "oc_referral"

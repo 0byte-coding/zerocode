@@ -1,5 +1,5 @@
 import { rm } from "fs/promises"
-import { Database } from "@zerocode-ai/core/database/database"
+import { Database } from "@0codeai/zerocode-core/database/database"
 import { disposeAllInstances } from "./fixture"
 
 export async function resetDatabase() {

@@ -1,9 +1,9 @@
 import type { APIEvent } from "@solidjs/start/server"
-import { ZenData } from "@zerocode-ai/console-core/model.js"
-import { and, Database, eq, isNull } from "@zerocode-ai/console-core/drizzle/index.js"
-import { KeyTable } from "@zerocode-ai/console-core/schema/key.sql.js"
-import { WorkspaceTable } from "@zerocode-ai/console-core/schema/workspace.sql.js"
-import { ModelTable } from "@zerocode-ai/console-core/schema/model.sql.js"
+import { ZenData } from "@0codeai/zerocode-console-core/model.js"
+import { and, Database, eq, isNull } from "@0codeai/zerocode-console-core/drizzle/index.js"
+import { KeyTable } from "@0codeai/zerocode-console-core/schema/key.sql.js"
+import { WorkspaceTable } from "@0codeai/zerocode-console-core/schema/workspace.sql.js"
+import { ModelTable } from "@0codeai/zerocode-console-core/schema/model.sql.js"
 import { buildOptionsResponse, buildModelsResponse } from "~/routes/zen/util/modelsHandler"
 
 export async function OPTIONS(_input: APIEvent) {

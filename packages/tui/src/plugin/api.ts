@@ -1,4 +1,4 @@
-import type { TuiPluginApi, TuiRouteDefinition } from "@zerocode-ai/plugin/tui"
+import type { TuiPluginApi, TuiRouteDefinition } from "@0codeai/zerocode-plugin/tui"
 import { createSignal } from "solid-js"
 
 type RouteEntry = {

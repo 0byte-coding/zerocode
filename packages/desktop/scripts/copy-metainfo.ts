@@ -33,11 +33,11 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
 
   <url type="bugtracker">https://github.com/anomalyco/opencode/issues</url>
   <url type="homepage">https://opencode.ai</url>
-  <url type="vcs-browser">https://github.com/anomalyco/opencode</url>
+  <url type="vcs-browser">https://github.com/0byte-coding/zerocode</url>
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/anomalyco/opencode/b75d4d1c5ec449585d515c756fc81f080a157a9a/packages/web/src/assets/lander/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/0byte-coding/zerocode/b75d4d1c5ec449585d515c756fc81f080a157a9a/packages/web/src/assets/lander/screenshot.png</image>
     </screenshot>
   </screenshots>
 </component>

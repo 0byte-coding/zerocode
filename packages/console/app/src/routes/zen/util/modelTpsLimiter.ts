@@ -1,5 +1,5 @@
-import { and, Database, inArray, sql } from "@zerocode-ai/console-core/drizzle/index.js"
-import { ModelTpsRateLimitTable } from "@zerocode-ai/console-core/schema/ip.sql.js"
+import { and, Database, inArray, sql } from "@0codeai/zerocode-console-core/drizzle/index.js"
+import { ModelTpsRateLimitTable } from "@0codeai/zerocode-console-core/schema/ip.sql.js"
 import { UsageInfo } from "./provider/provider"
 
 export function createModelTpsLimiter(providers: { id: string; model: string; tpsGoal?: number }[]) {

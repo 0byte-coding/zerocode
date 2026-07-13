@@ -1,5 +1,5 @@
-import { MoveSession } from "@zerocode-ai/core/control-plane/move-session"
-import { SessionV2 } from "@zerocode-ai/core/session"
+import { MoveSession } from "@0codeai/zerocode-core/control-plane/move-session"
+import { SessionV2 } from "@0codeai/zerocode-core/session"
 import { Effect } from "effect"
 import { HttpApiBuilder } from "effect/unstable/httpapi"
 import { RootHttpApi } from "../api"

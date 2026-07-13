@@ -1,9 +1,9 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import path from "path"
 import { Effect, Layer, Record, Result, Schema, Context } from "effect"
-import { NonNegativeInt } from "@zerocode-ai/core/schema"
-import { Global } from "@zerocode-ai/core/global"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
+import { NonNegativeInt } from "@0codeai/zerocode-core/schema"
+import { Global } from "@0codeai/zerocode-core/global"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
 
 export const OAUTH_DUMMY_KEY = "opencode-oauth-dummy-key"
 

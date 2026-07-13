@@ -1,4 +1,4 @@
-import { makeGlobalNode } from "@zerocode-ai/core/effect/app-node"
+import { makeGlobalNode } from "@0codeai/zerocode-core/effect/app-node"
 import { Plugin } from "../plugin"
 import { Format } from "../format"
 import { LSP } from "@/lsp/lsp"

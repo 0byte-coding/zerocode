@@ -2,8 +2,8 @@ export * as ConfigParse from "./parse"
 
 import { type ParseError as JsoncParseError, parse as parseJsoncImpl, printParseErrorCode } from "jsonc-parser"
 import { Cause, Exit, Schema as EffectSchema, SchemaIssue } from "effect"
-import type { DeepMutable } from "@zerocode-ai/core/schema"
-import { InvalidError, JsonError } from "@zerocode-ai/core/v1/config/error"
+import type { DeepMutable } from "@0codeai/zerocode-core/schema"
+import { InvalidError, JsonError } from "@0codeai/zerocode-core/v1/config/error"
 
 export function jsonc(text: string, filepath: string): unknown {
   const errors: JsoncParseError[] = []

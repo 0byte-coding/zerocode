@@ -12,7 +12,7 @@ beforeAll(async () => {
     useLocation: () => ({}),
     useSearchParams: () => [{}, () => undefined],
   }))
-  mock.module("@zerocode-ai/ui/context", () => ({
+  mock.module("@0codeai/zerocode-ui/context", () => ({
     createSimpleContext: () => ({
       use: () => undefined,
       provider: () => undefined,

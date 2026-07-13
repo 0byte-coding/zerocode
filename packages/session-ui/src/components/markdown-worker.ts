@@ -1,5 +1,5 @@
 import MarkdownShikiWorkerUrl from "./markdown-shiki.worker.ts?worker&url"
-import { OpenCodeTheme } from "@zerocode-ai/ui/context/marked"
+import { OpenCodeTheme } from "@0codeai/zerocode-ui/context/marked"
 import {
   applyMarkdownWorkerResponse,
   shouldReleaseMarkdownWorkerState,

@@ -1,31 +1,31 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { httpClient } from "@zerocode-ai/core/effect/app-node-platform"
-import { serviceUse } from "@zerocode-ai/core/effect/service-use"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { httpClient } from "@0codeai/zerocode-core/effect/app-node-platform"
+import { serviceUse } from "@0codeai/zerocode-core/effect/service-use"
 import path from "path"
 import { pathToFileURL } from "url"
 import os from "os"
 import { mergeDeep } from "remeda"
-import { Global } from "@zerocode-ai/core/global"
+import { Global } from "@0codeai/zerocode-core/global"
 import fsNode from "fs/promises"
-import { Flag } from "@zerocode-ai/core/flag/flag"
+import { Flag } from "@0codeai/zerocode-core/flag/flag"
 import { Auth } from "../auth"
 import { Env } from "../env"
 import { applyEdits, modify } from "jsonc-parser"
-import { InstallationLocal, InstallationVersion } from "@zerocode-ai/core/installation/version"
+import { InstallationLocal, InstallationVersion } from "@0codeai/zerocode-core/installation/version"
 import { existsSync } from "fs"
 import { Account } from "@/account/account"
 import { isRecord } from "@/util/record"
-import type { ConsoleState } from "@zerocode-ai/core/v1/config/console-state"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
+import type { ConsoleState } from "@0codeai/zerocode-core/v1/config/console-state"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
 import { InstanceState } from "@/effect/instance-state"
 import { Context, Duration, Effect, Exit, Fiber, Layer, Option, Schema } from "effect"
 import { FetchHttpClient, HttpClient, HttpClientRequest } from "effect/unstable/http"
-import { EffectFlock } from "@zerocode-ai/core/util/effect-flock"
+import { EffectFlock } from "@0codeai/zerocode-core/util/effect-flock"
 import { containsPath, type InstanceContext } from "../project/instance-context"
-import { ConfigV1 } from "@zerocode-ai/core/v1/config/config"
-import { RemoteAuthError } from "@zerocode-ai/core/v1/config/error"
-import { ConfigPermissionV1 } from "@zerocode-ai/core/v1/config/permission"
-import { ConfigPluginV1 } from "@zerocode-ai/core/v1/config/plugin"
+import { ConfigV1 } from "@0codeai/zerocode-core/v1/config/config"
+import { RemoteAuthError } from "@0codeai/zerocode-core/v1/config/error"
+import { ConfigPermissionV1 } from "@0codeai/zerocode-core/v1/config/permission"
+import { ConfigPluginV1 } from "@0codeai/zerocode-core/v1/config/plugin"
 import { ConfigAgent } from "./agent"
 import { ConfigCommand } from "./command"
 import { ConfigManaged } from "./managed"
@@ -33,7 +33,7 @@ import { ConfigParse } from "./parse"
 import { ConfigPaths } from "./paths"
 import { ConfigPlugin } from "./plugin"
 import { ConfigVariable } from "./variable"
-import { Npm } from "@zerocode-ai/core/npm"
+import { Npm } from "@0codeai/zerocode-core/npm"
 import { withTransientReadRetry } from "@/util/effect-http-client"
 
 // Custom merge function that concatenates array fields instead of replacing them
@@ -442,7 +442,7 @@ const layer = Layer.effect(
                   // Real, published npm package — end users' locally-authored
                   // `.opencode/tool` and `.opencode/plugin` files import from this for
                   // type support, so it must stay pointed at the actual registry name
-                  // regardless of this fork's own internal `@zerocode-ai/*` scope.
+                  // regardless of this fork's own internal `@0codeai/zerocode-*` scope.
                   name: "@opencode-ai/plugin",
                   version: InstallationLocal ? undefined : InstallationVersion,
                 },

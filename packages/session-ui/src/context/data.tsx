@@ -1,5 +1,5 @@
-import type { Message, Session, Part, SnapshotFileDiff, SessionStatus, Provider } from "@zerocode-ai/sdk/v2"
-import { createSimpleContext } from "@zerocode-ai/ui/context"
+import type { Message, Session, Part, SnapshotFileDiff, SessionStatus, Provider } from "@0codeai/zerocode-sdk/v2"
+import { createSimpleContext } from "@0codeai/zerocode-ui/context"
 import { PreloadMultiFileDiffResult } from "@pierre/diffs/ssr"
 
 export type NormalizedProviderListResponse = {

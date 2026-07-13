@@ -1,10 +1,10 @@
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { AbsolutePath } from "@zerocode-ai/core/schema"
-import { Reference } from "@zerocode-ai/core/reference"
-import { ReferenceGuidance } from "@zerocode-ai/core/reference/guidance"
-import { SystemContext } from "@zerocode-ai/core/system-context/index"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { AbsolutePath } from "@0codeai/zerocode-core/schema"
+import { Reference } from "@0codeai/zerocode-core/reference"
+import { ReferenceGuidance } from "@0codeai/zerocode-core/reference/guidance"
+import { SystemContext } from "@0codeai/zerocode-core/system-context/index"
 import { it } from "./lib/effect"
 
 const guidanceLayer = (referenceLayer: Layer.Layer<Reference.Service>) =>

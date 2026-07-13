@@ -1,1 +1,1 @@
-export * from "@zerocode-ai/tui/logo"
+export * from "@0codeai/zerocode-tui/logo"

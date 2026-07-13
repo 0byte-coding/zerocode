@@ -5,11 +5,11 @@ import path from "path"
 import os from "os"
 import { Cause, Effect, Exit } from "effect"
 import { testEffect } from "../lib/effect"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { EffectFlock } from "@zerocode-ai/core/util/effect-flock"
-import { Global } from "@zerocode-ai/core/global"
-import { Hash } from "@zerocode-ai/core/util/hash"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { EffectFlock } from "@0codeai/zerocode-core/util/effect-flock"
+import { Global } from "@0codeai/zerocode-core/global"
+import { Hash } from "@0codeai/zerocode-core/util/hash"
 
 function lock(dir: string, key: string) {
   return path.join(dir, Hash.fast(key) + ".lock")

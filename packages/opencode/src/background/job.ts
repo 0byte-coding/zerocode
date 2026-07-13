@@ -1,5 +1,5 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { BackgroundJob as CoreBackgroundJob } from "@zerocode-ai/core/background-job"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { BackgroundJob as CoreBackgroundJob } from "@0codeai/zerocode-core/background-job"
 import { InstanceState } from "@/effect/instance-state"
 import { Effect, Layer } from "effect"
 
@@ -12,7 +12,7 @@ export {
   type Status,
   type WaitInput,
   type WaitResult,
-} from "@zerocode-ai/core/background-job"
+} from "@0codeai/zerocode-core/background-job"
 
 /** Keeps the legacy service instance-scoped while sharing the core registry engine. */
 const layer = Layer.effect(

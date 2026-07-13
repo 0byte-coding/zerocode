@@ -2,7 +2,7 @@ export * as AgentV2 from "./agent"
 
 import { makeLocationNode } from "./effect/app-node"
 import { Array, Context, Effect, Layer, Types } from "effect"
-import { Agent } from "@zerocode-ai/schema/agent"
+import { Agent } from "@0codeai/zerocode-schema/agent"
 import { State } from "./state"
 
 export const ID = Agent.ID

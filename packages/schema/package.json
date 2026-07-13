@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@zerocode-ai/schema",
+  "name": "@0codeai/zerocode-schema",
   "private": true,
   "type": "module",
   "license": "MIT",

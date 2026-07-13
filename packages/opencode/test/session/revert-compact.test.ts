@@ -1,10 +1,10 @@
 import { describe, expect } from "bun:test"
-import { SessionV1 } from "@zerocode-ai/core/v1/session"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { SessionProjector } from "@zerocode-ai/core/session/projector"
+import { SessionV1 } from "@0codeai/zerocode-core/v1/session"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { SessionProjector } from "@0codeai/zerocode-core/session/projector"
 import fs from "fs/promises"
 import path from "path"
-import { CrossSpawnSpawner } from "@zerocode-ai/core/cross-spawn-spawner"
+import { CrossSpawnSpawner } from "@0codeai/zerocode-core/cross-spawn-spawner"
 import { Effect } from "effect"
 import { Session } from "@/session/session"
 
@@ -14,8 +14,8 @@ import { Snapshot } from "../../src/snapshot"
 import { MessageID, PartID, SessionID } from "../../src/session/schema"
 import { provideTmpdirInstance } from "../fixture/fixture"
 import { testEffect } from "../lib/effect"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
-import { ModelV2 } from "@zerocode-ai/core/model"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
+import { ModelV2 } from "@0codeai/zerocode-core/model"
 
 const it = testEffect(
   LayerNode.compile(

@@ -1,4 +1,4 @@
-import { Integration } from "@zerocode-ai/core/integration"
+import { Integration } from "@0codeai/zerocode-core/integration"
 import { Effect } from "effect"
 import { HttpApiBuilder, HttpApiSchema } from "effect/unstable/httpapi"
 import { Api } from "../api"

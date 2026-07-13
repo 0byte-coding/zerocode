@@ -1,5 +1,5 @@
-import { Flag } from "@zerocode-ai/core/flag/flag"
-import { Database } from "@zerocode-ai/core/database/database"
+import { Flag } from "@0codeai/zerocode-core/flag/flag"
+import { Database } from "@0codeai/zerocode-core/database/database"
 import { Effect } from "effect"
 import { HttpRouter, HttpServerRequest, HttpServerResponse } from "effect/unstable/http"
 import * as Fence from "@/server/shared/fence"

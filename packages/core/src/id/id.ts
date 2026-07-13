@@ -1,4 +1,4 @@
-import { create as createIdentifier } from "@zerocode-ai/schema/identifier"
+import { create as createIdentifier } from "@0codeai/zerocode-schema/identifier"
 
 const prefixes = {
   job: "job",

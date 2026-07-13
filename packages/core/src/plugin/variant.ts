@@ -1,6 +1,6 @@
 export * as VariantPlugin from "./variant"
 
-import type { ModelV2Info } from "@zerocode-ai/sdk/v2/types"
+import type { ModelV2Info } from "@0codeai/zerocode-sdk/v2/types"
 import { Effect } from "effect"
 import { define } from "./internal"
 

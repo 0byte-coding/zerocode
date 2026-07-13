@@ -1,4 +1,4 @@
-import type { ModelV2Info, ProviderV2Info } from "@zerocode-ai/sdk/v2/types"
+import type { ModelV2Info, ProviderV2Info } from "@0codeai/zerocode-sdk/v2/types"
 import type { Hooks } from "./registration.js"
 
 export interface CatalogProviderRecord {

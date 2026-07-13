@@ -1,4 +1,4 @@
-import type { NormalizedProviderListResponse } from "@zerocode-ai/session-ui/context"
+import type { NormalizedProviderListResponse } from "@0codeai/zerocode-session-ui/context"
 
 const emptyProviderCatalog: NormalizedProviderListResponse = { all: new Map(), connected: [], default: {} }
 

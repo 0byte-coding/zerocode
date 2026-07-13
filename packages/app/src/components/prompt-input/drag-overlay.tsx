@@ -1,5 +1,5 @@
 import { Component, Show } from "solid-js"
-import { Icon } from "@zerocode-ai/ui/icon"
+import { Icon } from "@0codeai/zerocode-ui/icon"
 
 type PromptDragOverlayProps = {
   type: "image" | "@mention" | null

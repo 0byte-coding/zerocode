@@ -1,8 +1,8 @@
-import { Database } from "@zerocode-ai/core/database/database"
+import { Database } from "@0codeai/zerocode-core/database/database"
 import { inArray } from "drizzle-orm"
-import { EventSequenceTable } from "@zerocode-ai/core/event/sql"
+import { EventSequenceTable } from "@0codeai/zerocode-core/event/sql"
 import { Workspace } from "@/control-plane/workspace"
-import type { WorkspaceV2 } from "@zerocode-ai/core/workspace"
+import type { WorkspaceV2 } from "@0codeai/zerocode-core/workspace"
 import { Effect } from "effect"
 
 export const HEADER = "x-opencode-sync"

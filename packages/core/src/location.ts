@@ -1,5 +1,5 @@
 import { Context, Effect, Layer } from "effect"
-import { Info, Ref, response } from "@zerocode-ai/schema/location"
+import { Info, Ref, response } from "@0codeai/zerocode-schema/location"
 import { Project } from "./project"
 import { LayerNode } from "./effect/layer-node"
 import { makeLocationNode, tags } from "./effect/app-node"

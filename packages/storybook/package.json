@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@zerocode-ai/storybook",
+  "name": "@0codeai/zerocode-storybook",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,8 +9,8 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "catalog:",
-    "@zerocode-ai/session-ui": "workspace:*",
-    "@zerocode-ai/ui": "workspace:*",
+    "@0codeai/zerocode-session-ui": "workspace:*",
+    "@0codeai/zerocode-ui": "workspace:*",
     "@solidjs/meta": "catalog:",
     "@storybook/addon-a11y": "^10.2.13",
     "@storybook/addon-docs": "^10.2.13",

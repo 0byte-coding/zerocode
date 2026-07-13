@@ -1,6 +1,6 @@
 import { useFile } from "@/context/file"
-import { FileIcon } from "@zerocode-ai/ui/file-icon"
-import "@zerocode-ai/ui/v2/file-tree-v2.css"
+import { FileIcon } from "@0codeai/zerocode-ui/file-icon"
+import "@0codeai/zerocode-ui/v2/file-tree-v2.css"
 import {
   createEffect,
   createMemo,
@@ -12,8 +12,8 @@ import {
   type ParentProps,
 } from "solid-js"
 import { Dynamic } from "solid-js/web"
-import type { FileNode } from "@zerocode-ai/sdk/v2"
-import { Icon } from "@zerocode-ai/ui/v2/icon"
+import type { FileNode } from "@0codeai/zerocode-sdk/v2"
+import { Icon } from "@0codeai/zerocode-ui/v2/icon"
 import { pathToFileUrl, withFileDragImage, type Kind } from "@/components/file-tree"
 import { createVirtualizer, defaultRangeExtractor } from "@tanstack/solid-virtual"
 import {

@@ -1,4 +1,4 @@
-import { createBuiltinPlugins, type BuiltinTuiPlugin } from "@zerocode-ai/tui/builtins"
+import { createBuiltinPlugins, type BuiltinTuiPlugin } from "@0codeai/zerocode-tui/builtins"
 import type { RuntimeFlags } from "@/effect/runtime-flags"
 
 export type InternalTuiPlugin = BuiltinTuiPlugin

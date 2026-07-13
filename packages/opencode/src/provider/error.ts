@@ -1,8 +1,8 @@
 import { APICallError } from "ai"
 import { STATUS_CODES } from "http"
 import { iife } from "@/util/iife"
-import type { ProviderV2 } from "@zerocode-ai/core/provider"
-import { isContextOverflow } from "@zerocode-ai/llm"
+import type { ProviderV2 } from "@0codeai/zerocode-core/provider"
+import { isContextOverflow } from "@0codeai/zerocode-llm"
 
 export class HeaderTimeoutError extends Error {
   public override readonly name = "ProviderHeaderTimeoutError"

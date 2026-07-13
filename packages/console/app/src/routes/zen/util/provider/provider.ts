@@ -1,4 +1,4 @@
-import { ZenData } from "@zerocode-ai/console-core/model.js"
+import { ZenData } from "@0codeai/zerocode-console-core/model.js"
 import {
   fromAnthropicChunk,
   fromAnthropicRequest,

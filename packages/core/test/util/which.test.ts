@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test"
 import fs from "fs/promises"
 import path from "path"
-import { which } from "@zerocode-ai/core/util/which"
+import { which } from "@0codeai/zerocode-core/util/which"
 import { tmpdir } from "../fixture/tmpdir"
 
 async function cmd(dir: string, name: string, exec = true) {

@@ -10,13 +10,13 @@ import {
   type TuiPluginStatus,
   type TuiSlotPlugin,
   type TuiTheme,
-} from "@zerocode-ai/plugin/tui"
+} from "@0codeai/zerocode-plugin/tui"
 import path from "path"
 import { fileURLToPath } from "url"
 import { TuiConfig } from "@/config/tui"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { errorData, errorMessage } from "@zerocode-ai/tui/util/error"
-import { isRecord } from "@zerocode-ai/tui/util/record"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { errorData, errorMessage } from "@0codeai/zerocode-tui/util/error"
+import { isRecord } from "@0codeai/zerocode-tui/util/record"
 import { resolveHostAttentionSoundPaths } from "@/config/tui-host-attention"
 import {
   readPackageThemes,
@@ -29,20 +29,20 @@ import {
 import { PluginLoader } from "@/plugin/loader"
 import { PluginMeta } from "@/plugin/meta"
 import { installPlugin as installModulePlugin, patchPluginConfig, readPluginManifest } from "@/plugin/install"
-import { hasTheme, upsertTheme } from "@zerocode-ai/tui/context/theme"
-import { Global } from "@zerocode-ai/core/global"
+import { hasTheme, upsertTheme } from "@0codeai/zerocode-tui/context/theme"
+import { Global } from "@0codeai/zerocode-core/global"
 import { Filesystem } from "@/util/filesystem"
 import { Process } from "@/util/process"
-import { Flock } from "@zerocode-ai/core/util/flock"
-import { Flag } from "@zerocode-ai/core/flag/flag"
+import { Flock } from "@0codeai/zerocode-core/util/flock"
+import { Flag } from "@0codeai/zerocode-core/flag/flag"
 import { internalTuiPlugins, type InternalTuiPlugin } from "./internal"
-import type { HostPluginApi, HostSlots } from "@zerocode-ai/tui/plugin/slots"
+import type { HostPluginApi, HostSlots } from "@0codeai/zerocode-tui/plugin/slots"
 import { ConfigPlugin } from "@/config/plugin"
-import { ConfigPluginV1 } from "@zerocode-ai/core/v1/config/plugin"
-import { createCommandShim } from "@zerocode-ai/tui/plugin/command-shim"
+import { ConfigPluginV1 } from "@0codeai/zerocode-core/v1/config/plugin"
+import { createCommandShim } from "@0codeai/zerocode-tui/plugin/command-shim"
 import { RuntimeFlags } from "@/effect/runtime-flags"
 import { Effect } from "effect"
-import { createPluginRuntime, type PluginRuntime, type TuiPluginHost } from "@zerocode-ai/tui/plugin/runtime"
+import { createPluginRuntime, type PluginRuntime, type TuiPluginHost } from "@0codeai/zerocode-tui/plugin/runtime"
 
 ensureRuntimePluginSupport({ additional: keymapRuntimeModules })
 

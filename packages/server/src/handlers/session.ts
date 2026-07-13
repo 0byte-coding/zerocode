@@ -1,8 +1,8 @@
-import { SessionV2 } from "@zerocode-ai/core/session"
+import { SessionV2 } from "@0codeai/zerocode-core/session"
 import { DateTime, Effect, Stream } from "effect"
 import { HttpApiBuilder, HttpApiSchema } from "effect/unstable/httpapi"
 import { Api } from "../api"
-import { SessionsCursor } from "@zerocode-ai/protocol/groups/session"
+import { SessionsCursor } from "@0codeai/zerocode-protocol/groups/session"
 import {
   ConflictError,
   InvalidCursorError,
@@ -10,8 +10,8 @@ import {
   ServiceUnavailableError,
   SessionNotFoundError,
   UnknownError,
-} from "@zerocode-ai/protocol/errors"
-import { AbsolutePath } from "@zerocode-ai/core/schema"
+} from "@0codeai/zerocode-protocol/errors"
+import { AbsolutePath } from "@0codeai/zerocode-core/schema"
 
 const DefaultSessionsLimit = 50
 const DefaultSessionHistoryLimit = 50

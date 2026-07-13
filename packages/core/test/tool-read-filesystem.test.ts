@@ -1,10 +1,10 @@
 import { describe, expect } from "bun:test"
 import path from "path"
 import { Effect, FileSystem } from "effect"
-import { LayerNodePlatform } from "@zerocode-ai/core/effect/app-node-platform"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
-import { ReadToolFileSystem } from "@zerocode-ai/core/tool/read-filesystem"
+import { LayerNodePlatform } from "@0codeai/zerocode-core/effect/app-node-platform"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
+import { ReadToolFileSystem } from "@0codeai/zerocode-core/tool/read-filesystem"
 import { testEffect } from "./lib/effect"
 
 const it = testEffect(LayerNode.compile(LayerNode.group([FSUtil.node, LayerNodePlatform.filesystem])))

@@ -1,8 +1,8 @@
 import { For, Show } from "solid-js"
-import type { PermissionRequest } from "@zerocode-ai/sdk/v2"
-import { Button } from "@zerocode-ai/ui/button"
-import { DockPrompt } from "@zerocode-ai/session-ui/dock-prompt"
-import { Icon } from "@zerocode-ai/ui/icon"
+import type { PermissionRequest } from "@0codeai/zerocode-sdk/v2"
+import { Button } from "@0codeai/zerocode-ui/button"
+import { DockPrompt } from "@0codeai/zerocode-session-ui/dock-prompt"
+import { Icon } from "@0codeai/zerocode-ui/icon"
 import { useLanguage } from "@/context/language"
 
 export function SessionPermissionDock(props: {

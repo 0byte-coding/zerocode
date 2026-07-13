@@ -1,6 +1,6 @@
-import { Location } from "@zerocode-ai/core/location"
-import { Project } from "@zerocode-ai/core/project"
-import { AbsolutePath } from "@zerocode-ai/core/schema"
+import { Location } from "@0codeai/zerocode-core/location"
+import { Project } from "@0codeai/zerocode-core/project"
+import { AbsolutePath } from "@0codeai/zerocode-core/schema"
 import { Effect, Layer } from "effect"
 import { tmpdir } from "./tmpdir"
 

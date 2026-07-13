@@ -1,1 +1,1 @@
-export { TuiEvent } from "@zerocode-ai/schema/tui-event"
+export { TuiEvent } from "@0codeai/zerocode-schema/tui-event"

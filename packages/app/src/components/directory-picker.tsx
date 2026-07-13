@@ -1,4 +1,4 @@
-import { useDialog } from "@zerocode-ai/ui/context/dialog"
+import { useDialog } from "@0codeai/zerocode-ui/context/dialog"
 import { ServerConnection } from "@/context/server"
 import { usePlatform } from "@/context/platform"
 import { useSettings } from "@/context/settings"

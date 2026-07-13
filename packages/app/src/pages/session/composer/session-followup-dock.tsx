@@ -1,8 +1,8 @@
 import { For, Show, createMemo } from "solid-js"
 import { createStore } from "solid-js/store"
-import { Button } from "@zerocode-ai/ui/button"
-import { DockTray } from "@zerocode-ai/ui/dock-surface"
-import { IconButton } from "@zerocode-ai/ui/icon-button"
+import { Button } from "@0codeai/zerocode-ui/button"
+import { DockTray } from "@0codeai/zerocode-ui/dock-surface"
+import { IconButton } from "@0codeai/zerocode-ui/icon-button"
 import { useLanguage } from "@/context/language"
 
 export function SessionFollowupDock(props: {

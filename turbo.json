@@ -13,19 +13,19 @@
       "outputs": [],
       "passThroughEnv": ["*"]
     },
-    "@zerocode-ai/core#test": {
+    "@0codeai/zerocode-core#test": {
       "dependsOn": ["^build"],
       "outputs": []
     },
-    "@zerocode-ai/app#test": {
+    "@0codeai/zerocode-app#test": {
       "dependsOn": ["^build"],
       "outputs": []
     },
-    "@zerocode-ai/ui#test": {
+    "@0codeai/zerocode-ui#test": {
       "dependsOn": ["^build"],
       "outputs": []
     },
-    "@zerocode-ai/session-ui#test": {
+    "@0codeai/zerocode-session-ui#test": {
       "dependsOn": ["^build"],
       "outputs": []
     }

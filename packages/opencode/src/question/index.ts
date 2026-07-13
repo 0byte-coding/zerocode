@@ -1,10 +1,10 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { Deferred, Effect, Layer, Schema, Context } from "effect"
 import { InstanceState } from "@/effect/instance-state"
 import { SessionID } from "@/session/schema"
 import { QuestionID } from "./schema"
 import { EventV2Bridge } from "@/event-v2-bridge"
-import { QuestionV1 } from "@zerocode-ai/schema/question-v1"
+import { QuestionV1 } from "@0codeai/zerocode-schema/question-v1"
 
 export const Option = QuestionV1.Option
 export type Option = typeof Option.Type

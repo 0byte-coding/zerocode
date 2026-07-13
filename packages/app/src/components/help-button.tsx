@@ -1,5 +1,5 @@
-import { Icon as IconV2 } from "@zerocode-ai/ui/v2/icon"
-import { IconButtonV2 } from "@zerocode-ai/ui/v2/icon-button-v2"
+import { Icon as IconV2 } from "@0codeai/zerocode-ui/v2/icon"
+import { IconButtonV2 } from "@0codeai/zerocode-ui/v2/icon-button-v2"
 import { createSignal, Show } from "solid-js"
 import { createStore } from "solid-js/store"
 import { Drawer, DrawerClose, DrawerContent } from "@/components/ui/drawer"

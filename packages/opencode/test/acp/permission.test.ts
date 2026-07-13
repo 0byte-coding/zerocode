@@ -5,8 +5,8 @@ import type {
   RequestPermissionResponse,
   SessionUpdate,
 } from "@agentclientprotocol/sdk"
-import type { Event, OpencodeClient } from "@zerocode-ai/sdk/v2"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import type { Event, OpencodeClient } from "@0codeai/zerocode-sdk/v2"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { createTwoFilesPatch } from "diff"
 import { Effect, ManagedRuntime } from "effect"
 import { mkdtemp, rm } from "node:fs/promises"

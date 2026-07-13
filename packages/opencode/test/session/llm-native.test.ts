@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test"
-import { LLMEvent, ToolFailure } from "@zerocode-ai/llm"
-import { LLMClient, RequestExecutor, WebSocketExecutor, type LLMClientShape } from "@zerocode-ai/llm/route"
+import { LLMEvent, ToolFailure } from "@0codeai/zerocode-llm"
+import { LLMClient, RequestExecutor, WebSocketExecutor, type LLMClientShape } from "@0codeai/zerocode-llm/route"
 import { jsonSchema, tool, type ModelMessage, type Tool } from "ai"
 import { Effect, Fiber, Layer, Stream } from "effect"
 import { FetchHttpClient } from "effect/unstable/http"
@@ -10,8 +10,8 @@ import type { Provider } from "@/provider/provider"
 
 import { OAUTH_DUMMY_KEY } from "@/auth"
 import { testEffect } from "../lib/effect"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
-import { ModelV2 } from "@zerocode-ai/core/model"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
+import { ModelV2 } from "@0codeai/zerocode-core/model"
 
 const baseModel: Provider.Model = {
   id: ModelV2.ID.make("gpt-5-mini"),

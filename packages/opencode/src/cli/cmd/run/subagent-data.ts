@@ -1,4 +1,4 @@
-import type { Event, Message, Part, PermissionRequest, QuestionRequest, ToolPart } from "@zerocode-ai/sdk/v2"
+import type { Event, Message, Part, PermissionRequest, QuestionRequest, ToolPart } from "@0codeai/zerocode-sdk/v2"
 import * as Locale from "@/util/locale"
 import {
   bootstrapSessionData,

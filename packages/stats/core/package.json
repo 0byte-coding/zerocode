@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@zerocode-ai/stats-core",
+  "name": "@0codeai/zerocode-stats-core",
   "version": "1.17.18",
   "private": true,
   "type": "module",

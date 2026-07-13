@@ -1,5 +1,5 @@
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { InstanceBootstrap } from "@/project/bootstrap"
 import { InstanceStore } from "@/project/instance-store"
 

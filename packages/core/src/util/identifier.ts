@@ -1,1 +1,1 @@
-export * as Identifier from "@zerocode-ai/schema/identifier"
+export * as Identifier from "@0codeai/zerocode-schema/identifier"

@@ -1,4 +1,4 @@
-import type { TuiPluginApi } from "@zerocode-ai/plugin/tui"
+import type { TuiPluginApi } from "@0codeai/zerocode-plugin/tui"
 import { RGBA } from "@opentui/core"
 import { createTuiResolvedConfig } from "./tui-runtime"
 

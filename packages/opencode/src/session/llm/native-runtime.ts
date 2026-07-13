@@ -15,8 +15,8 @@ import {
   toDefinitions,
   type JsonSchema,
   type LLMEvent,
-} from "@zerocode-ai/llm"
-import type { LLMClientShape } from "@zerocode-ai/llm/route"
+} from "@0codeai/zerocode-llm"
+import type { LLMClientShape } from "@0codeai/zerocode-llm/route"
 import { LLMNative } from "./native-request"
 
 export type RuntimeStatus =
@@ -76,7 +76,7 @@ export function stream(input: StreamInput): StreamResult {
   const current = statusWithFetch(input, fetch)
   if (current.type === "unsupported") return current
 
-  // Integration point with @zerocode-ai/llm: native-request lowers session data
+  // Integration point with @0codeai/zerocode-llm: native-request lowers session data
   // into an LLMRequest, then LLMClient handles route selection and transport.
   //
   // ProviderTransform.providerOptions builds AI-SDK-shaped options for the
@@ -171,7 +171,7 @@ export function nativeTools(tools: Record<string, Tool>, input: Pick<StreamInput
     Object.entries(tools).map(([name, item]) => [
       name,
       // Tool execution remains opencode-owned. The native runtime only adapts
-      // the @zerocode-ai/llm tool call back into the AI SDK Tool.execute shape.
+      // the @0codeai/zerocode-llm tool call back into the AI SDK Tool.execute shape.
       NativeTool.make({
         description: item.description ?? "",
         jsonSchema: nativeSchema(item.inputSchema),

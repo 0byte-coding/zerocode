@@ -1,6 +1,6 @@
-import { createOpencodeClient } from "@zerocode-ai/sdk/v2"
+import { createOpencodeClient } from "@0codeai/zerocode-sdk/v2"
 import { RGBA, type CliRenderer } from "@opentui/core"
-import type { HostPluginApi } from "@zerocode-ai/tui/plugin/slots"
+import type { HostPluginApi } from "@0codeai/zerocode-tui/plugin/slots"
 import { createTuiResolvedConfig } from "./tui-runtime"
 
 type Count = {

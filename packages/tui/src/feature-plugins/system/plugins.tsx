@@ -1,4 +1,4 @@
-import type { TuiPlugin, TuiPluginApi, TuiPluginStatus } from "@zerocode-ai/plugin/tui"
+import type { TuiPlugin, TuiPluginApi, TuiPluginStatus } from "@0codeai/zerocode-plugin/tui"
 import type { BuiltinTuiPlugin } from "../builtins"
 import { useTerminalDimensions } from "@opentui/solid"
 import { fileURLToPath } from "url"

@@ -1,9 +1,9 @@
 import { EOL } from "os"
 import { Effect } from "effect"
-import { Catalog } from "@zerocode-ai/core/catalog"
-import { LocationServiceMap, locationServiceMapLayer } from "@zerocode-ai/core/location-services"
-import { Location } from "@zerocode-ai/core/location"
-import { AbsolutePath } from "@zerocode-ai/core/schema"
+import { Catalog } from "@0codeai/zerocode-core/catalog"
+import { LocationServiceMap, locationServiceMapLayer } from "@0codeai/zerocode-core/location-services"
+import { Location } from "@0codeai/zerocode-core/location"
+import { AbsolutePath } from "@0codeai/zerocode-core/schema"
 import { effectCmd } from "../../effect-cmd"
 
 export const V2Command = effectCmd({

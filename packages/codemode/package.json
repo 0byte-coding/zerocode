@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@zerocode-ai/codemode",
+  "name": "@0codeai/zerocode-codemode",
   "version": "1.17.18",
   "description": "Effect-native confined code execution over schema-described tools",
   "private": true,

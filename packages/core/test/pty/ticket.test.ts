@@ -1,9 +1,9 @@
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { PtyID } from "@zerocode-ai/core/pty/schema"
-import { PtyTicket } from "@zerocode-ai/core/pty/ticket"
-import { WorkspaceV2 } from "@zerocode-ai/core/workspace"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { PtyID } from "@0codeai/zerocode-core/pty/schema"
+import { PtyTicket } from "@0codeai/zerocode-core/pty/ticket"
+import { WorkspaceV2 } from "@0codeai/zerocode-core/workspace"
 import { testEffect } from "../lib/effect"
 
 const it = testEffect(LayerNode.compile(PtyTicket.node))

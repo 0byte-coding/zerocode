@@ -1,4 +1,4 @@
-import { createSimpleContext } from "@zerocode-ai/ui/context"
+import { createSimpleContext } from "@0codeai/zerocode-ui/context"
 import { type Accessor, createMemo } from "solid-js"
 import { type ServerSDK, useServerSDK } from "./server-sdk"
 

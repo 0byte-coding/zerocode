@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "@zerocode-ai/script",
+  "name": "@0codeai/zerocode-script",
   "license": "MIT",
   "dependencies": {
     "semver": "^7.6.3"

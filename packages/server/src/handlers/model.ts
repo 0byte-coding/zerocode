@@ -1,4 +1,4 @@
-import { Catalog } from "@zerocode-ai/core/catalog"
+import { Catalog } from "@0codeai/zerocode-core/catalog"
 import { Effect } from "effect"
 import { HttpApiBuilder } from "effect/unstable/httpapi"
 import { Api } from "../api"

@@ -17,7 +17,7 @@ import type {
   SessionV2Info,
   SkillV2Info,
   V2Event,
-} from "@zerocode-ai/sdk/v2"
+} from "@0codeai/zerocode-sdk/v2"
 import { createStore, produce } from "solid-js/store"
 import { createSimpleContext } from "./helper"
 import { useSDK } from "./sdk"

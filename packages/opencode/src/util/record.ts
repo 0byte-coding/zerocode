@@ -1,1 +1,1 @@
-export * from "@zerocode-ai/tui/util/record"
+export * from "@0codeai/zerocode-tui/util/record"

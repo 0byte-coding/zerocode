@@ -1,5 +1,5 @@
-import { Skill } from "@zerocode-ai/schema/skill"
-import { Location } from "@zerocode-ai/schema/location"
+import { Skill } from "@0codeai/zerocode-schema/skill"
+import { Location } from "@0codeai/zerocode-schema/location"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"
 import { LocationQuery, locationQueryOpenApi } from "./location"

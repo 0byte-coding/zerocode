@@ -2,12 +2,12 @@ import { expect, test } from "bun:test"
 import { Effect } from "effect"
 import * as DateTime from "effect/DateTime"
 import { SessionID } from "../../src/session/schema"
-import { EventV2 } from "@zerocode-ai/core/event"
-import { ModelV2 } from "@zerocode-ai/core/model"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
-import { SessionEvent } from "@zerocode-ai/core/session/event"
-import { SessionMessageUpdater } from "@zerocode-ai/core/session/message-updater"
-import { SessionMessage } from "@zerocode-ai/core/session/message"
+import { EventV2 } from "@0codeai/zerocode-core/event"
+import { ModelV2 } from "@0codeai/zerocode-core/model"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
+import { SessionEvent } from "@0codeai/zerocode-core/session/event"
+import { SessionMessageUpdater } from "@0codeai/zerocode-core/session/message-updater"
+import { SessionMessage } from "@0codeai/zerocode-core/session/message"
 
 test.skip("step snapshots carry over to assistant messages", () => {
   const state: SessionMessageUpdater.MemoryState = { messages: [] }

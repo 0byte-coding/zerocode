@@ -1,5 +1,5 @@
 import { describe, expect } from "bun:test"
-import { State } from "@zerocode-ai/core/state"
+import { State } from "@0codeai/zerocode-core/state"
 import { Deferred, Effect, Exit, Fiber, Layer, Scope } from "effect"
 import { testEffect } from "./lib/effect"
 

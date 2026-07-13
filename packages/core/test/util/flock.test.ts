@@ -3,8 +3,8 @@ import fs from "fs/promises"
 import { spawn } from "child_process"
 import path from "path"
 import os from "os"
-import { Flock } from "@zerocode-ai/core/util/flock"
-import { Hash } from "@zerocode-ai/core/util/hash"
+import { Flock } from "@0codeai/zerocode-core/util/flock"
+import { Hash } from "@0codeai/zerocode-core/util/hash"
 
 type Msg = {
   key: string

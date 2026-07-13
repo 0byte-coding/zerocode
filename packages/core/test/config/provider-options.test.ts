@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import { ConfigProviderOptionsV1 } from "@zerocode-ai/core/v1/config/provider-options"
+import { ConfigProviderOptionsV1 } from "@0codeai/zerocode-core/v1/config/provider-options"
 
 describe("ConfigProviderOptionsV1", () => {
   test("keeps raw provider and request options unchanged", () => {

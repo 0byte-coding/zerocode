@@ -1,19 +1,19 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { httpClient } from "@zerocode-ai/core/effect/app-node-platform"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { httpClient } from "@0codeai/zerocode-core/effect/app-node-platform"
 import { Effect, Layer, Schema, Context, Stream } from "effect"
-import { serviceUse } from "@zerocode-ai/core/effect/service-use"
+import { serviceUse } from "@0codeai/zerocode-core/effect/service-use"
 import { HttpClient, HttpClientRequest, HttpClientResponse } from "effect/unstable/http"
 import { withTransientReadRetry } from "@/util/effect-http-client"
 import { errorMessage } from "@/util/error"
 import { ChildProcess } from "effect/unstable/process"
-import { AppProcess } from "@zerocode-ai/core/process"
+import { AppProcess } from "@0codeai/zerocode-core/process"
 import path from "path"
-import { makeRuntime } from "@zerocode-ai/core/effect/runtime"
+import { makeRuntime } from "@0codeai/zerocode-core/effect/runtime"
 import semver from "semver"
-import { InstallationChannel, InstallationVersion } from "@zerocode-ai/core/installation/version"
-import { NpmConfig } from "@zerocode-ai/core/npm-config"
-import { InstallationEvent } from "@zerocode-ai/schema/installation-event"
+import { InstallationChannel, InstallationVersion } from "@0codeai/zerocode-core/installation/version"
+import { NpmConfig } from "@0codeai/zerocode-core/npm-config"
+import { InstallationEvent } from "@0codeai/zerocode-schema/installation-event"
 
 export type Method = "curl" | "npm" | "yarn" | "pnpm" | "bun" | "brew" | "scoop" | "choco" | "unknown"
 
@@ -123,8 +123,8 @@ const layer: Layer.Layer<Service, never, HttpClient.HttpClient | AppProcess.Serv
     )
 
     const getBrewFormula = Effect.fnUntraced(function* () {
-      const tapFormula = yield* text(["brew", "list", "--formula", "anomalyco/tap/opencode"])
-      if (tapFormula.includes("opencode")) return "anomalyco/tap/opencode"
+      const tapFormula = yield* text(["brew", "list", "--formula", "0byte-coding/tap/opencode"])
+      if (tapFormula.includes("opencode")) return "0byte-coding/tap/opencode"
       const coreFormula = yield* text(["brew", "list", "--formula", "opencode"])
       if (coreFormula.includes("opencode")) return "opencode"
       return "opencode"
@@ -255,7 +255,7 @@ const layer: Layer.Layer<Service, never, HttpClient.HttpClient | AppProcess.Serv
         }
 
         const response = yield* httpOk.execute(
-          HttpClientRequest.get("https://api.github.com/repos/anomalyco/opencode/releases/latest").pipe(
+          HttpClientRequest.get("https://api.github.com/repos/0byte-coding/zerocode/releases/latest").pipe(
             HttpClientRequest.acceptJson,
           ),
         )
@@ -281,12 +281,12 @@ const layer: Layer.Layer<Service, never, HttpClient.HttpClient | AppProcess.Serv
             const formula = yield* getBrewFormula()
             const env = { HOMEBREW_NO_AUTO_UPDATE: "1" }
             if (formula.includes("/")) {
-              const tap = yield* run(["brew", "tap", "anomalyco/tap"], { env })
+              const tap = yield* run(["brew", "tap", "0byte-coding/tap"], { env })
               if (tap.code !== 0) {
                 upgradeResult = tap
                 break
               }
-              const repo = yield* text(["brew", "--repo", "anomalyco/tap"])
+              const repo = yield* text(["brew", "--repo", "0byte-coding/tap"])
               const dir = repo.trim()
               if (dir) {
                 const pull = yield* run(["git", "pull", "--ff-only"], { cwd: dir, env })

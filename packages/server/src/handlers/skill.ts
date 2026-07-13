@@ -1,4 +1,4 @@
-import { SkillV2 } from "@zerocode-ai/core/skill"
+import { SkillV2 } from "@0codeai/zerocode-core/skill"
 import { HttpApiBuilder } from "effect/unstable/httpapi"
 import { Api } from "../api"
 import { response } from "../location"

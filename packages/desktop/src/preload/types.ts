@@ -1,6 +1,6 @@
-import type { DesktopMenuAction } from "@zerocode-ai/app/desktop-menu"
-import type { WslServersPlatform } from "@zerocode-ai/app/wsl/types"
-import type { UpdaterState } from "@zerocode-ai/app/updater"
+import type { DesktopMenuAction } from "@0codeai/zerocode-app/desktop-menu"
+import type { WslServersPlatform } from "@0codeai/zerocode-app/wsl/types"
+import type { UpdaterState } from "@0codeai/zerocode-app/updater"
 export type {
   WslDistroProbe,
   WslInstalledDistro,
@@ -13,7 +13,7 @@ export type {
   WslServerRuntime,
   WslServersEvent,
   WslServersState,
-} from "@zerocode-ai/app/wsl/types"
+} from "@0codeai/zerocode-app/wsl/types"
 
 export type ServerReadyData = {
   url: string

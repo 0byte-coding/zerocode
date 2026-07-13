@@ -1,5 +1,5 @@
-import { Session } from "@zerocode-ai/schema/session"
-import { SessionMessage } from "@zerocode-ai/schema/session-message"
+import { Session } from "@0codeai/zerocode-schema/session"
+import { SessionMessage } from "@0codeai/zerocode-schema/session-message"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"
 import { InvalidCursorError, SessionNotFoundError, UnknownError } from "../errors"

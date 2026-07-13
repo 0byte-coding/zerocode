@@ -1,9 +1,9 @@
 import { Component, For, Match, Show, Switch } from "solid-js"
-import { FileIcon } from "@zerocode-ai/ui/file-icon"
-import { Icon } from "@zerocode-ai/ui/icon"
-import { Tag } from "@zerocode-ai/ui/v2/badge-v2"
-import { KeybindV2 } from "@zerocode-ai/ui/v2/keybind-v2"
-import { getDirectory, getFilename } from "@zerocode-ai/core/util/path"
+import { FileIcon } from "@0codeai/zerocode-ui/file-icon"
+import { Icon } from "@0codeai/zerocode-ui/icon"
+import { Tag } from "@0codeai/zerocode-ui/v2/badge-v2"
+import { KeybindV2 } from "@0codeai/zerocode-ui/v2/keybind-v2"
+import { getDirectory, getFilename } from "@0codeai/zerocode-core/util/path"
 
 export type AtOption =
   | { type: "agent"; name: string; display: string }

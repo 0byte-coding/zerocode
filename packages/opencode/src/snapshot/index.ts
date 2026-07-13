@@ -1,15 +1,15 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { Cause, Duration, Effect, Layer, Schedule, Schema, Semaphore, Context } from "effect"
 import { ChildProcess, ChildProcessSpawner } from "effect/unstable/process"
 import { formatPatch, structuredPatch } from "diff"
 import path from "path"
-import { AppProcess } from "@zerocode-ai/core/process"
+import { AppProcess } from "@0codeai/zerocode-core/process"
 import { InstanceState } from "@/effect/instance-state"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
-import { Hash } from "@zerocode-ai/core/util/hash"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
+import { Hash } from "@0codeai/zerocode-core/util/hash"
 import { Config } from "@/config/config"
-import { Global } from "@zerocode-ai/core/global"
-import { Info } from "@zerocode-ai/schema/file-diff"
+import { Global } from "@0codeai/zerocode-core/global"
+import { Info } from "@0codeai/zerocode-schema/file-diff"
 
 export const Patch = Schema.Struct({
   hash: Schema.String,

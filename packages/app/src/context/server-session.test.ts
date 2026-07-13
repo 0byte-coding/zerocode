@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test"
-import type { retry } from "@zerocode-ai/core/util/retry"
-import type { Message, OpencodeClient, Part, Session } from "@zerocode-ai/sdk/v2/client"
+import type { retry } from "@0codeai/zerocode-core/util/retry"
+import type { Message, OpencodeClient, Part, Session } from "@0codeai/zerocode-sdk/v2/client"
 import { createServerSession } from "./server-session"
 
 const session = (id: string, parentID?: string): Session => ({

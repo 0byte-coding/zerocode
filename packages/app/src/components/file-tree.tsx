@@ -1,8 +1,8 @@
 import { useFile } from "@/context/file"
 import { encodeFilePath } from "@/context/file/path"
-import { Collapsible } from "@zerocode-ai/ui/collapsible"
-import { FileIcon } from "@zerocode-ai/ui/file-icon"
-import { Icon } from "@zerocode-ai/ui/icon"
+import { Collapsible } from "@0codeai/zerocode-ui/collapsible"
+import { FileIcon } from "@0codeai/zerocode-ui/file-icon"
+import { Icon } from "@0codeai/zerocode-ui/icon"
 import {
   createEffect,
   createMemo,
@@ -17,7 +17,7 @@ import {
   type ParentProps,
 } from "solid-js"
 import { Dynamic } from "solid-js/web"
-import type { FileNode } from "@zerocode-ai/sdk/v2"
+import type { FileNode } from "@0codeai/zerocode-sdk/v2"
 
 const MAX_DEPTH = 128
 

@@ -1,5 +1,5 @@
 import { AwsClient } from "aws4fetch"
-import { lazy } from "@zerocode-ai/core/util/lazy"
+import { lazy } from "@0codeai/zerocode-core/util/lazy"
 
 export namespace Storage {
   export interface Adapter {

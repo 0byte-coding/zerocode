@@ -89,19 +89,19 @@ beforeAll(async () => {
     useSearchParams: () => [search, () => undefined],
   }))
 
-  mock.module("@zerocode-ai/sdk/v2/client", () => ({
+  mock.module("@0codeai/zerocode-sdk/v2/client", () => ({
     createOpencodeClient: (input: { directory: string }) => {
       createdClients.push(input.directory)
       return clientFor(input.directory)
     },
   }))
 
-  mock.module("@zerocode-ai/ui/toast", () => ({
+  mock.module("@0codeai/zerocode-ui/toast", () => ({
     Toast: { Region: () => null },
     showToast: () => 0,
   }))
 
-  mock.module("@zerocode-ai/core/util/encode", () => ({
+  mock.module("@0codeai/zerocode-core/util/encode", () => ({
     base64Encode: (value: string) => value,
   }))
 

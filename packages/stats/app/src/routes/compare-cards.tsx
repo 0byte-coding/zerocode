@@ -1,4 +1,4 @@
-import { ProviderIcon } from "@zerocode-ai/ui/provider-icon"
+import { ProviderIcon } from "@0codeai/zerocode-ui/provider-icon"
 import { For, Show } from "solid-js"
 import { catalogSlug, formatCatalogLabName, type ModelCatalogEntry } from "./model-catalog"
 

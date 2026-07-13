@@ -1,4 +1,4 @@
-import { PermissionV1 } from "@zerocode-ai/core/v1/permission"
+import { PermissionV1 } from "@0codeai/zerocode-core/v1/permission"
 import type { Agent } from "./agent"
 
 /**

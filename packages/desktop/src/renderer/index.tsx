@@ -13,8 +13,8 @@ import {
   ServerConnection,
   useCommand,
   useWslServers,
-} from "@zerocode-ai/app"
-import type { UpdaterState } from "@zerocode-ai/app/updater"
+} from "@0codeai/zerocode-app"
+import type { UpdaterState } from "@0codeai/zerocode-app/updater"
 import * as Sentry from "@sentry/solid"
 import type { AsyncStorage } from "@solid-primitives/storage"
 import { createMemoryHistory, MemoryRouter, type BaseRouterProps } from "@solidjs/router"
@@ -27,8 +27,8 @@ import { DesktopFirstLaunchOnboarding } from "./onboarding"
 import { resetZoom, setPinchZoomEnabled, webviewZoom, zoomIn, zoomOut } from "./webview-zoom"
 import { availableStartupServer, readyWslConnections } from "./wsl/connections"
 import "./styles.css"
-import { Splash } from "@zerocode-ai/ui/logo"
-import { useTheme } from "@zerocode-ai/ui/theme/context"
+import { Splash } from "@0codeai/zerocode-ui/logo"
+import { useTheme } from "@0codeai/zerocode-ui/theme/context"
 
 const root = document.getElementById("root")
 if (import.meta.env.DEV && !(root instanceof HTMLElement)) {

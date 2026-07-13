@@ -1,7 +1,7 @@
 import path from "path"
 import { writeHeapSnapshot } from "node:v8"
-import { Flag } from "@zerocode-ai/core/flag/flag"
-import { Global } from "@zerocode-ai/core/global"
+import { Flag } from "@0codeai/zerocode-core/flag/flag"
+import { Global } from "@0codeai/zerocode-core/global"
 const MINUTE = 60_000
 const LIMIT = 2 * 1024 * 1024 * 1024
 

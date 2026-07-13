@@ -1,4 +1,4 @@
-import type { OpenCodeEventEncoded } from "@zerocode-ai/protocol/groups/event"
+import type { OpenCodeEventEncoded } from "@0codeai/zerocode-protocol/groups/event"
 
 export type JsonValue =
   | null

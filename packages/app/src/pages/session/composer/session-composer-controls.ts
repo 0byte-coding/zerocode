@@ -1,4 +1,4 @@
-import { base64Encode } from "@zerocode-ai/core/util/encode"
+import { base64Encode } from "@0codeai/zerocode-core/util/encode"
 import { createQuery } from "@tanstack/solid-query"
 import { useNavigate, useSearchParams } from "@solidjs/router"
 import { type Accessor, createMemo } from "solid-js"

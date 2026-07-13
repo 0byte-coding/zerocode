@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import type { WslServersState } from "@zerocode-ai/app/wsl/types"
+import type { WslServersState } from "@0codeai/zerocode-app/wsl/types"
 import { availableStartupServer, readyWslConnections } from "./connections"
 
 const state = (kind: "starting" | "ready" | "failed" | "stopped"): WslServersState => ({

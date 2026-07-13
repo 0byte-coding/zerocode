@@ -1,9 +1,9 @@
 import { createEffect, createMemo, createSignal, on, onCleanup, Show } from "solid-js"
-import type { SessionStatus } from "@zerocode-ai/sdk/v2/client"
-import { useI18n } from "@zerocode-ai/ui/context/i18n"
-import { Card } from "@zerocode-ai/ui/card"
-import { Tooltip } from "@zerocode-ai/ui/tooltip"
-import { Spinner } from "@zerocode-ai/ui/spinner"
+import type { SessionStatus } from "@0codeai/zerocode-sdk/v2/client"
+import { useI18n } from "@0codeai/zerocode-ui/context/i18n"
+import { Card } from "@0codeai/zerocode-ui/card"
+import { Tooltip } from "@0codeai/zerocode-ui/tooltip"
+import { Spinner } from "@0codeai/zerocode-ui/spinner"
 
 export function SessionRetry(props: { status: SessionStatus; show?: boolean }) {
   const i18n = useI18n()

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import type { PartGroup } from "@zerocode-ai/session-ui/message-part"
+import type { PartGroup } from "@0codeai/zerocode-session-ui/message-part"
 import { reuseTimelineRows } from "./row-reconciliation"
 import { TimelineRow } from "./timeline-row"
 

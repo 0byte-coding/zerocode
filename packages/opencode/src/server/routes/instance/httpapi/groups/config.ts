@@ -1,5 +1,5 @@
 import { Config } from "@/config/config"
-import { ConfigV1 } from "@zerocode-ai/core/v1/config/config"
+import { ConfigV1 } from "@0codeai/zerocode-core/v1/config/config"
 import { Provider } from "@/provider/provider"
 import { HttpApi, HttpApiEndpoint, HttpApiError, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"
 import { Authorization } from "../middleware/authorization"

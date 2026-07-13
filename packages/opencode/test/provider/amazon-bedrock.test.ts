@@ -1,17 +1,17 @@
 import { afterEach, describe, expect, test } from "bun:test"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { Effect } from "effect"
 import path from "path"
 import { unlink } from "fs/promises"
-import { Global } from "@zerocode-ai/core/global"
+import { Global } from "@0codeai/zerocode-core/global"
 import { Filesystem } from "@/util/filesystem"
 import { Env } from "../../src/env"
 import { Provider } from "@/provider/provider"
 
 import { disposeAllInstances } from "../fixture/fixture"
 import { testEffect } from "../lib/effect"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
-import { ModelV2 } from "@zerocode-ai/core/model"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
+import { ModelV2 } from "@0codeai/zerocode-core/model"
 
 const it = testEffect(LayerNode.compile(LayerNode.group([Provider.node, Env.node])))
 

@@ -1,7 +1,7 @@
 import { Effect } from "effect"
 import { effectCmd } from "../effect-cmd"
 import { withNetworkOptions, resolveNetworkOptions } from "../network"
-import { Flag } from "@zerocode-ai/core/flag/flag"
+import { Flag } from "@0codeai/zerocode-core/flag/flag"
 
 export const ServeCommand = effectCmd({
   command: "serve",

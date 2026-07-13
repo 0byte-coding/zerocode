@@ -6,7 +6,7 @@
  */
 export * as WriteTool from "./write"
 
-import { ToolFailure } from "@zerocode-ai/llm"
+import { ToolFailure } from "@0codeai/zerocode-llm"
 import { Effect, Layer, Schema } from "effect"
 import { makeLocationNode } from "../effect/app-node"
 import { FileMutation } from "../file-mutation"

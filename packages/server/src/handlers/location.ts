@@ -1,4 +1,4 @@
-import { Location } from "@zerocode-ai/core/location"
+import { Location } from "@0codeai/zerocode-core/location"
 import { Effect } from "effect"
 import { HttpApiBuilder } from "effect/unstable/httpapi"
 import { Api } from "../api"

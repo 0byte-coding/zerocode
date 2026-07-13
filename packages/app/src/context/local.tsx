@@ -1,5 +1,5 @@
-import { createSimpleContext } from "@zerocode-ai/ui/context"
-import { base64Encode } from "@zerocode-ai/core/util/encode"
+import { createSimpleContext } from "@0codeai/zerocode-ui/context"
+import { base64Encode } from "@0codeai/zerocode-core/util/encode"
 import { useParams } from "@solidjs/router"
 import { batch, createEffect, createMemo, startTransition } from "solid-js"
 import { createStore } from "solid-js/store"

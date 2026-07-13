@@ -1,6 +1,6 @@
 import { Layer, ManagedRuntime } from "effect"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 
 import { Plugin } from "@/plugin"
 import { LSP } from "@/lsp/lsp"
@@ -9,8 +9,8 @@ import { ShareNext } from "@/share/share-next"
 import { Vcs } from "@/project/vcs"
 import { Snapshot } from "@/snapshot"
 import { Config } from "@/config/config"
-import * as Observability from "@zerocode-ai/core/observability"
-import { memoMap } from "@zerocode-ai/core/effect/memo-map"
+import * as Observability from "@0codeai/zerocode-core/observability"
+import { memoMap } from "@0codeai/zerocode-core/effect/memo-map"
 
 export const BootstrapLayer = AppNodeBuilder.build(
   LayerNode.group([Config.node, Plugin.node, ShareNext.node, Format.node, LSP.node, Vcs.node, Snapshot.node]),

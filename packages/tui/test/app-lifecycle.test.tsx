@@ -1,9 +1,9 @@
 import { expect, mock, test } from "bun:test"
-import type { TuiPluginApi } from "@zerocode-ai/plugin/tui"
+import type { TuiPluginApi } from "@0codeai/zerocode-plugin/tui"
 import { createTestRenderer } from "@opentui/core/testing"
 import { Effect } from "effect"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { Global } from "@zerocode-ai/core/global"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { Global } from "@0codeai/zerocode-core/global"
 import { createTuiResolvedConfig } from "./fixture/tui-runtime"
 import { createEventSource, createFetch, directory, json } from "./fixture/tui-sdk"
 

@@ -1,5 +1,5 @@
 {
-  "name": "@zerocode-ai/web",
+  "name": "@0codeai/zerocode-web",
   "type": "module",
   "license": "MIT",
   "version": "1.17.18",
@@ -36,7 +36,7 @@
     "vscode-languageserver-types": "3.17.5"
   },
   "devDependencies": {
-    "zerocode": "workspace:*",
+    "@0codeai/zerocode": "workspace:*",
     "@types/node": "catalog:",
     "@astrojs/check": "0.9.6",
     "typescript": "catalog:"

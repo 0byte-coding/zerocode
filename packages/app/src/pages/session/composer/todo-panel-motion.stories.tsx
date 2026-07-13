@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { createEffect, createMemo, onCleanup } from "solid-js"
 import { createStore } from "solid-js/store"
-import type { Todo } from "@zerocode-ai/sdk/v2"
+import type { Todo } from "@0codeai/zerocode-sdk/v2"
 import { useServerSync } from "@/context/global-sync"
 import { PromptInput } from "@/components/prompt-input"
 import { usePrompt } from "@/context/prompt"

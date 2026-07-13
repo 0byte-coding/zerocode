@@ -1,15 +1,15 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { llmClient } from "@zerocode-ai/core/effect/app-node-platform"
-import { PermissionV1 } from "@zerocode-ai/core/v1/permission"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { llmClient } from "@0codeai/zerocode-core/effect/app-node-platform"
+import { PermissionV1 } from "@0codeai/zerocode-core/v1/permission"
 import { Provider } from "@/provider/provider"
-import { SessionV1 } from "@zerocode-ai/core/v1/session"
-import { serviceUse } from "@zerocode-ai/core/effect/service-use"
+import { SessionV1 } from "@0codeai/zerocode-core/v1/session"
+import { serviceUse } from "@0codeai/zerocode-core/effect/service-use"
 import { Context, Effect, Layer } from "effect"
 import * as Stream from "effect/Stream"
 import { streamText, wrapLanguageModel, type ModelMessage, type Tool } from "ai"
-import type { LLMEvent } from "@zerocode-ai/llm"
-import { LLMClient } from "@zerocode-ai/llm/route"
-import type { LLMClientService } from "@zerocode-ai/llm/route"
+import type { LLMEvent } from "@0codeai/zerocode-llm"
+import { LLMClient } from "@0codeai/zerocode-llm/route"
+import type { LLMClientService } from "@0codeai/zerocode-llm/route"
 import { GitLabWorkflowLanguageModel } from "gitlab-ai-provider"
 import { ProviderTransform } from "@/provider/transform"
 import { Config } from "@/config/config"
@@ -18,7 +18,7 @@ import type { MessageV2 } from "./message-v2"
 import { Plugin } from "@/plugin"
 import { Permission } from "@/permission"
 import { EventV2Bridge } from "@/event-v2-bridge"
-import { EventV2 } from "@zerocode-ai/core/event"
+import { EventV2 } from "@0codeai/zerocode-core/event"
 import { Wildcard } from "@/util/wildcard"
 import { SessionID } from "@/session/schema"
 import { Auth } from "@/auth"
@@ -221,7 +221,7 @@ const live: Layer.Layer<
           })
         : undefined
 
-      // Runtime seam: native is an opt-in adapter over @zerocode-ai/llm. It
+      // Runtime seam: native is an opt-in adapter over @0codeai/zerocode-llm. It
       // either returns a ready LLMEvent stream or a concrete fallback reason.
       if (flags.experimentalNativeLlm) {
         const native = LLMNativeRuntime.stream({

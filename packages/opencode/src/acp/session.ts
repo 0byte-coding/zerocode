@@ -1,8 +1,8 @@
 import type { McpServer } from "@agentclientprotocol/sdk"
-import type { Message, Part } from "@zerocode-ai/sdk/v2"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
-import { ModelV2 } from "@zerocode-ai/core/model"
+import type { Message, Part } from "@0codeai/zerocode-sdk/v2"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
+import { ModelV2 } from "@0codeai/zerocode-core/model"
 import { Context, Effect, Layer, Ref } from "effect"
 import * as ACPError from "./error"
 

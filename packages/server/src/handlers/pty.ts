@@ -1,19 +1,19 @@
-import { Pty } from "@zerocode-ai/core/pty"
-import { PtyProtocol } from "@zerocode-ai/core/pty/protocol"
-import { PtyTicket } from "@zerocode-ai/core/pty/ticket"
-import { Location } from "@zerocode-ai/core/location"
+import { Pty } from "@0codeai/zerocode-core/pty"
+import { PtyProtocol } from "@0codeai/zerocode-core/pty/protocol"
+import { PtyTicket } from "@0codeai/zerocode-core/pty/ticket"
+import { Location } from "@0codeai/zerocode-core/location"
 import { Effect, Queue } from "effect"
 import { HttpServerRequest, HttpServerResponse } from "effect/unstable/http"
 import { HttpApiBuilder, HttpApiSchema } from "effect/unstable/httpapi"
 import * as Socket from "effect/unstable/socket/Socket"
 import { Api } from "../api"
 import { CorsConfig, isAllowedRequestOrigin } from "../cors"
-import { ForbiddenError, PtyNotFoundError } from "@zerocode-ai/protocol/errors"
+import { ForbiddenError, PtyNotFoundError } from "@0codeai/zerocode-protocol/errors"
 import {
   PTY_CONNECT_TICKET_QUERY,
   PTY_CONNECT_TOKEN_HEADER,
   PTY_CONNECT_TOKEN_HEADER_VALUE,
-} from "@zerocode-ai/protocol/groups/pty"
+} from "@0codeai/zerocode-protocol/groups/pty"
 import { response } from "../location"
 import { PtyEnvironment } from "../pty-environment"
 

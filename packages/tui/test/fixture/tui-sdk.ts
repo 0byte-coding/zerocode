@@ -1,4 +1,4 @@
-import type { GlobalEvent } from "@zerocode-ai/sdk/v2"
+import type { GlobalEvent } from "@0codeai/zerocode-sdk/v2"
 import type { EventSource } from "../../src/context/sdk"
 
 export const worktree = "/tmp/opencode"

@@ -1,4 +1,4 @@
-import { CommandV2 } from "@zerocode-ai/core/command"
+import { CommandV2 } from "@0codeai/zerocode-core/command"
 import { HttpApiBuilder } from "effect/unstable/httpapi"
 import { Api } from "../api"
 import { response } from "../location"

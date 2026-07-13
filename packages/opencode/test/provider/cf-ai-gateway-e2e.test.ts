@@ -13,8 +13,8 @@ import { createAiGateway } from "ai-gateway-provider"
 import { createUnified } from "ai-gateway-provider/providers/unified"
 import { ProviderTransform } from "@/provider/transform"
 import type * as Provider from "@/provider/provider"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
-import { ModelV2 } from "@zerocode-ai/core/model"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
+import { ModelV2 } from "@0codeai/zerocode-core/model"
 
 type Captured = { url: string; outerBody: unknown }
 type ProviderOptions = Record<string, Record<string, JSONValue>>

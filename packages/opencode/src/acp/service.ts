@@ -29,9 +29,9 @@ import {
   type SetSessionModeRequest,
   type SetSessionModeResponse,
 } from "@agentclientprotocol/sdk"
-import { InstallationVersion } from "@zerocode-ai/core/installation/version"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import type { AssistantMessage, Message, OpencodeClient, SessionMessageResponse } from "@zerocode-ai/sdk/v2"
+import { InstallationVersion } from "@0codeai/zerocode-core/installation/version"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import type { AssistantMessage, Message, OpencodeClient, SessionMessageResponse } from "@0codeai/zerocode-sdk/v2"
 import { Context, Effect, Layer, ManagedRuntime } from "effect"
 import * as ACPError from "./error"
 import { buildConfigOptions, parseModelSelection } from "./config-option"
@@ -41,8 +41,8 @@ import { ACPEvent } from "./event"
 import { ACPSession } from "./session"
 import { UsageService } from "./usage"
 import { ACPProfile } from "./profile"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
-import { ModelV2 } from "@zerocode-ai/core/model"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
+import { ModelV2 } from "@0codeai/zerocode-core/model"
 import { Provider } from "@/provider/provider"
 import type { Command } from "@/command"
 

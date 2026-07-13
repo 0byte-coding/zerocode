@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@zerocode-ai/stats-app",
+  "name": "@0codeai/zerocode-stats-app",
   "version": "1.17.18",
   "private": true,
   "type": "module",
@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@ibm/plex": "6.4.1",
-    "@zerocode-ai/stats-core": "workspace:*",
-    "@zerocode-ai/ui": "workspace:*",
+    "@0codeai/zerocode-stats-core": "workspace:*",
+    "@0codeai/zerocode-ui": "workspace:*",
     "@solidjs/meta": "catalog:",
     "@solidjs/router": "catalog:",
     "@solidjs/start": "catalog:",

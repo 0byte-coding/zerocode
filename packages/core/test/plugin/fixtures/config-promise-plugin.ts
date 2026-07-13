@@ -1,4 +1,4 @@
-import { define } from "@zerocode-ai/plugin/v2/promise"
+import { define } from "@0codeai/zerocode-plugin/v2/promise"
 
 export default define({
   id: "config-promise-plugin",

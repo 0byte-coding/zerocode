@@ -1,5 +1,5 @@
-import { TuiConfig } from "@zerocode-ai/tui/config"
-import { isRecord } from "@zerocode-ai/tui/util/record"
+import { TuiConfig } from "@0codeai/zerocode-tui/config"
+import { isRecord } from "@0codeai/zerocode-tui/util/record"
 import { Filesystem } from "@/util/filesystem"
 import { Schema } from "effect"
 

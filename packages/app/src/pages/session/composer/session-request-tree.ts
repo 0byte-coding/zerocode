@@ -1,4 +1,4 @@
-import type { PermissionRequest, QuestionRequest, Session } from "@zerocode-ai/sdk/v2/client"
+import type { PermissionRequest, QuestionRequest, Session } from "@0codeai/zerocode-sdk/v2/client"
 
 function sessionTreeRequest<T>(
   session: Session[],

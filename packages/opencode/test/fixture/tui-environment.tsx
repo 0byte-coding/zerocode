@@ -4,7 +4,7 @@ import {
   TuiStartupProvider,
   TuiTerminalEnvironmentProvider,
   type TuiPaths,
-} from "@zerocode-ai/tui/context/runtime"
+} from "@0codeai/zerocode-tui/context/runtime"
 import type { ParentProps } from "solid-js"
 
 export function TestTuiContexts(

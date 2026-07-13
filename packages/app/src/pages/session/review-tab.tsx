@@ -1,12 +1,12 @@
 import { createEffect, onCleanup, type JSX } from "solid-js"
 import { makeEventListener } from "@solid-primitives/event-listener"
-import type { SnapshotFileDiff, VcsFileDiff } from "@zerocode-ai/sdk/v2"
-import { SessionReview } from "@zerocode-ai/session-ui/session-review"
+import type { SnapshotFileDiff, VcsFileDiff } from "@0codeai/zerocode-sdk/v2"
+import { SessionReview } from "@0codeai/zerocode-session-ui/session-review"
 import type {
   SessionReviewCommentActions,
   SessionReviewCommentDelete,
   SessionReviewCommentUpdate,
-} from "@zerocode-ai/session-ui/session-review"
+} from "@0codeai/zerocode-session-ui/session-review"
 import type { SelectedLineRange } from "@/context/file"
 import { useSDK } from "@/context/sdk"
 import { useLayout } from "@/context/layout"

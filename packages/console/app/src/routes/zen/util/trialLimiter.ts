@@ -1,7 +1,7 @@
-import { Database, eq, sql } from "@zerocode-ai/console-core/drizzle/index.js"
-import { IpTable } from "@zerocode-ai/console-core/schema/ip.sql.js"
+import { Database, eq, sql } from "@0codeai/zerocode-console-core/drizzle/index.js"
+import { IpTable } from "@0codeai/zerocode-console-core/schema/ip.sql.js"
 import { UsageInfo } from "./provider/provider"
-import { Subscription } from "@zerocode-ai/console-core/subscription.js"
+import { Subscription } from "@0codeai/zerocode-console-core/subscription.js"
 
 export function createTrialLimiter(trialProviders: string[] | undefined, ip: string) {
   if (!trialProviders) return

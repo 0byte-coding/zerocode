@@ -6,7 +6,7 @@ import type {
   ToolCallLocation,
   ToolCallUpdate,
 } from "@agentclientprotocol/sdk"
-import type { Event, OpencodeClient } from "@zerocode-ai/sdk/v2"
+import type { Event, OpencodeClient } from "@0codeai/zerocode-sdk/v2"
 import { applyPatch } from "diff"
 import { exists, readText } from "@/util/filesystem"
 import type { ACPSession } from "./session"

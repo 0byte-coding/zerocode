@@ -1,8 +1,8 @@
-import { Npm } from "@zerocode-ai/core/npm"
+import { Npm } from "@0codeai/zerocode-core/npm"
 import type { InstanceContext } from "../project/instance-context"
 import { Filesystem } from "@/util/filesystem"
 import { Process } from "@/util/process"
-import { which } from "@zerocode-ai/core/util/which"
+import { which } from "@0codeai/zerocode-core/util/which"
 
 export interface Context extends Pick<InstanceContext, "directory" | "worktree"> {
   experimentalOxfmt: boolean

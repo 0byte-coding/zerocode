@@ -1,10 +1,10 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { ConfigPermissionV1 } from "@zerocode-ai/core/v1/config/permission"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { ConfigPermissionV1 } from "@0codeai/zerocode-core/v1/config/permission"
 import { InstanceState } from "@/effect/instance-state"
-import { Wildcard } from "@zerocode-ai/core/util/wildcard"
+import { Wildcard } from "@0codeai/zerocode-core/util/wildcard"
 import { Deferred, Effect, Layer, Context } from "effect"
 import os from "os"
-import { PermissionV1 } from "@zerocode-ai/core/v1/permission"
+import { PermissionV1 } from "@0codeai/zerocode-core/v1/permission"
 import { EventV2Bridge } from "@/event-v2-bridge"
 
 export const Event = PermissionV1.Event

@@ -1,5 +1,5 @@
-import type { SnapshotFileDiff, VcsFileDiff } from "@zerocode-ai/sdk/v2"
-import type { Message } from "@zerocode-ai/sdk/v2/client"
+import type { SnapshotFileDiff, VcsFileDiff } from "@0codeai/zerocode-sdk/v2"
+import type { Message } from "@0codeai/zerocode-sdk/v2/client"
 
 type Diff = SnapshotFileDiff | VcsFileDiff
 

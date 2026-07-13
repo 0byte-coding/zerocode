@@ -1,5 +1,5 @@
 import { Types } from "effect"
-import { Model } from "@zerocode-ai/schema/model"
+import { Model } from "@0codeai/zerocode-schema/model"
 import { ProviderV2 } from "./provider"
 
 export const ID = Model.ID

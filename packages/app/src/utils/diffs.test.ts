@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test"
-import type { SnapshotFileDiff } from "@zerocode-ai/sdk/v2"
-import type { Message } from "@zerocode-ai/sdk/v2/client"
+import type { SnapshotFileDiff } from "@0codeai/zerocode-sdk/v2"
+import type { Message } from "@0codeai/zerocode-sdk/v2/client"
 import { diffs, message } from "./diffs"
 
 const item = {

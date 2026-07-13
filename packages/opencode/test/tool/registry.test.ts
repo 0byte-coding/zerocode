@@ -3,7 +3,7 @@ import path from "path"
 import fs from "fs/promises"
 import { fileURLToPath, pathToFileURL } from "url"
 import { Effect, Layer, Result, Schema } from "effect"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { ToolRegistry } from "@/tool/registry"
 import { Tool } from "@/tool/tool"
 import { disposeAllInstances, TestInstance } from "../fixture/fixture"
@@ -17,8 +17,8 @@ import { InstanceState } from "@/effect/instance-state"
 import { ToolJsonSchema } from "@/tool/json-schema"
 import { MessageID, SessionID } from "@/session/schema"
 import { RuntimeFlags } from "@/effect/runtime-flags"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
-import { ModelV2 } from "@zerocode-ai/core/model"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
+import { ModelV2 } from "@0codeai/zerocode-core/model"
 import { MCP } from "@/mcp"
 import type { Tool as MCPToolDef } from "@modelcontextprotocol/sdk/types.js"
 
@@ -357,7 +357,7 @@ describe("tool.registry", () => {
         const test = yield* TestInstance
         const opencode = path.join(test.directory, ".opencode")
         const customTools = path.join(opencode, "tools")
-        const plugin = path.join(opencode, "node_modules", "@zerocode-ai", "plugin")
+        const plugin = path.join(opencode, "node_modules", "@0codeai", "zerocode-plugin")
         yield* Effect.promise(() => fs.mkdir(path.join(plugin, "dist"), { recursive: true }))
         yield* Effect.promise(() => fs.mkdir(customTools, { recursive: true }))
         yield* Effect.promise(() =>
@@ -369,7 +369,7 @@ describe("tool.registry", () => {
         yield* Effect.promise(() =>
           Bun.write(
             path.join(plugin, "package.json"),
-            JSON.stringify({ name: "@zerocode-ai/plugin", type: "module", exports: { ".": "./dist/index.js" } }),
+            JSON.stringify({ name: "@0codeai/zerocode-plugin", type: "module", exports: { ".": "./dist/index.js" } }),
           ),
         )
         yield* Effect.promise(() =>
@@ -389,7 +389,7 @@ describe("tool.registry", () => {
           Bun.write(
             path.join(customTools, "addition.ts"),
             [
-              'import { tool } from "@zerocode-ai/plugin"',
+              'import { tool } from "@0codeai/zerocode-plugin"',
               "export default tool({",
               "  description: 'Use this tool to add two numbers and return their sum.',",
               "  args: {",
@@ -506,7 +506,7 @@ describe("tool.registry", () => {
           JSON.stringify({
             name: "custom-tools",
             dependencies: {
-              "@zerocode-ai/plugin": "^0.0.0",
+              "@0codeai/zerocode-plugin": "^0.0.0",
               cowsay: "^1.6.0",
             },
           }),
@@ -521,7 +521,7 @@ describe("tool.registry", () => {
             packages: {
               "": {
                 dependencies: {
-                  "@zerocode-ai/plugin": "^0.0.0",
+                  "@0codeai/zerocode-plugin": "^0.0.0",
                   cowsay: "^1.6.0",
                 },
               },

@@ -1,6 +1,6 @@
 import { z } from "zod"
 import { fn } from "./util/fn"
-import { Resource } from "@zerocode-ai/console-resource"
+import { Resource } from "@0codeai/zerocode-console-resource"
 import { BlackPlans } from "./schema/billing.sql"
 import { Subscription } from "./subscription"
 

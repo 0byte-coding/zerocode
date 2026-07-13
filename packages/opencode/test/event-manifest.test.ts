@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test"
-import { SessionEvent } from "@zerocode-ai/core/session/event"
-import { EventManifest as SchemaEventManifest } from "@zerocode-ai/schema/event-manifest"
+import { SessionEvent } from "@0codeai/zerocode-core/session/event"
+import { EventManifest as SchemaEventManifest } from "@0codeai/zerocode-schema/event-manifest"
 import { Todo } from "@/session/todo"
 import { EventManifest } from "@/event-manifest"
 

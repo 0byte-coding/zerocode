@@ -1,4 +1,4 @@
-import { Resource } from "@zerocode-ai/console-resource"
+import { Resource } from "@0codeai/zerocode-console-resource"
 
 async function login() {
   const url = Resource.SALESFORCE_INSTANCE_URL.value.replace(/\/$/, "")

@@ -1,7 +1,7 @@
 import { Component, createSignal, startTransition } from "solid-js"
-import { Dialog } from "@zerocode-ai/ui/v2/dialog-v2"
-import { TabsV2 } from "@zerocode-ai/ui/v2/tabs-v2"
-import { Icon } from "@zerocode-ai/ui/icon"
+import { Dialog } from "@0codeai/zerocode-ui/v2/dialog-v2"
+import { TabsV2 } from "@0codeai/zerocode-ui/v2/tabs-v2"
+import { Icon } from "@0codeai/zerocode-ui/icon"
 import { useLanguage } from "@/context/language"
 import { usePlatform } from "@/context/platform"
 import { SettingsGeneralV2 } from "./general"
@@ -10,7 +10,7 @@ import { SettingsProvidersV2 } from "./providers"
 import { SettingsModelsV2 } from "./models"
 import "./settings-v2.css"
 import { SettingsServersV2 } from "./servers"
-import { useDialog } from "@zerocode-ai/ui/context/dialog"
+import { useDialog } from "@0codeai/zerocode-ui/context/dialog"
 
 export const DialogSettings: Component<{
   sessionID?: string

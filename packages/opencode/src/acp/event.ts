@@ -7,7 +7,7 @@ import type {
   Part,
   SessionMessageResponse,
   ToolPart,
-} from "@zerocode-ai/sdk/v2"
+} from "@0codeai/zerocode-sdk/v2"
 import { Effect } from "effect"
 import { ACPSession } from "./session"
 import { ACPPermission } from "./permission"

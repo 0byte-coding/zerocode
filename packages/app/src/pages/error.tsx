@@ -1,12 +1,12 @@
-import { TextField } from "@zerocode-ai/ui/text-field"
+import { TextField } from "@0codeai/zerocode-ui/text-field"
 import * as Sentry from "@sentry/solid"
-import { Logo } from "@zerocode-ai/ui/logo"
-import { Button } from "@zerocode-ai/ui/button"
+import { Logo } from "@0codeai/zerocode-ui/logo"
+import { Button } from "@0codeai/zerocode-ui/button"
 import { Component, createSignal, onMount, Show } from "solid-js"
 import { createStore } from "solid-js/store"
 import { usePlatform } from "@/context/platform"
 import { useLanguage } from "@/context/language"
-import { Icon } from "@zerocode-ai/ui/icon"
+import { Icon } from "@0codeai/zerocode-ui/icon"
 import { errorDescriptionKey } from "./error-description"
 
 export type InitError = {

@@ -2,7 +2,7 @@ export * as Reference from "./reference"
 
 import { makeLocationNode } from "./effect/app-node"
 import { Context, Effect, Layer, Scope, Types } from "effect"
-import { Reference } from "@zerocode-ai/schema/reference"
+import { Reference } from "@0codeai/zerocode-schema/reference"
 import { Global } from "./global"
 import { EventV2 } from "./event"
 import { Repository } from "./repository"

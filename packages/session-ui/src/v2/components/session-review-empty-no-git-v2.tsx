@@ -1,6 +1,6 @@
-import { FileIcon } from "@zerocode-ai/ui/file-icon"
-import { useI18n } from "@zerocode-ai/ui/context/i18n"
-import { ButtonV2 } from "@zerocode-ai/ui/v2/button-v2"
+import { FileIcon } from "@0codeai/zerocode-ui/file-icon"
+import { useI18n } from "@0codeai/zerocode-ui/context/i18n"
+import { ButtonV2 } from "@0codeai/zerocode-ui/v2/button-v2"
 import "./session-review-v2.css"
 
 export type SessionReviewEmptyNoGitV2Props = {

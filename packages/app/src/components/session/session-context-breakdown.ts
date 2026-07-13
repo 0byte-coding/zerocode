@@ -1,4 +1,4 @@
-import type { Message, Part } from "@zerocode-ai/sdk/v2/client"
+import type { Message, Part } from "@0codeai/zerocode-sdk/v2/client"
 
 export type SessionContextBreakdownKey = "system" | "user" | "assistant" | "tool" | "other"
 

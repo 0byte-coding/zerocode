@@ -1,4 +1,4 @@
-import { sampledChecksum } from "@zerocode-ai/core/util/encode"
+import { sampledChecksum } from "@0codeai/zerocode-core/util/encode"
 import {
   areFilesEqual,
   areOptionsEqual,

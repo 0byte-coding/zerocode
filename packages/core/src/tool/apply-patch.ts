@@ -1,7 +1,7 @@
 export * as ApplyPatchTool from "./apply-patch"
 
-import { ToolFailure } from "@zerocode-ai/llm"
-import { FileDiff } from "@zerocode-ai/schema/file-diff"
+import { ToolFailure } from "@0codeai/zerocode-llm"
+import { FileDiff } from "@0codeai/zerocode-schema/file-diff"
 import { createTwoFilesPatch, diffLines } from "diff"
 import { Effect, Layer, Schema } from "effect"
 import { makeLocationNode } from "../effect/app-node"

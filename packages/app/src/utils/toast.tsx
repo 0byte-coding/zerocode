@@ -1,6 +1,6 @@
-import { Icon, type IconProps } from "@zerocode-ai/ui/icon"
-import { Toast, showToast as showLegacyToast, type ToastOptions, type ToastVariant } from "@zerocode-ai/ui/toast"
-import { ToastV2, showToastV2 } from "@zerocode-ai/ui/v2/toast-v2"
+import { Icon, type IconProps } from "@0codeai/zerocode-ui/icon"
+import { Toast, showToast as showLegacyToast, type ToastOptions, type ToastVariant } from "@0codeai/zerocode-ui/toast"
+import { ToastV2, showToastV2 } from "@0codeai/zerocode-ui/v2/toast-v2"
 
 let v2 = false
 

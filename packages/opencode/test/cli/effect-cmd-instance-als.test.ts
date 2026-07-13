@@ -1,6 +1,6 @@
 import { afterEach, expect } from "bun:test"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
 import { Effect } from "effect"
 import { fileURLToPath } from "url"
 import { InstanceRef } from "../../src/effect/instance-ref"

@@ -1,5 +1,5 @@
-import { getStatsHomeData } from "@zerocode-ai/stats-core/domain/home"
-import { runtime } from "@zerocode-ai/stats-core/runtime"
+import { getStatsHomeData } from "@0codeai/zerocode-stats-core/domain/home"
+import { runtime } from "@0codeai/zerocode-stats-core/runtime"
 import {
   canonicalFamilyComparisonPath,
   canonicalModelComparisonPath,

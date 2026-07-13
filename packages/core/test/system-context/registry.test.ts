@@ -1,8 +1,8 @@
 import { describe, expect } from "bun:test"
 import { Cause, Effect, Exit, Schema, Scope } from "effect"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { SystemContext } from "@zerocode-ai/core/system-context"
-import { SystemContextRegistry } from "@zerocode-ai/core/system-context/registry"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { SystemContext } from "@0codeai/zerocode-core/system-context"
+import { SystemContextRegistry } from "@0codeai/zerocode-core/system-context/registry"
 import { testEffect } from "../lib/effect"
 
 const entry = (key: string, text: string, sourceKey = key) => ({

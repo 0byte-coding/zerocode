@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-import { Script } from "@zerocode-ai/script"
+import { Script } from "@0codeai/zerocode-script"
 
 await import("./prebuild")
 

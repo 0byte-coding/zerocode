@@ -1,5 +1,5 @@
-import { base64Encode } from "@zerocode-ai/core/util/encode"
-import { createSimpleContext } from "@zerocode-ai/ui/context"
+import { base64Encode } from "@0codeai/zerocode-core/util/encode"
+import { createSimpleContext } from "@0codeai/zerocode-ui/context"
 import { useParams, useSearchParams } from "@solidjs/router"
 import { createMemo, createRoot, getOwner, onCleanup } from "solid-js"
 import { requireServerKey } from "@/utils/session-route"

@@ -1,4 +1,4 @@
-import type { TuiPluginApi, TuiSlotContext, TuiSlotMap, TuiSlotProps } from "@zerocode-ai/plugin/tui"
+import type { TuiPluginApi, TuiSlotContext, TuiSlotMap, TuiSlotProps } from "@0codeai/zerocode-plugin/tui"
 import { createSlot, createSolidSlotRegistry, type JSX, type SolidPlugin } from "@opentui/solid"
 import { createSignal } from "solid-js"
 import { isRecord } from "../util/record"

@@ -1,4 +1,4 @@
-import type { AssistantMessage, Part, Provider, UserMessage } from "@zerocode-ai/sdk/v2"
+import type { AssistantMessage, Part, Provider, UserMessage } from "@0codeai/zerocode-sdk/v2"
 import { Locale } from "./locale"
 import * as Model from "./model"
 

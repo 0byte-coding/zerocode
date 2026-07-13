@@ -1,1 +1,1 @@
-export * from "@zerocode-ai/tui/util/error"
+export * from "@0codeai/zerocode-tui/util/error"

@@ -1,10 +1,10 @@
-import { SessionMessage } from "@zerocode-ai/schema/session-message"
-import { SessionInput } from "@zerocode-ai/schema/session-input"
-import { PromptInput } from "@zerocode-ai/schema/prompt-input"
-import { Session } from "@zerocode-ai/schema/session"
-import { Project } from "@zerocode-ai/schema/project"
-import { AbsolutePath, NonNegativeInt, PositiveInt, RelativePath, statics } from "@zerocode-ai/schema/schema"
-import { Workspace } from "@zerocode-ai/schema/workspace"
+import { SessionMessage } from "@0codeai/zerocode-schema/session-message"
+import { SessionInput } from "@0codeai/zerocode-schema/session-input"
+import { PromptInput } from "@0codeai/zerocode-schema/prompt-input"
+import { Session } from "@0codeai/zerocode-schema/session"
+import { Project } from "@0codeai/zerocode-schema/project"
+import { AbsolutePath, NonNegativeInt, PositiveInt, RelativePath, statics } from "@0codeai/zerocode-schema/schema"
+import { Workspace } from "@0codeai/zerocode-schema/workspace"
 import { Context, Effect, Encoding, Result, Schema, Struct } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, HttpApiMiddleware, HttpApiSchema, OpenApi } from "effect/unstable/httpapi"
 import {
@@ -16,11 +16,11 @@ import {
   SessionNotFoundError,
   UnknownError,
 } from "../errors"
-import { Agent } from "@zerocode-ai/schema/agent"
-import { Model } from "@zerocode-ai/schema/model"
-import { Location } from "@zerocode-ai/schema/location"
-import { Revert } from "@zerocode-ai/schema/revert"
-import { SessionEvent } from "@zerocode-ai/schema/session-event"
+import { Agent } from "@0codeai/zerocode-schema/agent"
+import { Model } from "@0codeai/zerocode-schema/model"
+import { Location } from "@0codeai/zerocode-schema/location"
+import { Revert } from "@0codeai/zerocode-schema/revert"
+import { SessionEvent } from "@0codeai/zerocode-schema/session-event"
 
 const SessionsQueryFields = {
   workspace: Workspace.ID.pipe(Schema.optional),

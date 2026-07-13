@@ -1,4 +1,4 @@
-import type { AssistantMessage, Message } from "@zerocode-ai/sdk/v2/client"
+import type { AssistantMessage, Message } from "@0codeai/zerocode-sdk/v2/client"
 
 type Provider = {
   id: string

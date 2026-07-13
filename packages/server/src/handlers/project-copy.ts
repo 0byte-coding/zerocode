@@ -1,10 +1,10 @@
-import { Location } from "@zerocode-ai/core/location"
-import { ProjectCopy } from "@zerocode-ai/core/project/copy"
-import { Git } from "@zerocode-ai/core/git"
+import { Location } from "@0codeai/zerocode-core/location"
+import { ProjectCopy } from "@0codeai/zerocode-core/project/copy"
+import { Git } from "@0codeai/zerocode-core/git"
 import { Effect } from "effect"
 import { HttpApiBuilder, HttpApiSchema } from "effect/unstable/httpapi"
 import { Api } from "../api"
-import { ProjectCopyError } from "@zerocode-ai/protocol/groups/project-copy"
+import { ProjectCopyError } from "@0codeai/zerocode-protocol/groups/project-copy"
 
 export const ProjectCopyHandler = HttpApiBuilder.group(Api, "server.projectCopy", (handlers) =>
   Effect.succeed(

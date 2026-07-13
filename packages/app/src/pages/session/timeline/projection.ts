@@ -1,5 +1,5 @@
-import { Binary } from "@zerocode-ai/core/util/binary"
-import type { AssistantMessage, Message, Part, SessionStatus, UserMessage } from "@zerocode-ai/sdk/v2"
+import { Binary } from "@0codeai/zerocode-core/util/binary"
+import type { AssistantMessage, Message, Part, SessionStatus, UserMessage } from "@0codeai/zerocode-sdk/v2"
 import { createMemo, mapArray, type Accessor } from "solid-js"
 import { reuseTimelineRows } from "./row-reconciliation"
 import { Timeline, TimelineRow } from "./rows"

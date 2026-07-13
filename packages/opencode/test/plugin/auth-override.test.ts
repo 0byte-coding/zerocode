@@ -1,17 +1,17 @@
 import { describe, expect, test } from "bun:test"
 import path from "path"
 import { pathToFileURL } from "url"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { Effect } from "effect"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
 import { provideInstance, TestInstance, tmpdirScoped } from "../fixture/fixture"
 import { ProviderAuth } from "@/provider/auth"
 
 import { RuntimeFlags } from "@/effect/runtime-flags"
 import { TestConfig } from "../fixture/config"
 import { testEffect } from "../lib/effect"
-import { CrossSpawnSpawner } from "@zerocode-ai/core/cross-spawn-spawner"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
+import { CrossSpawnSpawner } from "@0codeai/zerocode-core/cross-spawn-spawner"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
 import { Config } from "@/config/config"
 
 const it = testEffect(LayerNode.compile(LayerNode.group([CrossSpawnSpawner.node, FSUtil.node])))

@@ -8,8 +8,8 @@ import {
   type DragEvent,
 } from "@thisbeyond/solid-dnd"
 import { ConstrainDragXAxis } from "@/utils/solid-dnd"
-import { IconButton } from "@zerocode-ai/ui/icon-button"
-import { Tooltip, TooltipKeybind } from "@zerocode-ai/ui/tooltip"
+import { IconButton } from "@0codeai/zerocode-ui/icon-button"
+import { Tooltip, TooltipKeybind } from "@0codeai/zerocode-ui/tooltip"
 import { type LocalProject } from "@/context/layout"
 
 export const SidebarContent = (props: {

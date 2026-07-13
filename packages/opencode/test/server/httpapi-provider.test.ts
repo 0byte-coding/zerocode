@@ -1,6 +1,6 @@
 import { describe, expect } from "bun:test"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
 import { Effect, Layer } from "effect"
 import path from "path"
 import { resetDatabase } from "../fixture/db"

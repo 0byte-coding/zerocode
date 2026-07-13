@@ -1,6 +1,6 @@
 export * as Tool from "./tool"
 
-import { ToolDefinition, ToolFailure, ToolOutput, type ToolCall } from "@zerocode-ai/llm"
+import { ToolDefinition, ToolFailure, ToolOutput, type ToolCall } from "@0codeai/zerocode-llm"
 import { Effect, JsonSchema, Schema } from "effect"
 import type { AgentV2 } from "../agent"
 import type { SessionMessage } from "../session/message"

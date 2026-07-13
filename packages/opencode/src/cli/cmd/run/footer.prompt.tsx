@@ -8,7 +8,7 @@
 import { pathToFileURL } from "bun"
 import { StyledText, fg, type ColorInput, type KeyEvent, type TextareaRenderable } from "@opentui/core"
 import { useRenderer } from "@opentui/solid"
-import { normalizePromptContent } from "@zerocode-ai/tui/editor"
+import { normalizePromptContent } from "@0codeai/zerocode-tui/editor"
 import fuzzysort from "fuzzysort"
 import path from "path"
 import { createEffect, createMemo, createResource, createSignal, onCleanup, onMount, type Accessor } from "solid-js"
@@ -23,7 +23,7 @@ import {
   movePromptHistory,
   pushPromptHistory,
 } from "./prompt.shared"
-import { ZEROCODE_BASE_MODE, useBindings } from "@zerocode-ai/tui/keymap"
+import { ZEROCODE_BASE_MODE, useBindings } from "@0codeai/zerocode-tui/keymap"
 import { realignEditorPromptParts, resolveEditorSlashValue } from "./prompt.editor"
 import { FOOTER_MENU_ROWS, createFooterMenuState, type RunFooterMenuItem } from "./footer.menu"
 import type { RunFooterTheme } from "./theme"

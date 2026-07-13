@@ -1,4 +1,4 @@
-import { Location } from "@zerocode-ai/schema/location"
+import { Location } from "@0codeai/zerocode-schema/location"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"
 

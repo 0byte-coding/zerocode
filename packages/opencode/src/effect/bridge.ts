@@ -1,6 +1,6 @@
 import { Context, Effect, Exit, Fiber } from "effect"
 import { WorkspaceContext } from "@/control-plane/workspace-context"
-import type { WorkspaceV2 } from "@zerocode-ai/core/workspace"
+import type { WorkspaceV2 } from "@0codeai/zerocode-core/workspace"
 import { InstanceRef, WorkspaceRef } from "./instance-ref"
 import { attachWith } from "./run-service"
 

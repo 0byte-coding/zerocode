@@ -6,7 +6,7 @@ import {
   useServerSDK,
   useServerSync,
   useTabs,
-} from "@zerocode-ai/app"
+} from "@0codeai/zerocode-app"
 import { onMount, startTransition } from "solid-js"
 
 export function DesktopFirstLaunchOnboarding(props: { initialUrl: string; onLoaded: () => void }) {

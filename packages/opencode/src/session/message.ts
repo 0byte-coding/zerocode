@@ -1,11 +1,11 @@
 import { Schema } from "effect"
 import { SessionID } from "./schema"
 
-import { NonNegativeInt } from "@zerocode-ai/core/schema"
+import { NonNegativeInt } from "@0codeai/zerocode-core/schema"
 import { MessageError } from "./message-error"
 import { AuthError, OutputLengthError } from "./message-error"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
-import { ModelV2 } from "@zerocode-ai/core/model"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
+import { ModelV2 } from "@0codeai/zerocode-core/model"
 export { AuthError, OutputLengthError } from "./message-error"
 
 export const ToolCall = Schema.Struct({

@@ -11,8 +11,8 @@
 //     → stream.ts bridges to footer API
 //       → footer.ts queues commits and patches the footer view
 //         → OpenTUI split-footer renderer writes to terminal
-import type { OpencodeClient, PermissionRequest, QuestionRequest, ToolPart } from "@zerocode-ai/sdk/v2"
-import type { TuiConfig } from "@zerocode-ai/tui/config"
+import type { OpencodeClient, PermissionRequest, QuestionRequest, ToolPart } from "@0codeai/zerocode-sdk/v2"
+import type { TuiConfig } from "@0codeai/zerocode-tui/config"
 
 export type RunFilePart = {
   type: "file"

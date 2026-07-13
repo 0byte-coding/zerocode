@@ -1,4 +1,4 @@
-import { centsToMicroCents } from "@zerocode-ai/console-core/util/price.js"
+import { centsToMicroCents } from "@0codeai/zerocode-console-core/util/price.js"
 import { buildRateLimitKey, getRedis } from "./redis"
 import { logger } from "./logger"
 

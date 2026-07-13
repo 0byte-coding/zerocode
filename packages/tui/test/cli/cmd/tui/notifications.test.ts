@@ -1,7 +1,7 @@
 import { describe, expect, test } from "bun:test"
 import Notifications from "../../../../src/feature-plugins/system/notifications"
-import type { Event, PermissionRequest, QuestionRequest, Session } from "@zerocode-ai/sdk/v2"
-import type { TuiAttentionNotifyInput } from "@zerocode-ai/plugin/tui"
+import type { Event, PermissionRequest, QuestionRequest, Session } from "@0codeai/zerocode-sdk/v2"
+import type { TuiAttentionNotifyInput } from "@0codeai/zerocode-plugin/tui"
 import { createTuiPluginApi } from "../../../fixture/tui-plugin"
 
 async function setup() {

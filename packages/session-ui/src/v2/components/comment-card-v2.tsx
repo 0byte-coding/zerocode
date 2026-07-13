@@ -1,6 +1,6 @@
 import { Show } from "solid-js"
-import { FileIcon } from "@zerocode-ai/ui/file-icon"
-import { getFilenameTruncated } from "@zerocode-ai/core/util/path"
+import { FileIcon } from "@0codeai/zerocode-ui/file-icon"
+import { getFilenameTruncated } from "@0codeai/zerocode-core/util/path"
 import { AttachmentCardV2 } from "./attachment-card-v2"
 
 export function CommentCardV2(props: {

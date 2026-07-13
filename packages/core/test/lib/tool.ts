@@ -1,6 +1,6 @@
-import { AgentV2 } from "@zerocode-ai/core/agent"
-import { SessionMessage } from "@zerocode-ai/core/session/message"
-import { ToolRegistry } from "@zerocode-ai/core/tool/registry"
+import { AgentV2 } from "@0codeai/zerocode-core/agent"
+import { SessionMessage } from "@0codeai/zerocode-core/session/message"
+import { ToolRegistry } from "@0codeai/zerocode-core/tool/registry"
 import { Effect } from "effect"
 
 export const toolIdentity = {

@@ -1,11 +1,11 @@
-import { useFilteredList } from "@zerocode-ai/ui/hooks"
-import { getDirectory, getFilename } from "@zerocode-ai/core/util/path"
+import { useFilteredList } from "@0codeai/zerocode-ui/hooks"
+import { getDirectory, getFilename } from "@0codeai/zerocode-core/util/path"
 import { createSignal, For, onMount, Show, splitProps, type JSX } from "solid-js"
-import { Button } from "@zerocode-ai/ui/button"
-import { FileIcon } from "@zerocode-ai/ui/file-icon"
-import { Icon } from "@zerocode-ai/ui/icon"
+import { Button } from "@0codeai/zerocode-ui/button"
+import { FileIcon } from "@0codeai/zerocode-ui/file-icon"
+import { Icon } from "@0codeai/zerocode-ui/icon"
 import { installLineCommentStyles } from "./line-comment-styles"
-import { useI18n } from "@zerocode-ai/ui/context/i18n"
+import { useI18n } from "@0codeai/zerocode-ui/context/i18n"
 
 installLineCommentStyles()
 

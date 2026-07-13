@@ -1,5 +1,5 @@
-import { Model } from "@zerocode-ai/schema/model"
-import { Location } from "@zerocode-ai/schema/location"
+import { Model } from "@0codeai/zerocode-schema/model"
+import { Location } from "@0codeai/zerocode-schema/location"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"
 import { ServiceUnavailableError } from "../errors"

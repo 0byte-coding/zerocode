@@ -1,4 +1,4 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { Context, Effect, Layer } from "effect"
 
 import { InstanceState } from "@/effect/instance-state"
@@ -17,12 +17,12 @@ import type { Provider } from "@/provider/provider"
 import type { Agent } from "@/agent/agent"
 import { Permission } from "@/permission"
 import { Skill } from "@/skill"
-import { AbsolutePath } from "@zerocode-ai/core/schema"
-import { Location } from "@zerocode-ai/core/location"
-import { LocationServiceMap, locationServiceMapLayer } from "@zerocode-ai/core/location-services"
-import { Reference } from "@zerocode-ai/core/reference"
+import { AbsolutePath } from "@0codeai/zerocode-core/schema"
+import { Location } from "@0codeai/zerocode-core/location"
+import { LocationServiceMap, locationServiceMapLayer } from "@0codeai/zerocode-core/location-services"
+import { Reference } from "@0codeai/zerocode-core/reference"
 import { MCP } from "@/mcp"
-import { PermissionV1 } from "@zerocode-ai/core/v1/permission"
+import { PermissionV1 } from "@0codeai/zerocode-core/v1/permission"
 
 export function provider(model: Provider.Model) {
   if (model.api.id.includes("muse-spark")) return [PROMPT_META]

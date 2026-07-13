@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@zerocode-ai/server",
+  "name": "@0codeai/zerocode-server",
   "version": "1.17.18",
   "private": true,
   "type": "module",
@@ -12,8 +12,8 @@
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
-    "@zerocode-ai/core": "workspace:*",
-    "@zerocode-ai/protocol": "workspace:*",
+    "@0codeai/zerocode-core": "workspace:*",
+    "@0codeai/zerocode-protocol": "workspace:*",
     "drizzle-orm": "catalog:",
     "effect": "catalog:"
   },

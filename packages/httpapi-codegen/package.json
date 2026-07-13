@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@zerocode-ai/httpapi-codegen",
+  "name": "@0codeai/zerocode-httpapi-codegen",
   "private": true,
   "type": "module",
   "exports": {

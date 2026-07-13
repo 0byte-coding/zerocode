@@ -1,8 +1,8 @@
-import type { Hooks, PluginInput } from "@zerocode-ai/plugin"
+import type { Hooks, PluginInput } from "@0codeai/zerocode-plugin"
 import { OAUTH_DUMMY_KEY } from "../auth"
 import { createServer } from "http"
-import { InstallationVersion } from "@zerocode-ai/core/installation/version"
-import { OauthCallbackPage } from "@zerocode-ai/core/oauth/page"
+import { InstallationVersion } from "@0codeai/zerocode-core/installation/version"
+import { OauthCallbackPage } from "@0codeai/zerocode-core/oauth/page"
 
 // Public Grok-CLI OAuth client. xAI's auth server rejects loopback OAuth from
 // non-allowlisted clients, so we reuse the Grok-CLI client_id that xAI ships

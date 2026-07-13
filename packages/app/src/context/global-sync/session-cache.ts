@@ -6,7 +6,7 @@ import type {
   SessionStatus,
   SnapshotFileDiff,
   Todo,
-} from "@zerocode-ai/sdk/v2/client"
+} from "@0codeai/zerocode-sdk/v2/client"
 
 export const SESSION_CACHE_LIMIT = 40
 

@@ -2,7 +2,7 @@ import { Effect } from "effect"
 import { UI } from "../ui"
 import { effectCmd } from "../effect-cmd"
 import { withNetworkOptions, resolveNetworkOptions } from "../network"
-import { Flag } from "@zerocode-ai/core/flag/flag"
+import { Flag } from "@0codeai/zerocode-core/flag/flag"
 import open from "open"
 import { networkInterfaces } from "os"
 

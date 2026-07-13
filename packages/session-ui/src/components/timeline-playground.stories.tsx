@@ -11,9 +11,9 @@ import type {
   ToolPart,
   FilePart,
   AgentPart,
-} from "@zerocode-ai/sdk/v2"
+} from "@0codeai/zerocode-sdk/v2"
 import { DataProvider } from "../context/data"
-import { FileComponentProvider } from "@zerocode-ai/ui/context/file"
+import { FileComponentProvider } from "@0codeai/zerocode-ui/context/file"
 import { SessionTurn } from "./session-turn"
 
 // ---------------------------------------------------------------------------

@@ -1,11 +1,11 @@
-import { Resource } from "@zerocode-ai/console-resource"
-import { Actor } from "@zerocode-ai/console-core/actor.js"
+import { Resource } from "@0codeai/zerocode-console-resource"
+import { Actor } from "@0codeai/zerocode-console-core/actor.js"
 import { action, json, query } from "@solidjs/router"
 import { withActor } from "~/context/auth.withActor"
-import { Billing } from "@zerocode-ai/console-core/billing.js"
-import { and, Database, desc, eq, isNull } from "@zerocode-ai/console-core/drizzle/index.js"
-import { WorkspaceTable } from "@zerocode-ai/console-core/schema/workspace.sql.js"
-import { UserTable } from "@zerocode-ai/console-core/schema/user.sql.js"
+import { Billing } from "@0codeai/zerocode-console-core/billing.js"
+import { and, Database, desc, eq, isNull } from "@0codeai/zerocode-console-core/drizzle/index.js"
+import { WorkspaceTable } from "@0codeai/zerocode-console-core/schema/workspace.sql.js"
+import { UserTable } from "@0codeai/zerocode-console-core/schema/user.sql.js"
 
 export function formatDateForTable(date: Date) {
   const options: Intl.DateTimeFormatOptions = {

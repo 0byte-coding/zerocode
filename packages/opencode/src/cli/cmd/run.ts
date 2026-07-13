@@ -1,5 +1,5 @@
-import type { PermissionV1 } from "@zerocode-ai/core/v1/permission"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
+import type { PermissionV1 } from "@0codeai/zerocode-core/v1/permission"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
 // CLI entry point for `opencode run` and `opencode --mini`.
 //
 // Handles three modes:
@@ -22,7 +22,7 @@ import { UI } from "../ui"
 import { effectCmd } from "../effect-cmd"
 import { EOL } from "os"
 import { Filesystem } from "@/util/filesystem"
-import { createOpencodeClient, type OpencodeClient, type ToolPart } from "@zerocode-ai/sdk/v2"
+import { createOpencodeClient, type OpencodeClient, type ToolPart } from "@0codeai/zerocode-sdk/v2"
 import { FormatError, FormatUnknownError } from "../error"
 import { INTERACTIVE_INPUT_ERROR, resolveInteractiveStdin } from "./run/runtime.stdin"
 

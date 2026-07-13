@@ -6,7 +6,7 @@ import { Database } from "../database/database"
 import { makeGlobalNode } from "../effect/app-node"
 import { ProjectV2 } from "../project"
 import { PermissionTable } from "./sql"
-import { PermissionSaved } from "@zerocode-ai/schema/permission-saved"
+import { PermissionSaved } from "@0codeai/zerocode-schema/permission-saved"
 
 export const ID = PermissionSaved.ID
 export type ID = typeof ID.Type

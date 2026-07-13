@@ -1,4 +1,4 @@
-import { MoveSession } from "@zerocode-ai/core/control-plane/move-session"
+import { MoveSession } from "@0codeai/zerocode-core/control-plane/move-session"
 import { Schema } from "effect"
 import { HttpApi, HttpApiEndpoint, HttpApiGroup, HttpApiSchema, OpenApi } from "effect/unstable/httpapi"
 import { described } from "./metadata"

@@ -1,5 +1,5 @@
-import { ProjectCopy } from "@zerocode-ai/schema/project-copy"
-import { Project } from "@zerocode-ai/schema/project"
+import { ProjectCopy } from "@0codeai/zerocode-schema/project-copy"
+import { Project } from "@0codeai/zerocode-schema/project"
 import { Schema, Struct } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, HttpApiSchema, OpenApi } from "effect/unstable/httpapi"
 import { LocationQuery, locationQueryOpenApi } from "./location"

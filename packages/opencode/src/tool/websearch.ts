@@ -3,8 +3,8 @@ import { HttpClient } from "effect/unstable/http"
 import * as Tool from "./tool"
 import * as McpWebSearch from "./mcp-websearch"
 import DESCRIPTION from "./websearch.txt"
-import { checksum } from "@zerocode-ai/core/util/encode"
-import { InstallationVersion } from "@zerocode-ai/core/installation/version"
+import { checksum } from "@0codeai/zerocode-core/util/encode"
+import { InstallationVersion } from "@0codeai/zerocode-core/installation/version"
 import { RuntimeFlags } from "@/effect/runtime-flags"
 
 export const Parameters = Schema.Struct({

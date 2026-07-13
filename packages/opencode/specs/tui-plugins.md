@@ -5,7 +5,7 @@ Technical reference for the current TUI plugin system.
 ## Overview
 
 - TUI plugin config lives in `tui.json`.
-- Author package entrypoint is `@zerocode-ai/plugin/tui`.
+- Author package entrypoint is `@0codeai/zerocode-plugin/tui`.
 - Internal plugins load inside the CLI app the same way external TUI plugins do.
 - Package plugins can be installed from CLI or TUI.
 - v1 plugin modules are target-exclusive: a module can export `server` or `tui`, never both.
@@ -68,14 +68,14 @@ Example:
 
 Package entrypoint:
 
-- Import types from `@zerocode-ai/plugin/tui`.
-- `@zerocode-ai/plugin` exports `./tui` and declares optional peer deps on `@opentui/core` and `@opentui/solid`.
+- Import types from `@0codeai/zerocode-plugin/tui`.
+- `@0codeai/zerocode-plugin` exports `./tui` and declares optional peer deps on `@opentui/core` and `@opentui/solid`.
 
 Minimal module shape:
 
 ```tsx
 /** @jsxImportSource @opentui/solid */
-import type { TuiPlugin, TuiPluginModule } from "@zerocode-ai/plugin/tui"
+import type { TuiPlugin, TuiPluginModule } from "@0codeai/zerocode-plugin/tui"
 
 const tui: TuiPlugin = async (api, options, meta) => {
   api.keymap.registerLayer({
@@ -323,7 +323,7 @@ Mode pushes are automatically tracked by the plugin runtime. If a plugin is disa
 - `api.keys` exposes host-formatted shortcut display helpers for plugin UI.
 - `formatSequence(parts)` formats parsed key sequence parts using the host's display policy.
 - `formatBindings(bindings)` formats binding lists and returns `undefined` when there is nothing to show.
-- For generic config-to-bindings helpers, import `createBindingLookup` from `@zerocode-ai/plugin/tui`.
+- For generic config-to-bindings helpers, import `createBindingLookup` from `@0codeai/zerocode-plugin/tui`.
 
 ### Attention
 

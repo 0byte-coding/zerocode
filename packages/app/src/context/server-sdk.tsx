@@ -1,5 +1,5 @@
-import type { Event } from "@zerocode-ai/sdk/v2/client"
-import { createSimpleContext } from "@zerocode-ai/ui/context"
+import type { Event } from "@0codeai/zerocode-sdk/v2/client"
+import { createSimpleContext } from "@0codeai/zerocode-ui/context"
 import { createGlobalEmitter } from "@solid-primitives/event-bus"
 import { makeEventListener } from "@solid-primitives/event-listener"
 import { type Accessor, batch, createMemo, onCleanup, onMount } from "solid-js"

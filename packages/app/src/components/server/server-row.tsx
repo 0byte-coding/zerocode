@@ -1,4 +1,4 @@
-import { Tooltip } from "@zerocode-ai/ui/tooltip"
+import { Tooltip } from "@0codeai/zerocode-ui/tooltip"
 import { createResizeObserver } from "@solid-primitives/resize-observer"
 import {
   children,

@@ -1,5 +1,5 @@
-import { FileSystem } from "@zerocode-ai/core/filesystem"
-import { RelativePath } from "@zerocode-ai/core/schema"
+import { FileSystem } from "@0codeai/zerocode-core/filesystem"
+import { RelativePath } from "@0codeai/zerocode-core/schema"
 import { Effect } from "effect"
 import { HttpServerResponse } from "effect/unstable/http"
 import { HttpApiBuilder } from "effect/unstable/httpapi"

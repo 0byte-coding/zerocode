@@ -1,4 +1,4 @@
-import type { TuiPlugin, TuiPluginApi } from "@zerocode-ai/plugin/tui"
+import type { TuiPlugin, TuiPluginApi } from "@0codeai/zerocode-plugin/tui"
 import type { BuiltinTuiPlugin } from "../builtins"
 import { createMemo, Show } from "solid-js"
 import { Tips } from "./tips-view"

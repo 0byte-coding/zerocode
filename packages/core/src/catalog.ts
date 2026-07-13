@@ -2,7 +2,7 @@ export * as Catalog from "./catalog"
 
 import { makeLocationNode } from "./effect/app-node"
 import { Array, Context, Effect, Layer, Option, Order, pipe, Schema } from "effect"
-import { Catalog } from "@zerocode-ai/schema/catalog"
+import { Catalog } from "@0codeai/zerocode-schema/catalog"
 import { ModelV2 } from "./model"
 import { ProviderV2 } from "./provider"
 import { EventV2 } from "./event"

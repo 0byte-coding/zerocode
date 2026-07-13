@@ -1,5 +1,5 @@
-import { Command } from "@zerocode-ai/schema/command"
-import { Location } from "@zerocode-ai/schema/location"
+import { Command } from "@0codeai/zerocode-schema/command"
+import { Location } from "@0codeai/zerocode-schema/location"
 import { Schema } from "effect"
 import { HttpApiEndpoint, HttpApiGroup, OpenApi } from "effect/unstable/httpapi"
 import { LocationQuery, locationQueryOpenApi } from "./location"

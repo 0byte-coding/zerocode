@@ -1,5 +1,5 @@
 import { Session } from "@/session/session"
-import { SessionV1 } from "@zerocode-ai/core/v1/session"
+import { SessionV1 } from "@0codeai/zerocode-core/v1/session"
 import { MessageV2 } from "../../session/message-v2"
 import { SessionID } from "../../session/schema"
 import { effectCmd, fail } from "../effect-cmd"

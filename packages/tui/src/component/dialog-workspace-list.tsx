@@ -1,4 +1,4 @@
-import type { Workspace } from "@zerocode-ai/sdk/v2"
+import type { Workspace } from "@0codeai/zerocode-sdk/v2"
 import { useDialog } from "../ui/dialog"
 import { DialogSelect, type DialogSelectOption } from "../ui/dialog-select"
 import { useProject } from "../context/project"

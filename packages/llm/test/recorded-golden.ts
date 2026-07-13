@@ -1,4 +1,4 @@
-import type { HttpRecorder } from "@zerocode-ai/http-recorder"
+import type { HttpRecorder } from "@0codeai/zerocode-http-recorder"
 import { describe } from "bun:test"
 import { Effect } from "effect"
 import type { Model } from "../src"

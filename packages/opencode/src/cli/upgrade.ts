@@ -1,8 +1,8 @@
 import { Config } from "@/config/config"
 import { AppRuntime } from "@/effect/app-runtime"
-import { Flag } from "@zerocode-ai/core/flag/flag"
+import { Flag } from "@0codeai/zerocode-core/flag/flag"
 import { Installation } from "@/installation"
-import { InstallationVersion } from "@zerocode-ai/core/installation/version"
+import { InstallationVersion } from "@0codeai/zerocode-core/installation/version"
 import { GlobalBus } from "@/bus/global"
 
 export async function upgrade() {

@@ -1,6 +1,6 @@
 import { createStore } from "solid-js/store"
 import { onCleanup, Show, type Accessor } from "solid-js"
-import { InlineInput } from "@zerocode-ai/ui/inline-input"
+import { InlineInput } from "@0codeai/zerocode-ui/inline-input"
 
 export function createInlineEditorController() {
   // This controller intentionally supports one active inline editor at a time.

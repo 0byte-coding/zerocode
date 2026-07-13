@@ -1,5 +1,5 @@
-import type { Event } from "@zerocode-ai/sdk/v2"
-import type { TuiAttentionSoundName, TuiPlugin, TuiPluginApi } from "@zerocode-ai/plugin/tui"
+import type { Event } from "@0codeai/zerocode-sdk/v2"
+import type { TuiAttentionSoundName, TuiPlugin, TuiPluginApi } from "@0codeai/zerocode-plugin/tui"
 import type { BuiltinTuiPlugin } from "../builtins"
 
 const id = "internal:notifications"

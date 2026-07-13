@@ -1,10 +1,10 @@
 import { describe, expect } from "bun:test"
 import { Context, Deferred, Effect, Exit, Fiber, Layer, Scope } from "effect"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { EventV2 } from "@zerocode-ai/core/event"
-import { QuestionV2 } from "@zerocode-ai/core/question"
-import { SessionV2 } from "@zerocode-ai/core/session"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { EventV2 } from "@0codeai/zerocode-core/event"
+import { QuestionV2 } from "@0codeai/zerocode-core/question"
+import { SessionV2 } from "@0codeai/zerocode-core/session"
 import { testEffect } from "./lib/effect"
 
 const questions = AppNodeBuilder.build(LayerNode.group([EventV2.node, QuestionV2.node]))

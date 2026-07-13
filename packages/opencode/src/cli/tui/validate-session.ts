@@ -1,4 +1,4 @@
-import { createOpencodeClient } from "@zerocode-ai/sdk/v2"
+import { createOpencodeClient } from "@0codeai/zerocode-sdk/v2"
 import { SessionID } from "@/session/schema"
 import { Schema } from "effect"
 

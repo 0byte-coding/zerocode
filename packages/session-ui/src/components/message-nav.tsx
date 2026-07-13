@@ -1,8 +1,8 @@
-import { UserMessage } from "@zerocode-ai/sdk/v2"
+import { UserMessage } from "@0codeai/zerocode-sdk/v2"
 import { HoverCard } from "@kobalte/core/hover-card"
 import { ComponentProps, For, Match, Show, createSignal, splitProps, Switch } from "solid-js"
-import { DiffChanges } from "@zerocode-ai/ui/diff-changes"
-import { useI18n } from "@zerocode-ai/ui/context/i18n"
+import { DiffChanges } from "@0codeai/zerocode-ui/diff-changes"
+import { useI18n } from "@0codeai/zerocode-ui/context/i18n"
 
 export function MessageNav(
   props: ComponentProps<"ul"> & {

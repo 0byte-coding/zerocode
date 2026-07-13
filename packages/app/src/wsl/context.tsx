@@ -1,4 +1,4 @@
-import { createSimpleContext } from "@zerocode-ai/ui/context"
+import { createSimpleContext } from "@0codeai/zerocode-ui/context"
 import { queryOptions, useQuery, useQueryClient } from "@tanstack/solid-query"
 import { createEffect, onCleanup } from "solid-js"
 import type { WslServersState } from "./types"

@@ -6,20 +6,20 @@
 // strict `NonNegativeInt` schema then made every load of the message list
 // fail to encode, killing Desktop boot for every user with such a row.
 import { describe, expect } from "bun:test"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { Effect, Layer } from "effect"
 import { eq } from "drizzle-orm"
 
 import { SessionPaths } from "../../src/server/routes/instance/httpapi/groups/session"
 import { Session } from "@/session/session"
 import { MessageID, PartID } from "../../src/session/schema"
-import { Database } from "@zerocode-ai/core/database/database"
-import { PartTable } from "@zerocode-ai/core/session/sql"
+import { Database } from "@0codeai/zerocode-core/database/database"
+import { PartTable } from "@0codeai/zerocode-core/session/sql"
 import { resetDatabase } from "../fixture/db"
 import { TestInstance } from "../fixture/fixture"
 import { testEffect } from "../lib/effect"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
-import { ModelV2 } from "@zerocode-ai/core/model"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
+import { ModelV2 } from "@0codeai/zerocode-core/model"
 import { httpApiLayer, requestInDirectory } from "./httpapi-layer"
 
 const it = testEffect(Layer.mergeAll(LayerNode.compile(LayerNode.group([Session.node, Database.node])), httpApiLayer))

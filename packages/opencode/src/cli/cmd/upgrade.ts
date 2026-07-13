@@ -2,7 +2,7 @@ import type { Argv } from "yargs"
 import { UI } from "../ui"
 import * as prompts from "@clack/prompts"
 import { Installation } from "../../installation"
-import { InstallationVersion } from "@zerocode-ai/core/installation/version"
+import { InstallationVersion } from "@0codeai/zerocode-core/installation/version"
 
 export const UpgradeCommand = {
   command: "upgrade [target]",

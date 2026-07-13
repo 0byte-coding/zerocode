@@ -1,8 +1,8 @@
 import { getRequestEvent } from "solid-js/web"
-import { and, Database, eq, inArray, isNull, sql } from "@zerocode-ai/console-core/drizzle/index.js"
-import { UserTable } from "@zerocode-ai/console-core/schema/user.sql.js"
+import { and, Database, eq, inArray, isNull, sql } from "@0codeai/zerocode-console-core/drizzle/index.js"
+import { UserTable } from "@0codeai/zerocode-console-core/schema/user.sql.js"
 import { redirect } from "@solidjs/router"
-import { Actor } from "@zerocode-ai/console-core/actor.js"
+import { Actor } from "@0codeai/zerocode-console-core/actor.js"
 
 import { createClient } from "@openauthjs/openauth/client"
 
@@ -12,7 +12,7 @@ export const AuthClient = createClient({
 })
 
 import { useSession } from "@solidjs/start/http"
-import { Resource } from "@zerocode-ai/console-resource"
+import { Resource } from "@0codeai/zerocode-console-resource"
 
 export interface AuthSession {
   account?: Record<

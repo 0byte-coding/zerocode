@@ -1,6 +1,6 @@
 import type { APIEvent } from "@solidjs/start/server"
-import { AWS } from "@zerocode-ai/console-core/aws.js"
-import { Resource } from "@zerocode-ai/console-resource"
+import { AWS } from "@0codeai/zerocode-console-core/aws.js"
+import { Resource } from "@0codeai/zerocode-console-resource"
 import { i18n } from "~/i18n"
 import { localeFromRequest } from "~/lib/language"
 import { createLead } from "~/lib/salesforce"

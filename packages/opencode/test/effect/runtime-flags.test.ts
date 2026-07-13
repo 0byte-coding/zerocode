@@ -1,6 +1,6 @@
 import { describe, expect } from "bun:test"
 import { ConfigProvider, Effect, Layer } from "effect"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
 import { RuntimeFlags } from "../../src/effect/runtime-flags"
 import { it } from "../lib/effect"
 

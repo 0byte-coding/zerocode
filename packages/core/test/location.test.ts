@@ -1,10 +1,10 @@
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { Location } from "@zerocode-ai/core/location"
-import { Project } from "@zerocode-ai/core/project"
-import { AbsolutePath } from "@zerocode-ai/core/schema"
-import { WorkspaceV2 } from "@zerocode-ai/core/workspace"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { Location } from "@0codeai/zerocode-core/location"
+import { Project } from "@0codeai/zerocode-core/project"
+import { AbsolutePath } from "@0codeai/zerocode-core/schema"
+import { WorkspaceV2 } from "@0codeai/zerocode-core/workspace"
 import { testEffect } from "./lib/effect"
 
 const workspaceID = WorkspaceV2.ID.make("wrk_test")

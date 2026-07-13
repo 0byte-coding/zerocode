@@ -1,9 +1,9 @@
 import { EOL } from "os"
 import { Effect } from "effect"
-import { FileSystem } from "@zerocode-ai/core/filesystem"
-import { LocationServiceMap, locationServiceMapLayer } from "@zerocode-ai/core/location-services"
-import { Location } from "@zerocode-ai/core/location"
-import { AbsolutePath, RelativePath } from "@zerocode-ai/core/schema"
+import { FileSystem } from "@0codeai/zerocode-core/filesystem"
+import { LocationServiceMap, locationServiceMapLayer } from "@0codeai/zerocode-core/location-services"
+import { Location } from "@0codeai/zerocode-core/location"
+import { AbsolutePath, RelativePath } from "@0codeai/zerocode-core/schema"
 import { effectCmd } from "../../effect-cmd"
 import { cmd } from "../cmd"
 

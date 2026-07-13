@@ -1,11 +1,11 @@
 {
-  "name": "@zerocode-ai/ui",
+  "name": "@0codeai/zerocode-ui",
   "version": "1.17.18",
   "type": "module",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anomalyco/opencode.git",
+    "url": "git+https://github.com/0byte-coding/zerocode.git",
     "directory": "packages/ui"
   },
   "publishConfig": {

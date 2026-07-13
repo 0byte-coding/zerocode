@@ -1,1 +1,1 @@
-export { ID as PtyID } from "@zerocode-ai/schema/pty"
+export { ID as PtyID } from "@0codeai/zerocode-schema/pty"

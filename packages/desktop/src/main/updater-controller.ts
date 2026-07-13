@@ -1,6 +1,6 @@
-import type { UpdaterState } from "@zerocode-ai/app/updater"
+import type { UpdaterState } from "@0codeai/zerocode-app/updater"
 
-export type { UpdaterState } from "@zerocode-ai/app/updater"
+export type { UpdaterState } from "@0codeai/zerocode-app/updater"
 
 export type UpdaterReadyRecord = { version: string }
 

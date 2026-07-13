@@ -1,7 +1,7 @@
 import { describe, test, expect } from "bun:test"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { Effect } from "effect"
-import { FSUtil } from "@zerocode-ai/core/fs-util"
+import { FSUtil } from "@0codeai/zerocode-core/fs-util"
 import { testEffect } from "../lib/effect"
 import path from "path"
 

@@ -1,4 +1,4 @@
-import { Resource } from "@zerocode-ai/console-resource"
+import { Resource } from "@0codeai/zerocode-console-resource"
 import { Redis } from "@upstash/redis/cloudflare"
 
 let redis: Redis | undefined

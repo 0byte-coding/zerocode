@@ -1,7 +1,7 @@
 import type { APIEvent } from "@solidjs/start/server"
 import { z } from "zod"
-import { Resource } from "@zerocode-ai/console-resource"
-import { safeEqual } from "@zerocode-ai/console-core/util/crypto.js"
+import { Resource } from "@0codeai/zerocode-console-resource"
+import { safeEqual } from "@0codeai/zerocode-console-core/util/crypto.js"
 
 const DISCORD_ALERT_ROLE_ID = "1520924666359713863"
 

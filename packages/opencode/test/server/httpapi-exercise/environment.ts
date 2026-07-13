@@ -1,4 +1,4 @@
-import { Flag } from "@zerocode-ai/core/flag/flag"
+import { Flag } from "@0codeai/zerocode-core/flag/flag"
 import { Effect } from "effect"
 import path from "path"
 

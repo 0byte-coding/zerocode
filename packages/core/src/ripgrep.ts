@@ -2,7 +2,7 @@ export * as Ripgrep from "./ripgrep"
 
 import { Context, Effect, Fiber, Layer, Schema, Stream } from "effect"
 import { ChildProcess } from "effect/unstable/process"
-import { Entry, Match } from "@zerocode-ai/schema/filesystem"
+import { Entry, Match } from "@0codeai/zerocode-schema/filesystem"
 import { makeGlobalNode } from "./effect/app-node"
 import { AppProcess, collectStream, waitForAbort } from "./process"
 import { NonNegativeInt, PositiveInt, RelativePath } from "./schema"

@@ -1,10 +1,10 @@
-import { Location } from "@zerocode-ai/core/location"
-import { PermissionV2 } from "@zerocode-ai/core/permission"
-import { PermissionSaved } from "@zerocode-ai/core/permission/saved"
+import { Location } from "@0codeai/zerocode-core/location"
+import { PermissionV2 } from "@0codeai/zerocode-core/permission"
+import { PermissionSaved } from "@0codeai/zerocode-core/permission/saved"
 import { Effect } from "effect"
 import { HttpApiBuilder, HttpApiSchema } from "effect/unstable/httpapi"
 import { Api } from "../api"
-import { PermissionNotFoundError, SessionNotFoundError } from "@zerocode-ai/protocol/errors"
+import { PermissionNotFoundError, SessionNotFoundError } from "@0codeai/zerocode-protocol/errors"
 import { response } from "../location"
 
 function missingRequest(id: PermissionV2.ID) {

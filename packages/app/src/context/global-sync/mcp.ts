@@ -1,4 +1,4 @@
-import type { McpStatus } from "@zerocode-ai/sdk/v2/client"
+import type { McpStatus } from "@0codeai/zerocode-sdk/v2/client"
 
 export async function toggleMcp(input: {
   status: McpStatus["status"]

@@ -1,6 +1,6 @@
 export * as PluginPtyEnvironment from "./pty-environment"
 
-import { PtyEnvironment } from "@zerocode-ai/server/pty-environment"
+import { PtyEnvironment } from "@0codeai/zerocode-server/pty-environment"
 import { Effect, Layer } from "effect"
 import { InstanceStore } from "@/project/instance-store"
 import { Plugin } from "."

@@ -1,8 +1,8 @@
 import { describe, expect } from "bun:test"
 import { Effect, Exit, Fiber } from "effect"
-import { define } from "@zerocode-ai/plugin/v2/effect"
-import { AgentV2 } from "@zerocode-ai/core/agent"
-import { PluginV2 } from "@zerocode-ai/core/plugin"
+import { define } from "@0codeai/zerocode-plugin/v2/effect"
+import { AgentV2 } from "@0codeai/zerocode-core/agent"
+import { PluginV2 } from "@0codeai/zerocode-core/plugin"
 import { testEffect } from "./lib/effect"
 import { PluginTestLayer } from "./plugin/fixture"
 

@@ -6,13 +6,13 @@ import { Session } from "@/session/session"
 import { SessionID } from "../../session/schema"
 import { UI } from "../ui"
 import { Locale } from "@/util/locale"
-import { Flag } from "@zerocode-ai/core/flag/flag"
+import { Flag } from "@0codeai/zerocode-core/flag/flag"
 import { Filesystem } from "@/util/filesystem"
 import { Process } from "@/util/process"
 import { NotFoundError } from "@/storage/storage"
 import { EOL } from "os"
 import path from "path"
-import { which } from "@zerocode-ai/core/util/which"
+import { which } from "@0codeai/zerocode-core/util/which"
 
 function pagerCmd(): string[] {
   const lessOptions = ["-R", "-S"]

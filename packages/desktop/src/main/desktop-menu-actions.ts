@@ -1,5 +1,5 @@
 import { BrowserWindow } from "electron"
-import type { DesktopMenuAction } from "@zerocode-ai/app/desktop-menu"
+import type { DesktopMenuAction } from "@0codeai/zerocode-app/desktop-menu"
 import { createMainWindow, updateTitlebar } from "./windows"
 
 export type DesktopMenuActionHandlers = Partial<{

@@ -1,4 +1,4 @@
-import { define } from "@zerocode-ai/plugin/v2/effect"
+import { define } from "@0codeai/zerocode-plugin/v2/effect"
 import { Effect } from "effect"
 
 export default define({

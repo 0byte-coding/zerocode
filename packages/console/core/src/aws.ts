@@ -1,5 +1,5 @@
 import { z } from "zod"
-import { Resource } from "@zerocode-ai/console-resource"
+import { Resource } from "@0codeai/zerocode-console-resource"
 import { AwsClient } from "aws4fetch"
 import { fn } from "./util/fn"
 

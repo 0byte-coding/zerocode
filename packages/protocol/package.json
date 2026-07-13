@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "@zerocode-ai/protocol",
+  "name": "@0codeai/zerocode-protocol",
   "private": true,
   "type": "module",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
-    "@zerocode-ai/schema": "workspace:*",
+    "@0codeai/zerocode-schema": "workspace:*",
     "effect": "catalog:"
   },
   "devDependencies": {

@@ -7,7 +7,7 @@ import { Authorization } from "../middleware/authorization"
 import { InstanceContextMiddleware } from "../middleware/instance-context"
 import { WorkspaceRoutingMiddleware, WorkspaceRoutingQuery } from "../middleware/workspace-routing"
 import { described } from "./metadata"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
 
 const root = "/provider"
 

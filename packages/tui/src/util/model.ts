@@ -1,4 +1,4 @@
-import type { Provider } from "@zerocode-ai/sdk/v2"
+import type { Provider } from "@0codeai/zerocode-sdk/v2"
 
 export function parse(value: string) {
   const [providerID, ...modelID] = value.split("/")

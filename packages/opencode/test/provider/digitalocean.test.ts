@@ -1,10 +1,10 @@
 import { expect } from "bun:test"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { Provider } from "../../src/provider/provider"
 
 import { Effect } from "effect"
 import { testEffect } from "../lib/effect"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
 
 const DIGITALOCEAN = ProviderV2.ID.make("digitalocean")
 const it = testEffect(LayerNode.compile(Provider.node))

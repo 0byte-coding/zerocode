@@ -1,5 +1,5 @@
-import { getFilename } from "@zerocode-ai/core/util/path"
-import { useDialog } from "@zerocode-ai/ui/context/dialog"
+import { getFilename } from "@0codeai/zerocode-core/util/path"
+import { useDialog } from "@0codeai/zerocode-ui/context/dialog"
 import { useMutation } from "@tanstack/solid-query"
 import { createMemo } from "solid-js"
 import { createStore } from "solid-js/store"

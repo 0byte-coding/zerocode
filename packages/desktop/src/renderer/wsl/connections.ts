@@ -1,4 +1,4 @@
-import type { WslServersState } from "@zerocode-ai/app/wsl/types"
+import type { WslServersState } from "@0codeai/zerocode-app/wsl/types"
 
 export function readyWslConnections(state?: WslServersState) {
   return (state?.servers ?? []).flatMap((item) => {

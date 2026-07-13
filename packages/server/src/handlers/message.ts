@@ -1,9 +1,9 @@
-import { SessionMessage } from "@zerocode-ai/core/session/message"
-import { SessionV2 } from "@zerocode-ai/core/session"
+import { SessionMessage } from "@0codeai/zerocode-core/session/message"
+import { SessionV2 } from "@0codeai/zerocode-core/session"
 import { Effect, Schema } from "effect"
 import { HttpApiBuilder } from "effect/unstable/httpapi"
 import { Api } from "../api"
-import { InvalidCursorError, SessionNotFoundError, UnknownError } from "@zerocode-ai/protocol/errors"
+import { InvalidCursorError, SessionNotFoundError, UnknownError } from "@0codeai/zerocode-protocol/errors"
 
 const DefaultMessagesLimit = 50
 

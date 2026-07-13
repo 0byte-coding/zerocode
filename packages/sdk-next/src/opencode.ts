@@ -1,9 +1,9 @@
-import { OpenCode } from "@zerocode-ai/client/effect"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { PermissionSaved } from "@zerocode-ai/core/permission/saved"
-import { ApplicationTools } from "@zerocode-ai/core/tool/application-tools"
-import { createEmbeddedRoutes } from "@zerocode-ai/server/routes"
+import { OpenCode } from "@0codeai/zerocode-client/effect"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { PermissionSaved } from "@0codeai/zerocode-core/permission/saved"
+import { ApplicationTools } from "@0codeai/zerocode-core/tool/application-tools"
+import { createEmbeddedRoutes } from "@0codeai/zerocode-server/routes"
 import { Context, Effect, Layer, Scope } from "effect"
 import { FetchHttpClient, HttpRouter, HttpServer } from "effect/unstable/http"
 
@@ -44,6 +44,6 @@ export const create = Effect.fn("OpenCode.create")(function* () {
 
 export type Interface = Effect.Success<ReturnType<typeof create>>
 
-export class Service extends Context.Service<Service, Interface>()("@zerocode-ai/sdk-next/OpenCode") {}
+export class Service extends Context.Service<Service, Interface>()("@0codeai/zerocode-sdk-next/OpenCode") {}
 
 export const layer = Layer.effect(Service, create())

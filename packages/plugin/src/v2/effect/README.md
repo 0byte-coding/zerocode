@@ -10,7 +10,7 @@ The public server client will be exposed separately. It is intentionally not par
 ## Defining A Plugin
 
 ```ts
-import { define } from "@zerocode-ai/plugin/v2/effect"
+import { define } from "@0codeai/zerocode-plugin/v2/effect"
 import { Effect } from "effect"
 
 export const Plugin = define({

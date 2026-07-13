@@ -1,7 +1,7 @@
-import { base64Encode } from "@zerocode-ai/core/util/encode"
-import { Event } from "@zerocode-ai/schema/event"
-import { SessionStatusEvent } from "@zerocode-ai/schema/session-status-event"
-import { SessionV1 } from "@zerocode-ai/schema/session-v1"
+import { base64Encode } from "@0codeai/zerocode-core/util/encode"
+import { Event } from "@0codeai/zerocode-schema/event"
+import { SessionStatusEvent } from "@0codeai/zerocode-schema/session-status-event"
+import { SessionV1 } from "@0codeai/zerocode-schema/session-v1"
 import type {
   AssistantMessage,
   GlobalEvent,
@@ -12,7 +12,7 @@ import type {
   ToolPart,
   ToolState,
   UserMessage,
-} from "@zerocode-ai/sdk/v2/client"
+} from "@0codeai/zerocode-sdk/v2/client"
 import { expect, type Page } from "@playwright/test"
 import { Schema } from "effect"
 import { mockOpenCodeServer } from "../../utils/mock-server"

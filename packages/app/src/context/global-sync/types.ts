@@ -16,8 +16,8 @@ import type {
   SnapshotFileDiff,
   Todo,
   VcsInfo,
-} from "@zerocode-ai/sdk/v2/client"
-import { NormalizedProviderListResponse } from "@zerocode-ai/session-ui/context"
+} from "@0codeai/zerocode-sdk/v2/client"
+import { NormalizedProviderListResponse } from "@0codeai/zerocode-session-ui/context"
 import type { Accessor } from "solid-js"
 import type { SetStoreFunction, Store } from "solid-js/store"
 

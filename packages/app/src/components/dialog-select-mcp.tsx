@@ -1,8 +1,8 @@
 import { Component, createMemo, Show } from "solid-js"
 import { useSync } from "@/context/sync"
-import { Dialog } from "@zerocode-ai/ui/dialog"
-import { List } from "@zerocode-ai/ui/list"
-import { Switch } from "@zerocode-ai/ui/switch"
+import { Dialog } from "@0codeai/zerocode-ui/dialog"
+import { List } from "@0codeai/zerocode-ui/list"
+import { Switch } from "@0codeai/zerocode-ui/switch"
 import { useLanguage } from "@/context/language"
 import { useMcpToggle } from "@/context/mcp"
 

@@ -1,6 +1,6 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { InstanceState } from "@/effect/instance-state"
-import { SessionV1 } from "@zerocode-ai/core/v1/session"
+import { SessionV1 } from "@0codeai/zerocode-core/v1/session"
 import { Runner } from "@/effect/runner"
 import { BackgroundJob } from "@/background/job"
 import { Effect, Latch, Layer, Scope, Context } from "effect"

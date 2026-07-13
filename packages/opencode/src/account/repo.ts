@@ -1,10 +1,10 @@
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { eq } from "drizzle-orm"
-import { serviceUse } from "@zerocode-ai/core/effect/service-use"
+import { serviceUse } from "@0codeai/zerocode-core/effect/service-use"
 import { Effect, Layer, Option, Schema, Context } from "effect"
 
-import { Database } from "@zerocode-ai/core/database/database"
-import { AccountStateTable, AccountTable } from "@zerocode-ai/core/account/sql"
+import { Database } from "@0codeai/zerocode-core/database/database"
+import { AccountStateTable, AccountTable } from "@0codeai/zerocode-core/account/sql"
 import { AccessToken, AccountID, AccountRepoError, Info, OrgID, RefreshToken } from "./schema"
 import { normalizeServerUrl } from "./url"
 

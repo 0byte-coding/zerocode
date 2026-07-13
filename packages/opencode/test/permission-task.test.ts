@@ -1,5 +1,5 @@
-import { PermissionV1 } from "@zerocode-ai/core/v1/permission"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { PermissionV1 } from "@0codeai/zerocode-core/v1/permission"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { describe, test, expect } from "bun:test"
 import { Effect } from "effect"
 import { Permission } from "../src/permission"

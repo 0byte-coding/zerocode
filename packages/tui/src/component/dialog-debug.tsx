@@ -1,6 +1,6 @@
 import { TextAttributes } from "@opentui/core"
 import { createMemo, createSignal, For } from "solid-js"
-import { InstallationChannel, InstallationVersion } from "@zerocode-ai/core/installation/version"
+import { InstallationChannel, InstallationVersion } from "@0codeai/zerocode-core/installation/version"
 import { useTheme } from "../context/theme"
 import { useDialog } from "../ui/dialog"
 import { useRoute } from "../context/route"

@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test"
-import { useSpring } from "@zerocode-ai/ui/motion-spring"
+import { useSpring } from "@0codeai/zerocode-ui/motion-spring"
 import { createRoot, createSignal } from "solid-js"
 
 test("snaps spring progress when the session changes", async () => {

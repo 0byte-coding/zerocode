@@ -1,8 +1,8 @@
 import { describe, expect } from "bun:test"
 import { Effect } from "effect"
-import { Credential } from "@zerocode-ai/core/credential"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
-import { Integration } from "@zerocode-ai/core/integration"
+import { Credential } from "@0codeai/zerocode-core/credential"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
+import { Integration } from "@0codeai/zerocode-core/integration"
 import { testEffect } from "./lib/effect"
 
 const it = testEffect(LayerNode.compile(Credential.node))

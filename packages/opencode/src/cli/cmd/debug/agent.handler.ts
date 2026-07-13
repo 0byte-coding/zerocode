@@ -1,6 +1,6 @@
-import { PermissionV1 } from "@zerocode-ai/core/v1/permission"
+import { PermissionV1 } from "@0codeai/zerocode-core/v1/permission"
 import { EOL } from "os"
-import { SessionV1 } from "@zerocode-ai/core/v1/session"
+import { SessionV1 } from "@0codeai/zerocode-core/v1/session"
 import { basename } from "path"
 import { Cause, Effect } from "effect"
 import { Agent } from "../../../agent/agent"

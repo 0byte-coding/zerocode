@@ -1,5 +1,5 @@
 {
-  "name": "@zerocode-ai/slack",
+  "name": "@0codeai/zerocode-slack",
   "version": "1.17.18",
   "type": "module",
   "license": "MIT",
@@ -8,7 +8,7 @@
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
-    "@zerocode-ai/sdk": "workspace:*",
+    "@0codeai/zerocode-sdk": "workspace:*",
     "@slack/bolt": "^3.17.1"
   },
   "devDependencies": {

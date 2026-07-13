@@ -1,5 +1,5 @@
 import { expect } from "bun:test"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { Effect } from "effect"
 import { Config } from "@/config/config"
 import { Agent as AgentSvc } from "../../src/agent/agent"

@@ -1,35 +1,35 @@
 import { expect, test } from "bun:test"
 import { Schema } from "effect"
-import { AgentV2 } from "@zerocode-ai/core/agent"
-import { ModelV2 } from "@zerocode-ai/core/model"
-import { SessionV2 } from "@zerocode-ai/core/session"
-import { Agent } from "@zerocode-ai/schema/agent"
-import { Location } from "@zerocode-ai/schema/location"
-import { Model } from "@zerocode-ai/schema/model"
-import { AgentAttachment, FileAttachment, Prompt, Source } from "@zerocode-ai/schema/prompt"
-import { Provider } from "@zerocode-ai/schema/provider"
-import { Project } from "@zerocode-ai/schema/project"
-import { ProjectDirectories } from "@zerocode-ai/schema/project-directories"
-import { PermissionV1 } from "@zerocode-ai/schema/permission-v1"
-import { Session } from "@zerocode-ai/schema/session"
-import { SessionInput } from "@zerocode-ai/schema/session-input"
-import { SessionMessage } from "@zerocode-ai/schema/session-message"
-import { Workspace } from "@zerocode-ai/schema/workspace"
-import { Command } from "@zerocode-ai/schema/command"
-import { Connection } from "@zerocode-ai/schema/connection"
-import { Credential } from "@zerocode-ai/schema/credential"
-import { FileSystem } from "@zerocode-ai/schema/filesystem"
-import { Integration } from "@zerocode-ai/schema/integration"
-import { LLM } from "@zerocode-ai/schema/llm"
-import { Permission } from "@zerocode-ai/schema/permission"
-import { Plugin } from "@zerocode-ai/schema/plugin"
-import { Pty } from "@zerocode-ai/schema/pty"
-import { Reference } from "@zerocode-ai/schema/reference"
-import { SessionTodo } from "@zerocode-ai/schema/session-todo"
-import { Skill } from "@zerocode-ai/schema/skill"
-import { AbsolutePath, DateTimeUtcFromMillis, optional, statics } from "@zerocode-ai/schema/schema"
-import { ProviderV2 } from "@zerocode-ai/core/provider"
-import { PluginV2 } from "@zerocode-ai/core/plugin"
+import { AgentV2 } from "@0codeai/zerocode-core/agent"
+import { ModelV2 } from "@0codeai/zerocode-core/model"
+import { SessionV2 } from "@0codeai/zerocode-core/session"
+import { Agent } from "@0codeai/zerocode-schema/agent"
+import { Location } from "@0codeai/zerocode-schema/location"
+import { Model } from "@0codeai/zerocode-schema/model"
+import { AgentAttachment, FileAttachment, Prompt, Source } from "@0codeai/zerocode-schema/prompt"
+import { Provider } from "@0codeai/zerocode-schema/provider"
+import { Project } from "@0codeai/zerocode-schema/project"
+import { ProjectDirectories } from "@0codeai/zerocode-schema/project-directories"
+import { PermissionV1 } from "@0codeai/zerocode-schema/permission-v1"
+import { Session } from "@0codeai/zerocode-schema/session"
+import { SessionInput } from "@0codeai/zerocode-schema/session-input"
+import { SessionMessage } from "@0codeai/zerocode-schema/session-message"
+import { Workspace } from "@0codeai/zerocode-schema/workspace"
+import { Command } from "@0codeai/zerocode-schema/command"
+import { Connection } from "@0codeai/zerocode-schema/connection"
+import { Credential } from "@0codeai/zerocode-schema/credential"
+import { FileSystem } from "@0codeai/zerocode-schema/filesystem"
+import { Integration } from "@0codeai/zerocode-schema/integration"
+import { LLM } from "@0codeai/zerocode-schema/llm"
+import { Permission } from "@0codeai/zerocode-schema/permission"
+import { Plugin } from "@0codeai/zerocode-schema/plugin"
+import { Pty } from "@0codeai/zerocode-schema/pty"
+import { Reference } from "@0codeai/zerocode-schema/reference"
+import { SessionTodo } from "@0codeai/zerocode-schema/session-todo"
+import { Skill } from "@0codeai/zerocode-schema/skill"
+import { AbsolutePath, DateTimeUtcFromMillis, optional, statics } from "@0codeai/zerocode-schema/schema"
+import { ProviderV2 } from "@0codeai/zerocode-core/provider"
+import { PluginV2 } from "@0codeai/zerocode-core/plugin"
 
 test("Core reuses the canonical shared schemas", async () => {
   const [
@@ -55,27 +55,27 @@ test("Core reuses the canonical shared schemas", async () => {
     coreSchema,
     coreWorkspace,
   ] = await Promise.all([
-    import("@zerocode-ai/core/command"),
-    import("@zerocode-ai/core/integration/connection"),
-    import("@zerocode-ai/core/credential"),
-    import("@zerocode-ai/core/filesystem"),
-    import("@zerocode-ai/core/integration"),
-    import("@zerocode-ai/core/location"),
-    import("@zerocode-ai/llm"),
-    import("@zerocode-ai/core/permission"),
-    import("@zerocode-ai/core/v1/permission"),
-    import("@zerocode-ai/core/project/copy"),
-    import("@zerocode-ai/core/pty"),
-    import("@zerocode-ai/core/project/schema"),
-    import("@zerocode-ai/core/reference"),
-    import("@zerocode-ai/core/session/input"),
-    import("@zerocode-ai/core/session/message"),
-    import("@zerocode-ai/core/session/todo"),
-    import("@zerocode-ai/core/session/prompt"),
-    import("@zerocode-ai/core/skill"),
-    import("@zerocode-ai/core/v2-schema"),
-    import("@zerocode-ai/core/schema"),
-    import("@zerocode-ai/core/workspace"),
+    import("@0codeai/zerocode-core/command"),
+    import("@0codeai/zerocode-core/integration/connection"),
+    import("@0codeai/zerocode-core/credential"),
+    import("@0codeai/zerocode-core/filesystem"),
+    import("@0codeai/zerocode-core/integration"),
+    import("@0codeai/zerocode-core/location"),
+    import("@0codeai/zerocode-llm"),
+    import("@0codeai/zerocode-core/permission"),
+    import("@0codeai/zerocode-core/v1/permission"),
+    import("@0codeai/zerocode-core/project/copy"),
+    import("@0codeai/zerocode-core/pty"),
+    import("@0codeai/zerocode-core/project/schema"),
+    import("@0codeai/zerocode-core/reference"),
+    import("@0codeai/zerocode-core/session/input"),
+    import("@0codeai/zerocode-core/session/message"),
+    import("@0codeai/zerocode-core/session/todo"),
+    import("@0codeai/zerocode-core/session/prompt"),
+    import("@0codeai/zerocode-core/skill"),
+    import("@0codeai/zerocode-core/v2-schema"),
+    import("@0codeai/zerocode-core/schema"),
+    import("@0codeai/zerocode-core/workspace"),
   ])
 
   const schemas = [

@@ -6,7 +6,7 @@ import {
   parseDeepLink,
   parseNewSessionDeepLink,
 } from "./deep-links"
-import { type Session } from "@zerocode-ai/sdk/v2/client"
+import { type Session } from "@0codeai/zerocode-sdk/v2/client"
 import {
   childSessionOnPath,
   closeHomeProject,

@@ -1,4 +1,4 @@
-import type { Model } from "@zerocode-ai/sdk/v2"
+import type { Model } from "@0codeai/zerocode-sdk/v2"
 import { Option, Schema } from "effect"
 
 const item = Schema.Struct({

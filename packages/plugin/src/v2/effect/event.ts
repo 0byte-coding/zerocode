@@ -1,4 +1,4 @@
-import type { Event as SDKEvent } from "@zerocode-ai/sdk/v2/types"
+import type { Event as SDKEvent } from "@0codeai/zerocode-sdk/v2/types"
 import type { Stream } from "effect"
 
 export type EventMap = {

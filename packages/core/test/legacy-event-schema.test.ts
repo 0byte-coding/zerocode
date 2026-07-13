@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import { SessionV1 as Wire } from "@zerocode-ai/schema/session-v1"
+import { SessionV1 as Wire } from "@0codeai/zerocode-schema/session-v1"
 import { SessionV1 } from "../src/v1/session"
 
 describe("legacy event schema compatibility", () => {

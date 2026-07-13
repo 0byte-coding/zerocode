@@ -3,16 +3,16 @@ import fs from "fs/promises"
 import path from "path"
 import { pathToFileURL } from "url"
 import { createTestKeymap } from "@opentui/keymap/testing"
-import type { TuiAttentionSoundPack } from "@zerocode-ai/plugin/tui"
+import type { TuiAttentionSoundPack } from "@0codeai/zerocode-plugin/tui"
 import { tmpdir } from "../../fixture/fixture"
 import { createTuiPluginApi } from "../../fixture/tui-plugin"
 import { createTuiResolvedConfig, mockTuiRuntime } from "../../fixture/tui-runtime"
-import { Global } from "@zerocode-ai/core/global"
+import { Global } from "@0codeai/zerocode-core/global"
 import { TuiConfig } from "../../../src/config/tui"
 import { Filesystem } from "@/util/filesystem"
 import { PluginLoader } from "../../../src/plugin/loader"
 
-const { allThemes, addTheme } = await import("@zerocode-ai/tui/context/theme")
+const { allThemes, addTheme } = await import("@0codeai/zerocode-tui/context/theme")
 const { TuiPluginRuntime } = await import("../../../src/plugin/tui/runtime")
 
 type Row = Record<string, unknown>

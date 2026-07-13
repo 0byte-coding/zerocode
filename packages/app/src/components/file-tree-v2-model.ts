@@ -1,4 +1,4 @@
-import type { FileNode } from "@zerocode-ai/sdk/v2"
+import type { FileNode } from "@0codeai/zerocode-sdk/v2"
 
 export type FileTreeV2Model = {
   children: ReadonlyMap<string, readonly FileTreeV2Node[]>

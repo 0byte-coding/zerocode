@@ -1,9 +1,9 @@
 import { describe, expect } from "bun:test"
 import { Effect, Layer } from "effect"
-import { AppNodeBuilder } from "@zerocode-ai/core/effect/app-node-builder"
-import { Location } from "@zerocode-ai/core/location"
-import { Policy } from "@zerocode-ai/core/policy"
-import { AbsolutePath } from "@zerocode-ai/core/schema"
+import { AppNodeBuilder } from "@0codeai/zerocode-core/effect/app-node-builder"
+import { Location } from "@0codeai/zerocode-core/location"
+import { Policy } from "@0codeai/zerocode-core/policy"
+import { AbsolutePath } from "@0codeai/zerocode-core/schema"
 import { location } from "./fixture/location"
 import { testEffect } from "./lib/effect"
 

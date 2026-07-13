@@ -14,7 +14,7 @@ process.chdir(dir)
 
 const generated = await import("./generate.ts")
 
-import { Script } from "@zerocode-ai/script"
+import { Script } from "@0codeai/zerocode-script"
 import pkg from "../package.json"
 
 const singleFlag = process.argv.includes("--single")
@@ -142,9 +142,10 @@ if (!skipInstall) {
   await $`bun install --os="*" --cpu="*" @parcel/watcher@${pkg.dependencies["@parcel/watcher"]}`
   await $`bun install --os="*" --cpu="*" @ff-labs/fff-bun@${pkg.dependencies["@ff-labs/fff-bun"]}`
 }
+const baseName = "zerocode"
 for (const item of targets) {
-  const name = [
-    pkg.name,
+  const dirName = [
+    baseName,
     // changing to win32 flags npm for some reason
     item.os === "win32" ? "windows" : item.os,
     item.arch,
@@ -153,8 +154,9 @@ for (const item of targets) {
   ]
     .filter(Boolean)
     .join("-")
-  console.log(`building ${name}`)
-  await $`mkdir -p dist/${name}/bin`
+  const pkgName = `@0codeai/${dirName}`
+  console.log(`building ${dirName}`)
+  await $`mkdir -p dist/${dirName}/bin`
 
   const localPath = path.resolve(dir, "node_modules/@opentui/core/parser.worker.js")
   const rootPath = path.resolve(dir, "../../node_modules/@opentui/core/parser.worker.js")
@@ -179,8 +181,8 @@ for (const item of targets) {
       autoloadDotenv: false,
       autoloadTsconfig: true,
       autoloadPackageJson: true,
-      target: name.replace(pkg.name, "bun") as any,
-      outfile: `dist/${name}/bin/zerocode`,
+      target: dirName.replace(baseName, "bun") as any,
+      outfile: `dist/${dirName}/bin/zerocode`,
       execArgv: [`--user-agent=zerocode/${Script.version}`, "--use-system-ca", "--"],
       windows: {},
     },
@@ -200,22 +202,22 @@ for (const item of targets) {
 
   // Smoke test: only run if binary is for current platform
   if (item.os === process.platform && item.arch === process.arch && !item.abi) {
-    const binaryPath = `dist/${name}/bin/zerocode`
+    const binaryPath = `dist/${dirName}/bin/zerocode`
     console.log(`Running smoke test: ${binaryPath} --version`)
     try {
       const versionOutput = await $`${binaryPath} --version`.text()
       console.log(`Smoke test passed: ${versionOutput.trim()}`)
     } catch (e) {
-      console.error(`Smoke test failed for ${name}:`, e)
+      console.error(`Smoke test failed for ${dirName}:`, e)
       process.exit(1)
     }
   }
 
-  await $`rm -rf ./dist/${name}/bin/tui`
-  await Bun.file(`dist/${name}/package.json`).write(
+  await $`rm -rf ./dist/${dirName}/bin/tui`
+  await Bun.file(`dist/${dirName}/package.json`).write(
     JSON.stringify(
       {
-        name,
+        name: pkgName,
         version: Script.version,
         preferUnplugged: true,
         os: [item.os],
@@ -226,7 +228,7 @@ for (const item of targets) {
       2,
     ),
   )
-  binaries[name] = Script.version
+  binaries[dirName] = Script.version
 }
 
 if (Script.release) {

@@ -5,8 +5,8 @@ import path from "node:path"
 import { Effect, Exit, Stream } from "effect"
 import type * as PlatformError from "effect/PlatformError"
 import { ChildProcess, ChildProcessSpawner } from "effect/unstable/process"
-import { CrossSpawnSpawner } from "@zerocode-ai/core/cross-spawn-spawner"
-import { LayerNode } from "@zerocode-ai/core/effect/layer-node"
+import { CrossSpawnSpawner } from "@0codeai/zerocode-core/cross-spawn-spawner"
+import { LayerNode } from "@0codeai/zerocode-core/effect/layer-node"
 import { testEffect } from "../lib/effect"
 
 const live = LayerNode.compile(CrossSpawnSpawner.node)
