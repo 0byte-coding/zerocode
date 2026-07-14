@@ -1,0 +1,78 @@
+name: publish-npm
+run-name: "publish npm ${{ inputs.version }} (${{ inputs.tag }})"
+
+# Modular, npm-only release path for the @0codeai/zerocode CLI package.
+# Deliberately decoupled from the AUR / homebrew / docker / Windows-signing /
+# Electron-desktop concerns in publish.yml - those need extra credentials
+# (AUR_KEY, Apple/Azure certs, a homebrew-tap push token) that a plain npm
+# publish has no business depending on. See script/publish-npm.ts and
+# script/publish-extras.ts in packages/opencode.
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to publish, e.g. 0.1.0 (falls back to the registry's latest+1 patch if omitted, but is required until @0codeai/zerocode has a first release)"
+        required: true
+        type: string
+      tag:
+        description: "npm dist-tag to publish under"
+        required: false
+        type: string
+        default: "latest"
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}-${{ inputs.version }}
+
+permissions:
+  contents: read
+
+jobs:
+  build-cli:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
+
+      - uses: ./.github/actions/setup-bun
+
+      - name: Build
+        run: ./packages/opencode/script/build.ts
+        env:
+          ZEROCODE_VERSION: ${{ inputs.version }}
+          ZEROCODE_CHANNEL: ${{ inputs.tag }}
+
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: zerocode-cli
+          path: |
+            packages/opencode/dist/zerocode-darwin*
+            packages/opencode/dist/zerocode-linux*
+            packages/opencode/dist/zerocode-windows*
+
+  publish-npm:
+    needs: build-cli
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
+
+      - uses: ./.github/actions/setup-bun
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: "24"
+          registry-url: "https://registry.npmjs.org"
+
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: zerocode-cli
+          path: packages/opencode/dist
+
+      - run: ./packages/opencode/script/publish-npm.ts
+        env:
+          ZEROCODE_VERSION: ${{ inputs.version }}
+          ZEROCODE_CHANNEL: ${{ inputs.tag }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_CONFIG_PROVENANCE: false
+          # binary packages are ~50-70MB each and publish concurrently -
+          # give slower links (and CI network hiccups) room to finish.
+          NPM_CONFIG_FETCH_TIMEOUT: "600000"
+          NPM_CONFIG_FETCH_RETRIES: "5"
+          NPM_CONFIG_FETCH_RETRY_MINTIMEOUT: "10000"
